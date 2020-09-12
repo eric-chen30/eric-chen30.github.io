@@ -228,7 +228,8 @@
   padding: 0.125em;
 }
 .vcards .vcard:hover > .vimg {
-  animation: 0.8s ease-out 0s 1 normal both running shake;
+  -webkit-animation: 0.8s ease-out 0s 1 normal both running shake;
+          animation: 0.8s ease-out 0s 1 normal both running shake;
 }
 .vcards .vcard .vhead {
   line-height: 1.5;
@@ -363,23 +364,7 @@
   vertical-align: middle;
   margin: 0 0.3125rem;
 }
-@-moz-keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(1turn);
-  }
-}
 @-webkit-keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(1turn);
-  }
-}
-@-o-keyframes spin {
   0% {
     transform: rotate(0deg);
   }
@@ -395,17 +380,7 @@
     transform: rotate(1turn);
   }
 }
-@-moz-keyframes pulse {
-  50% {
-    background: #dcdcdc;
-  }
-}
 @-webkit-keyframes pulse {
-  50% {
-    background: #dcdcdc;
-  }
-}
-@-o-keyframes pulse {
   50% {
     background: #dcdcdc;
   }
