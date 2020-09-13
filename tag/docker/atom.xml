@@ -5,6 +5,7 @@
     <link href="http://example.com" />
     <updated>2020-09-12T07:59:46.000Z</updated>
     <category term="Docker" />
+    <category term="Pandas" />
     <entry>
         <id>http://example.com/2020/09/12/Docker%E5%85%A5%E9%97%A8/</id>
         <title>Docker入门</title>

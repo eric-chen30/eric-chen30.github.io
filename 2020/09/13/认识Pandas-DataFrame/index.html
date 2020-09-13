@@ -1,0 +1,469 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="CsStar" href="http://example.com/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="CsStar" href="http://example.com/atom.xml" />
+<link rel="alternate" type="application/json" title="CsStar" href="http://example.com/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.1.4">
+
+  
+  <meta name="keywords" content="Pandas" />
+
+
+
+<meta name="description" content="Work Hard To Be A Better Man" >
+
+
+<link rel="canonical" href="http://example.com/2020/09/13/%E8%AE%A4%E8%AF%86Pandas-DataFrame/">
+
+
+
+  <title>
+认识Pandas-DataFrame - 数据分析 |
+Eric Chen = CsStar = Work Hard To Be A Better Man</title>
+<meta name="generator" content="Hexo 5.1.1"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">认识Pandas-DataFrame
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2020-09-13 16:25:21">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2020-09-13T16:25:21+08:00">2020-09-13</time>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Eric Chen</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitzannuj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciundwu5j20zk0m8n9e.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclip4jbpj20zk0m87cv.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciuv0socj20zk0m8qes.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclxfdlttj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicit31ffoj20zk0m8naf.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main id="main">
+      <div class="inner">
+        <div id="content" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span>
+<i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" itemprop="item" rel="index" title="分类于 数据分析"><span itemprop="name">数据分析</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/13/%E8%AE%A4%E8%AF%86Pandas-DataFrame/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="Eric Chen">
+    <meta itemprop="description" content="Work Hard To Be A Better Man, Work Hard To Be A Better Man">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="CsStar">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h1 id="pandas-dataframe基础知识总结"><a class="markdownIt-Anchor" href="#pandas-dataframe基础知识总结">#</a> Pandas-DataFrame 基础知识总结</h1>
+<h2 id="1-dataframe的创建"><a class="markdownIt-Anchor" href="#1-dataframe的创建">#</a> 1、DataFrame 的创建</h2>
+<h3 id="11-dataframe和series简介"><a class="markdownIt-Anchor" href="#11-dataframe和series简介">#</a> 1.1、DataFrame 和 Series 简介</h3>
+<p>DataFrame 是一种表格型的数据结构。DataFrame 既有行索引，也有列索引，它可以看作是由 Series 组成的字典，并且这些 Series 共用一个索引。创建方式有很多种，主要是根据 dict 进行创建，或者是读取 csv 或者 txt 文件。</p>
+<blockquote>
+<p><strong>Series</strong>：简单来说，就是一个竖着的 List，一般创建需要传入一个 List。</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">s = pd.Series([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,np.nan])</span><br><span class="line">print(s)      <span class="comment"># 竖着的列表，其中np.nan为NaN，还包含默认的索引列</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>numpy 中不存在的值都会被赋值为 NaN</li>
+<li>默认索引列为数字（从 0 开始），也可以自定义索引列，在 Series 函数中添加 index 关键字，同时给一个自定义索引列表</li>
+</ul>
+</blockquote>
+<h3 id="12-根据字典创建"><a class="markdownIt-Anchor" href="#12-根据字典创建">#</a> 1.2、根据字典创建</h3>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">data = &#123;</span><br><span class="line">    <span class="string">&#x27;name&#x27;</span>:[<span class="string">&#x27;csstar&#x27;</span>,<span class="string">&#x27;jackson&#x27;</span>,<span class="string">&#x27;tom&#x27;</span>,<span class="string">&#x27;jerry&#x27;</span>,<span class="string">&#x27;yummy&#x27;</span>],</span><br><span class="line">    <span class="string">&#x27;year&#x27;</span>:[<span class="number">2000</span>,<span class="number">2001</span>,<span class="number">2008</span>,<span class="number">2010</span>,<span class="number">2020</span>],</span><br><span class="line">    <span class="string">&#x27;sex&#x27;</span>:[<span class="string">&#x27;m&#x27;</span>,<span class="string">&#x27;m&#x27;</span>,<span class="string">&#x27;m&#x27;</span>,<span class="string">&#x27;w&#x27;</span>,<span class="string">&#x27;w&#x27;</span>]</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment"># 得到了DataFrame对象，包含默认索引列</span></span><br><span class="line">frame = pd.DataFrame(data)  </span><br><span class="line"></span><br><span class="line"><span class="comment"># index是行索引--&gt;对应行  columns是列索引--&gt;对应列</span></span><br><span class="line">frame2 = pd.DataFrame(data,index=[<span class="string">&#x27;one&#x27;</span>,<span class="string">&#x27;two&#x27;</span>,<span class="string">&#x27;three&#x27;</span>,<span class="string">&#x27;four&#x27;</span>,<span class="string">&#x27;five&#x27;</span>],columns=[<span class="string">&#x27;name&#x27;</span>,<span class="string">&#x27;sex&#x27;</span>,<span class="string">&#x27;year&#x27;</span>])</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>如果 columns 中出现了没有定义的列，那么该列的数据都为 NaN</li>
+<li>可以用 index，columns，values 来访问 DataFrame 的行索引，列索引以及数据值，数据返回的是一个<strong>二维数组</strong>。</li>
+</ul>
+</blockquote>
+<h3 id="13-读取文件的方式创建"><a class="markdownIt-Anchor" href="#13-读取文件的方式创建">#</a> 1.3、读取文件的方式创建</h3>
+<p>读取文件生成 DataFrame 最常用的是<strong> read_csv,read_table</strong> 方法</p>
+<p><img data-src="%E8%AE%A4%E8%AF%86Pandas-DataFrame.assets/image-20200913170309272.png" alt="image-20200913170309272"></p>
+<p>还有一些其他的 DataFrame 创建方式，比如说可以通过读取 mysql 或者 mongoDB，读取 json 文件等方式来生成 DataFrame 对象。</p>
+<h2 id="2-dataframe轴的概念"><a class="markdownIt-Anchor" href="#2-dataframe轴的概念">#</a> 2、DataFrame 轴的概念</h2>
+<p>在 DataFrame 的处理中经常会遇到轴的概念，我们所说的 axis=0 即表示沿着每一列或者行标签 / 索引值向下执行的，axis = 1 即表示沿着每一行或者列标签方向执行对应的方法</p>
+<h2 id="3-dataframe的性质"><a class="markdownIt-Anchor" href="#3-dataframe的性质">#</a> 3、DataFrame 的性质</h2>
+<h3 id="31-索引-切片"><a class="markdownIt-Anchor" href="#31-索引-切片">#</a> 3.1、索引、切片</h3>
+<p>根据列的名字获取一列，返回的是一个 Series</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">frame[<span class="string">&#x27;列索引的名字&#x27;</span>]</span><br></pre></td></tr></table></figure>
+<p>获取多列或者多行</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">data = pd.DataFrame(np.arange(<span class="number">16</span>).reshape((<span class="number">4</span>,<span class="number">4</span>)),index = [<span class="string">&#x27;Ohio&#x27;</span>,<span class="string">&#x27;Colorado&#x27;</span>,<span class="string">&#x27;Utah&#x27;</span>,<span class="string">&#x27;New York&#x27;</span>],columns=[<span class="string">&#x27;one&#x27;</span>,<span class="string">&#x27;two&#x27;</span>,<span class="string">&#x27;three&#x27;</span>,<span class="string">&#x27;four&#x27;</span>])</span><br><span class="line">data[[<span class="string">&#x27;two&#x27;</span>,<span class="string">&#x27;three&#x27;</span>]]</span><br><span class="line"><span class="comment">#输出</span></span><br><span class="line">    two three</span><br><span class="line">Ohio    <span class="number">1</span>   <span class="number">2</span></span><br><span class="line">Colorado    <span class="number">5</span>   <span class="number">6</span></span><br><span class="line">Utah    <span class="number">9</span>   <span class="number">10</span></span><br><span class="line">New York    <span class="number">13</span>  <span class="number">14</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#取行</span></span><br><span class="line">data[:<span class="number">2</span>]</span><br><span class="line"><span class="comment">#输出</span></span><br><span class="line">    one two three   four</span><br><span class="line">Ohio    <span class="number">0</span>   <span class="number">1</span>   <span class="number">2</span>   <span class="number">3</span></span><br><span class="line">Colorado    <span class="number">4</span>   <span class="number">5</span>   <span class="number">6</span>   <span class="number">7</span></span><br></pre></td></tr></table></figure>
+<p>根据逻辑条件来选取</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">data[data[<span class="string">&#x27;three&#x27;</span>]&gt;<span class="number">5</span>]</span><br><span class="line"><span class="comment">#输出</span></span><br><span class="line">    one two three   four</span><br><span class="line">Colorado    <span class="number">4</span>   <span class="number">5</span>   <span class="number">6</span>   <span class="number">7</span></span><br><span class="line">Utah    <span class="number">8</span>   <span class="number">9</span>   <span class="number">10</span>  <span class="number">11</span></span><br><span class="line">New York    <span class="number">12</span>  <span class="number">13</span>  <span class="number">14</span>  <span class="number">15</span></span><br></pre></td></tr></table></figure>
+<p>专门用于索引的方法，如果用标签 —&gt;loc 方法，如果用下标 —&gt;iloc 方法</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#data.ix[&#x27;Colorado&#x27;,[&#x27;two&#x27;,&#x27;three&#x27;]]</span></span><br><span class="line">data.loc[<span class="string">&#x27;Colorado&#x27;</span>,[<span class="string">&#x27;two&#x27;</span>,<span class="string">&#x27;three&#x27;</span>]]</span><br><span class="line"><span class="comment">#输出</span></span><br><span class="line">two      <span class="number">5</span></span><br><span class="line">three    <span class="number">6</span></span><br><span class="line">Name: Colorado, dtype: int64</span><br><span class="line"></span><br><span class="line">data.iloc[<span class="number">0</span>:<span class="number">3</span>,<span class="number">2</span>]</span><br><span class="line"><span class="comment">#输出</span></span><br><span class="line">Ohio         <span class="number">2</span></span><br><span class="line">Colorado     <span class="number">6</span></span><br><span class="line">Utah        <span class="number">10</span></span><br><span class="line">Name: three, dtype: int64</span><br></pre></td></tr></table></figure>
+<h3 id="32-修改数据"><a class="markdownIt-Anchor" href="#32-修改数据">#</a> 3.2、修改数据</h3>
+<p>使用标量修改某一列</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">frame[<span class="string">&#x27;debt&#x27;</span>]=<span class="number">16.5</span></span><br><span class="line">frame <span class="comment"># debt列全部数据为16.5</span></span><br></pre></td></tr></table></figure>
+<p>使用一个列表来修改，不过要保证列表的长度与 DataFrame 长度相同：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">frame.debt = np.arange(<span class="number">5</span>)</span><br></pre></td></tr></table></figure>
+<p>使用一个 Series，此时会根据索引来进行精确匹配</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">val=pd.Series([<span class="number">-1.2</span>,<span class="number">-1.5</span>,<span class="number">-1.7</span>],index[<span class="string">&#x27;two&#x27;</span>,<span class="string">&#x27;four&#x27;</span>,<span class="string">&#x27;five&#x27;</span>])</span><br><span class="line">frame[<span class="string">&#x27;debt&#x27;</span>] = val  <span class="comment">#定义一个三个数据的Series来代替指定index行的值，从而实现精确定位并修改</span></span><br></pre></td></tr></table></figure>
+<h3 id="33-重新索引"><a class="markdownIt-Anchor" href="#33-重新索引">#</a> 3.3、重新索引</h3>
+<p>使用 reinex 方法对 DataFrame 进行重新索引，可以重新索引行或 i 列，或者两者都索引，只穿一个参数的情况下，会重新索引行。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">frame = pd.DataFrame(np.arange(<span class="number">9</span>).reshape((<span class="number">3</span>,<span class="number">3</span>)),index=[<span class="number">1</span>,<span class="number">4</span>,<span class="number">5</span>],columns=[<span class="string">&#x27;Ohio&#x27;</span>,<span class="string">&#x27;Texas&#x27;</span>,<span class="string">&#x27;California&#x27;</span>])</span><br><span class="line">frame2 = frame.reindex([<span class="number">1</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">5</span>])</span><br><span class="line">frame2</span><br><span class="line"><span class="comment">#输出</span></span><br><span class="line">    Ohio    Texas   California</span><br><span class="line"><span class="number">1</span>   <span class="number">0.0</span> <span class="number">1.0</span> <span class="number">2.0</span></span><br><span class="line"><span class="number">2</span>   NaN NaN NaN</span><br><span class="line"><span class="number">4</span>   <span class="number">3.0</span> <span class="number">4.0</span> <span class="number">5.0</span></span><br><span class="line"><span class="number">5</span>   <span class="number">6.0</span> <span class="number">7.0</span> <span class="number">8.0</span></span><br><span class="line"></span><br><span class="line">states = [<span class="string">&#x27;Texas&#x27;</span>,<span class="string">&#x27;Utah&#x27;</span>,<span class="string">&#x27;California&#x27;</span>]</span><br><span class="line">frame.reindex(columns=states)</span><br><span class="line"><span class="comment">#输出</span></span><br><span class="line">    Texas   Utah    California</span><br><span class="line"><span class="number">1</span>   <span class="number">1</span>   NaN <span class="number">2</span></span><br><span class="line"><span class="number">4</span>   <span class="number">4</span>   NaN <span class="number">5</span></span><br><span class="line"><span class="number">5</span>   <span class="number">7</span>   NaN <span class="number">8</span></span><br></pre></td></tr></table></figure>
+<h3 id="34-丢弃指定轴上的值"><a class="markdownIt-Anchor" href="#34-丢弃指定轴上的值">#</a> 3.4、丢弃指定轴上的值</h3>
+<p>使用 drop 方法丢弃指定轴上的值，不会对 DataFrame 造成影响</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">frame = pd.DataFrame(np.arange(<span class="number">9</span>).reshape((<span class="number">3</span>,<span class="number">3</span>)),index = [<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;c&#x27;</span>,<span class="string">&#x27;d&#x27;</span>],columns = [<span class="string">&#x27;Ohio&#x27;</span>,<span class="string">&#x27;Texas&#x27;</span>,<span class="string">&#x27;California&#x27;</span>])</span><br><span class="line">frame.drop(<span class="string">&#x27;a&#x27;</span>) </span><br><span class="line"><span class="comment">#输出</span></span><br><span class="line">Ohio    Texas   California</span><br><span class="line">a   <span class="number">0</span>   <span class="number">1</span>   <span class="number">2</span></span><br><span class="line">c   <span class="number">3</span>   <span class="number">4</span>   <span class="number">5</span></span><br><span class="line">d   <span class="number">6</span>   <span class="number">7</span>   <span class="number">8</span></span><br><span class="line"></span><br><span class="line">frame.drop([<span class="string">&#x27;Ohio&#x27;</span>],axis=<span class="number">1</span>)</span><br><span class="line"><span class="comment">#输出</span></span><br><span class="line">    Texas   California</span><br><span class="line">a   <span class="number">1</span>   <span class="number">2</span></span><br><span class="line">c   <span class="number">4</span>   <span class="number">5</span></span><br><span class="line">d   <span class="number">7</span>   <span class="number">8</span></span><br></pre></td></tr></table></figure>
+<h3 id="35-算术运算"><a class="markdownIt-Anchor" href="#35-算术运算">#</a> 3.5、算术运算</h3>
+<h3 id="36-函数应用与映射"><a class="markdownIt-Anchor" href="#36-函数应用与映射">#</a> 3.6、函数应用与映射</h3>
+<h3 id="37-排序与排名"><a class="markdownIt-Anchor" href="#37-排序与排名">#</a> 3.7、排序与排名</h3>
+<h3 id="38汇总和计算描述统计"><a class="markdownIt-Anchor" href="#38汇总和计算描述统计">#</a> 3.8，汇总和计算描述统计</h3>
+<h3 id="39-处理缺失数据"><a class="markdownIt-Anchor" href="#39-处理缺失数据">#</a> 3.9、处理缺失数据</h3>
+
+      <div class="tags">
+          <a href="/tags/Pandas/" rel="tag"><i class="ic i-tag"></i> Pandas</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2020-09-13 17:37:17" itemprop="dateModified" datetime="2020-09-13T17:37:17+08:00">2020-09-13</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="Eric Chen 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="Eric Chen 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="Eric Chen 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>Eric Chen <i class="ic i-at"><em>@</em></i>CsStar
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://example.com/2020/09/13/%E8%AE%A4%E8%AF%86Pandas-DataFrame/" title="认识Pandas-DataFrame">http://example.com/2020/09/13/认识Pandas-DataFrame/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="nav">
+    <div class="item left">
+      
+
+  <a href="/2020/09/12/Docker%E5%85%A5%E9%97%A8/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicljgocqbj20zk0m8e81.jpg" title="Docker入门">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>Docker入门</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments" data-id="2020/09/13/认识Pandas-DataFrame/"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#pandas-dataframe%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93"><span class="toc-number">1.</span> <span class="toc-text"> Pandas-DataFrame 基础知识总结</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-dataframe%E7%9A%84%E5%88%9B%E5%BB%BA"><span class="toc-number">1.1.</span> <span class="toc-text"> 1、DataFrame 的创建</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#11-dataframe%E5%92%8Cseries%E7%AE%80%E4%BB%8B"><span class="toc-number">1.1.1.</span> <span class="toc-text"> 1.1、DataFrame 和 Series 简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#12-%E6%A0%B9%E6%8D%AE%E5%AD%97%E5%85%B8%E5%88%9B%E5%BB%BA"><span class="toc-number">1.1.2.</span> <span class="toc-text"> 1.2、根据字典创建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#13-%E8%AF%BB%E5%8F%96%E6%96%87%E4%BB%B6%E7%9A%84%E6%96%B9%E5%BC%8F%E5%88%9B%E5%BB%BA"><span class="toc-number">1.1.3.</span> <span class="toc-text"> 1.3、读取文件的方式创建</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-dataframe%E8%BD%B4%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">1.2.</span> <span class="toc-text"> 2、DataFrame 轴的概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-dataframe%E7%9A%84%E6%80%A7%E8%B4%A8"><span class="toc-number">1.3.</span> <span class="toc-text"> 3、DataFrame 的性质</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#31-%E7%B4%A2%E5%BC%95-%E5%88%87%E7%89%87"><span class="toc-number">1.3.1.</span> <span class="toc-text"> 3.1、索引、切片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#32-%E4%BF%AE%E6%94%B9%E6%95%B0%E6%8D%AE"><span class="toc-number">1.3.2.</span> <span class="toc-text"> 3.2、修改数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#33-%E9%87%8D%E6%96%B0%E7%B4%A2%E5%BC%95"><span class="toc-number">1.3.3.</span> <span class="toc-text"> 3.3、重新索引</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#34-%E4%B8%A2%E5%BC%83%E6%8C%87%E5%AE%9A%E8%BD%B4%E4%B8%8A%E7%9A%84%E5%80%BC"><span class="toc-number">1.3.4.</span> <span class="toc-text"> 3.4、丢弃指定轴上的值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#35-%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97"><span class="toc-number">1.3.5.</span> <span class="toc-text"> 3.5、算术运算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#36-%E5%87%BD%E6%95%B0%E5%BA%94%E7%94%A8%E4%B8%8E%E6%98%A0%E5%B0%84"><span class="toc-number">1.3.6.</span> <span class="toc-text"> 3.6、函数应用与映射</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#37-%E6%8E%92%E5%BA%8F%E4%B8%8E%E6%8E%92%E5%90%8D"><span class="toc-number">1.3.7.</span> <span class="toc-text"> 3.7、排序与排名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#38%E6%B1%87%E6%80%BB%E5%92%8C%E8%AE%A1%E7%AE%97%E6%8F%8F%E8%BF%B0%E7%BB%9F%E8%AE%A1"><span class="toc-number">1.3.8.</span> <span class="toc-text"> 3.8，汇总和计算描述统计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#39-%E5%A4%84%E7%90%86%E7%BC%BA%E5%A4%B1%E6%95%B0%E6%8D%AE"><span class="toc-number">1.3.9.</span> <span class="toc-text"> 3.9、处理缺失数据</span></a></li></ol></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li class="active"><a href="/2020/09/13/%E8%AE%A4%E8%AF%86Pandas-DataFrame/" rel="bookmark" title="认识Pandas-DataFrame">认识Pandas-DataFrame</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="Eric Chen"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">Eric Chen</p>
+  <div class="description" itemprop="description">Work Hard To Be A Better Man</div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+        <a href="/archives">
+        <span class="count">2</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories">
+        <span class="count">1</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags">
+        <span class="count">2</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL2VyaWMtY2hlbjMw" title="https:&#x2F;&#x2F;github.com&#x2F;eric-chen30"><i class="ic i-github"></i></span>
+      <span class="exturl item twitter" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;twitter.com&#x2F;yourname"><i class="ic i-twitter"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS9FcmljX3NodWFp" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;Eric_shuai"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTQzODMzOTMwNA==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;438339304"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item weibo" data-url="aHR0cHM6Ly93ZWliby5jb20vNjg5MzcwODY2My9wcm9maWxlP3JpZ2h0bW9kPTEmd3ZyPTYmbW9kPXBlcnNvbmluZm8=" title="https:&#x2F;&#x2F;weibo.com&#x2F;6893708663&#x2F;profile?rightmod&#x3D;1&amp;wvr&#x3D;6&amp;mod&#x3D;personinfo"><i class="ic i-weibo"></i></span>
+      <span class="exturl item about" data-url="aHR0cHM6Ly9hYm91dC5tZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;about.me&#x2F;yourname"><i class="ic i-address-card"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+        
+  <li class="item dropdown">
+    <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/friends/" rel="section"><i class="ic i-heart"></i>友達</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/links/" rel="section"><i class="ic i-magic"></i>网址</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="ic i-sakura rotate"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Eric Chen @ Eric Chen</span>
+</div>
+
+<div class="powered-by">
+  基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'http://example.com/2020/09/13/%E8%AE%A4%E8%AF%86Pandas-DataFrame/',
+    favicon: {
+      show: "Eric Chen",
+      hide: "Eric Chen"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 ${query} ，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return uri === LOCAL.path;
+      }
+    ]
+  };
+</script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/velocity-animate@1.5.2/velocity.min.js,npm/velocity-animate@1.5.2/velocity.ui.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.1.4"></script>
+
+
+
+
+</body>
+</html>

@@ -1,16 +1,21 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://example.com</id>
-    <title>CsStar</title>
-    <link href="http://example.com" />
-    <updated>2020-09-13T08:25:21.000Z</updated>
-    <category term="Docker" />
-    <category term="Pandas" />
-    <entry>
-        <id>http://example.com/2020/09/13/%E8%AE%A4%E8%AF%86Pandas-DataFrame/</id>
-        <title>认识Pandas-DataFrame</title>
-        <link rel="alternate" href="http://example.com/2020/09/13/%E8%AE%A4%E8%AF%86Pandas-DataFrame/"/>
-        <content type="html">&lt;h1 id=&#34;pandas-dataframe基础知识总结&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#pandas-dataframe基础知识总结&#34;&gt;#&lt;/a&gt; Pandas-DataFrame 基础知识总结&lt;/h1&gt;
+<rss version="2.0">
+    <channel>
+        <title>CsStar • Posts by &#34;数据分析&#34; category</title>
+        <link>http://example.com</link>
+        <description>Work Hard To Be A Better Man</description>
+        <language>zh-CN</language>
+        <pubDate>Sun, 13 Sep 2020 16:25:21 +0800</pubDate>
+        <lastBuildDate>Sun, 13 Sep 2020 16:25:21 +0800</lastBuildDate>
+        <category>Docker</category>
+        <category>Pandas</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2020/09/13/%E8%AE%A4%E8%AF%86Pandas-DataFrame/</guid>
+            <title>认识Pandas-DataFrame</title>
+            <link>http://example.com/2020/09/13/%E8%AE%A4%E8%AF%86Pandas-DataFrame/</link>
+            <category>Pandas</category>
+            <pubDate>Sun, 13 Sep 2020 16:25:21 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;pandas-dataframe基础知识总结&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#pandas-dataframe基础知识总结&#34;&gt;#&lt;/a&gt; Pandas-DataFrame 基础知识总结&lt;/h1&gt;
 &lt;h2 id=&#34;1-dataframe的创建&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-dataframe的创建&#34;&gt;#&lt;/a&gt; 1、DataFrame 的创建&lt;/h2&gt;
 &lt;h3 id=&#34;11-dataframe和series简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#11-dataframe和series简介&#34;&gt;#&lt;/a&gt; 1.1、DataFrame 和 Series 简介&lt;/h3&gt;
 &lt;p&gt;DataFrame 是一种表格型的数据结构。DataFrame 既有行索引，也有列索引，它可以看作是由 Series 组成的字典，并且这些 Series 共用一个索引。创建方式有很多种，主要是根据 dict 进行创建，或者是读取 csv 或者 txt 文件。&lt;/p&gt;
@@ -66,166 +71,7 @@
 &lt;h3 id=&#34;37-排序与排名&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#37-排序与排名&#34;&gt;#&lt;/a&gt; 3.7、排序与排名&lt;/h3&gt;
 &lt;h3 id=&#34;38汇总和计算描述统计&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#38汇总和计算描述统计&#34;&gt;#&lt;/a&gt; 3.8，汇总和计算描述统计&lt;/h3&gt;
 &lt;h3 id=&#34;39-处理缺失数据&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#39-处理缺失数据&#34;&gt;#&lt;/a&gt; 3.9、处理缺失数据&lt;/h3&gt;
-</content>
-        <category term="Pandas" />
-        <updated>2020-09-13T08:25:21.000Z</updated>
-    </entry>
-    <entry>
-        <id>http://example.com/2020/09/12/Docker%E5%85%A5%E9%97%A8/</id>
-        <title>Docker入门</title>
-        <link rel="alternate" href="http://example.com/2020/09/12/Docker%E5%85%A5%E9%97%A8/"/>
-        <content type="html">&lt;h1 id=&#34;docker入门&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker入门&#34;&gt;#&lt;/a&gt; Docker 入门&lt;/h1&gt;
-&lt;h3 id=&#34;1docker简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1docker简介&#34;&gt;#&lt;/a&gt; 1，docker 简介&lt;/h3&gt;
-&lt;h4 id=&#34;11三要素&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#11三要素&#34;&gt;#&lt;/a&gt; 1.1，三要素：&lt;/h4&gt;
-&lt;p&gt;仓库，镜像，容器&lt;/p&gt;
-&lt;h4 id=&#34;12why&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#12why&#34;&gt;#&lt;/a&gt; 1.2，why：&lt;/h4&gt;
-&lt;p&gt;开发代码 ----&amp;gt; 运维工程师不一定能运行&lt;/p&gt;
-&lt;p&gt;环境 / 配置不同 -&amp;gt; 导致相同代码不一定能成功运行得到正确结果&lt;/p&gt;
-&lt;h4 id=&#34;13简化&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#13简化&#34;&gt;#&lt;/a&gt; 1.3，简化：&lt;/h4&gt;
-&lt;p&gt;将代码 / 依赖 / 配置 / 环境等一系列进行打包形成一个统一的镜像&lt;/p&gt;
-&lt;p&gt;这个统一的镜像可以在较为简单的环境下成功运行&lt;/p&gt;
-&lt;h4 id=&#34;14比喻&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#14比喻&#34;&gt;#&lt;/a&gt; 1.4，比喻：&lt;/h4&gt;
-&lt;p&gt;一个集装箱代表一个运行环境，相互分离，互不干扰&lt;/p&gt;
-&lt;h3 id=&#34;2虚拟机与docker的概念和区别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2虚拟机与docker的概念和区别&#34;&gt;#&lt;/a&gt; 2，虚拟机与 docker 的概念和区别&lt;/h3&gt;
-&lt;h4 id=&#34;21虚拟机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#21虚拟机&#34;&gt;#&lt;/a&gt; 2.1，虚拟机：&lt;/h4&gt;
-&lt;p&gt;在一种操作系统里运行另一种操作系统，跟真实系统一模一样&lt;/p&gt;
-&lt;h4 id=&#34;22区别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#22区别&#34;&gt;#&lt;/a&gt; 2.2，区别：&lt;/h4&gt;
-&lt;p&gt;虚拟机运行分钟级，而 docker 则是秒级&lt;/p&gt;
-&lt;p&gt;虚拟里占用资源多，包含了硬件，软件一整套操作系统&lt;/p&gt;
-&lt;p&gt;docker 轻量级的，且基于宿主机的内核&lt;/p&gt;
-&lt;p&gt;Linux 容器不是模拟一个完整的操作系统，按需导入&lt;/p&gt;
-&lt;p&gt;docker 可以认为是一种精简版的 linux 环境，更简洁，灵活&lt;/p&gt;
-&lt;h3 id=&#34;3资源&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3资源&#34;&gt;#&lt;/a&gt; 3，资源&lt;/h3&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2RvY2tlci1jbi5jb20=&#34;&gt;docker-cn.com&lt;/span&gt;    //docker 中文网&lt;br&gt;
- Docker Hub        //docker 仓库&lt;/p&gt;
-&lt;h3 id=&#34;4docker安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4docker安装&#34;&gt;#&lt;/a&gt; 4，Docker 安装&lt;/h3&gt;
-&lt;p&gt;centos 6.5 或更高的版本&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;uname -r        cat  /etc/redhat-release    // 查看 centos 版本&lt;br&gt;
- epel-release    //epel 安装 docker 依赖库   tag：6.8&lt;br&gt;
-&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2RvY2tlci5pbw==&#34;&gt;docker.io&lt;/span&gt;         // 正式的 docker 镜像      tag：6.8&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;7.0 版本不同，具体参考官方文档&lt;/p&gt;
-&lt;h3 id=&#34;5三部分&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5三部分&#34;&gt;#&lt;/a&gt; 5，三部分&lt;/h3&gt;
-&lt;p&gt;client--------&amp;gt;docker bulid / pull / run&lt;br&gt;
-docker_host---------&amp;gt;Docker  daemon&lt;br&gt;
-repository-------------&amp;gt; 仓库&lt;/p&gt;
-&lt;h4 id=&#34;51理解&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#51理解&#34;&gt;#&lt;/a&gt; 5.1，理解：&lt;/h4&gt;
-&lt;p&gt;镜像 ------ 是只读模板&lt;br&gt;
-容器 ------ 时利用镜像创造的实例，可以看作简易版的 linux&lt;br&gt;
- 仓库 ------ 集中存放镜像文件   分为公开库 / 私有库&lt;/p&gt;
-&lt;h3 id=&#34;6阿里云网易云镜像加速&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6阿里云网易云镜像加速&#34;&gt;#&lt;/a&gt; 6，阿里云 / 网易云镜像加速：&lt;/h3&gt;
-&lt;p&gt;注册账号&lt;br&gt;
-获得阿里云加速器链接&lt;br&gt;
-配置文件&lt;br&gt;
-重载配置文件 / 重启 docker&lt;br&gt;
- 检查是否生效  ps -ef | grep docker&lt;/p&gt;
-&lt;h3 id=&#34;7docker-run-查找顺序&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#7docker-run-查找顺序&#34;&gt;#&lt;/a&gt; 7，docker run 查找顺序&lt;/h3&gt;
-&lt;p&gt;本地容器 ------&amp;gt; 本地镜像 --------&amp;gt;hub 共有仓库去 pull 镜像 -----&amp;gt; 本地更具镜像实例一个容器&lt;/p&gt;
-&lt;h3 id=&#34;8docker命令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#8docker命令&#34;&gt;#&lt;/a&gt; 8，docker 命令&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;systemctl  start  docker     // 启动 docker&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;docker images                  // 本地镜像模板&lt;/p&gt;
-&lt;p&gt;-a  所有镜像     -q 所有镜像 id     --digests  摘要&lt;/p&gt;
-&lt;p&gt;–no-trunc 完整镜像信息     // 参数&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;docker search &amp;lt;images_name&amp;gt;   // 在 docker hub 共有仓库中搜寻镜像&lt;/p&gt;
-&lt;p&gt;-s    星数限定      --no-trunc 完整镜像信息    --automated  只显示该类型镜像&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;docker  pull  &amp;lt;images_name&amp;gt;：tag   // 拉去某个特定版本镜像&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;docker rmi  &amp;lt;images_name&amp;gt;  // 运行时删除不了&lt;/p&gt;
-&lt;p&gt;-f   强制删除&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;docker rmi -f  images1:tag  images2:tag  // 删除多个镜像&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;docker rmi -f  $(docker images -qa)    // 删除全部镜像&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;img data-src=&#34;C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200410102315483.png&#34; alt=&#34;image-20200410102315483&#34; style=&#34;zoom:150%;&#34; /&gt;
-&lt;h3 id=&#34;81docker-ps-的参数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#81docker-ps-的参数&#34;&gt;#&lt;/a&gt; 8.1，docker ps 的参数：&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;docker ps -a 可查看后台运行的容器 id，并根据需求删除&lt;/p&gt;
-&lt;p&gt;docker inspect 容器 id     // 查看容器内部的细节&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;9镜像原理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#9镜像原理&#34;&gt;#&lt;/a&gt; 9，镜像原理：&lt;/h3&gt;
-&lt;p&gt;轻量的，可执行的独立软件包，用来打包软件和软件所需的运行环境&lt;/p&gt;
-&lt;p&gt;docker 镜像实际上是一层层文件系统，这种为 UnionFile 层级文件系统&lt;/p&gt;
-&lt;p&gt;一个文件的内存大，说明需要的层级文件多，依赖的环境复杂&lt;/p&gt;
-&lt;h3 id=&#34;10分层结构&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#10分层结构&#34;&gt;#&lt;/a&gt; 10，分层结构：&lt;/h3&gt;
-&lt;p&gt;优点 ------ 共享资源&lt;/p&gt;
-&lt;p&gt;镜像层可读，容器层可写&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;docker commit     // 提交容器副本成为一个新的镜像&lt;/p&gt;
-&lt;p&gt;-m “提交信息”    -a 作者    容器 ID  目标镜像名：tag&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;11防火墙&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#11防火墙&#34;&gt;#&lt;/a&gt; 11，防火墙：&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;systemctl status firewalld.service   // 查看防火墙状态&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;systemctl stop firewalld.service   // 关闭运行的防火墙&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;systemctl disable firewalld.service  // 永久关闭防火墙&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;12docker容器数据卷&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#12docker容器数据卷&#34;&gt;#&lt;/a&gt; 12，docker 容器数据卷：&lt;/h3&gt;
-&lt;p&gt;保证数据的持久化，容器之间共享数据，数据同步&lt;/p&gt;
-&lt;h3 id=&#34;13直接命令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#13直接命令&#34;&gt;#&lt;/a&gt; 13，直接命令：&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;docker run -it -v /myDataVolume:/dataVolumeContainer centos&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;:ro   // 修改权限为只读模式&lt;/p&gt;
-&lt;p&gt;映射文件夹下无法新建文件，且无法修改文件，形成单方向同步&lt;/p&gt;
-&lt;h3 id=&#34;14dockerfile&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#14dockerfile&#34;&gt;#&lt;/a&gt; 14，DockerFile：&lt;/h3&gt;
-&lt;p&gt;对镜像源码的描述，编译文件&lt;/p&gt;
-&lt;p&gt;提示错误：“docker build” requires exactly 1 argument.&lt;/p&gt;
-&lt;p&gt;原因是因为（少了一个 ‘.’ ， ‘.’ 代表当前路径）&lt;/p&gt;
-&lt;p&gt;[root@docker mydocker]# docker build -f /mydocker/DockerFile -t cs/centos .&lt;/p&gt;
-&lt;p&gt;. 打包当前目录&lt;/p&gt;
-&lt;h3 id=&#34;15数据卷容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#15数据卷容器&#34;&gt;#&lt;/a&gt; 15，数据卷容器：&lt;/h3&gt;
-&lt;p&gt;容器间传递共享&lt;/p&gt;
-&lt;p&gt;docker run -it --name dc01 cs/centos  // 父容器&lt;/p&gt;
-&lt;p&gt;docker run -it --name dc02 --volumes-from dc01 cs/centos   // 子容器&lt;/p&gt;
-&lt;p&gt;删除父容器 1，对 2，3 子容器不影响，干掉父容器 1，对 2，3 之间的数据共享也不影响&lt;/p&gt;
-&lt;h3 id=&#34;16dockerfile-镜像构建文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#16dockerfile-镜像构建文件&#34;&gt;#&lt;/a&gt; 16，DockerFile:  镜像构建文件&lt;/h3&gt;
-&lt;p&gt;手动编写符合 file 规范的 dockerfile 文件&lt;/p&gt;
-&lt;p&gt;docker build 命令执行，生成镜像&lt;/p&gt;
-&lt;p&gt;docker run 执行&lt;/p&gt;
-&lt;h3 id=&#34;17dockerfile&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#17dockerfile&#34;&gt;#&lt;/a&gt; 17，dockerfile：&lt;/h3&gt;
-&lt;p&gt;1，每条保留字指令都必须大写首字母，且保留字后不为空&lt;/p&gt;
-&lt;p&gt;2，指令自上而下，顺序执行，# 表注释&lt;/p&gt;
-&lt;p&gt;3，每条指令创建一个新的镜像层，并不断提交给镜像&lt;/p&gt;
-&lt;h4 id=&#34;171docker执行dockerfile的大致流程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#171docker执行dockerfile的大致流程&#34;&gt;#&lt;/a&gt; 17.1，docker 执行 dockerfile 的大致流程：&lt;/h4&gt;
-&lt;p&gt;1，docker 从基础镜像运行一个容器&lt;/p&gt;
-&lt;p&gt;2，执行一条条指令，对容器进行修改&lt;/p&gt;
-&lt;p&gt;3，执行 docker commit 提交新的镜像层，对镜像进行修改&lt;/p&gt;
-&lt;p&gt;4，docker 基于新镜像在运行一个容器&lt;/p&gt;
-&lt;p&gt;5，在依次类推，直到运行完所有指令&lt;/p&gt;
-&lt;h4 id=&#34;172dockerfile保留字&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#172dockerfile保留字&#34;&gt;#&lt;/a&gt; 17.2，dockerfile 保留字：&lt;/h4&gt;
-&lt;p&gt;基础镜像&lt;/p&gt;
-&lt;p&gt;作者说明&lt;/p&gt;
-&lt;p&gt;执行命令&lt;/p&gt;
-&lt;p&gt;指定对外暴露的端口&lt;/p&gt;
-&lt;p&gt;进入终端的指定工作目录&lt;/p&gt;
-&lt;p&gt;构建镜像中设置环境变量&lt;/p&gt;
-&lt;p&gt;拷贝并解压缩某个压缩包&lt;/p&gt;
-&lt;p&gt;与 add 功能相同，但不能解压缩&lt;/p&gt;
-&lt;p&gt;自建容器卷&lt;/p&gt;
-&lt;p&gt;指定容器启动时要运行的命令，只有最后一个 CMD 命令生效&lt;/p&gt;
-&lt;p&gt;指定容器启动时要运行的命令，但不会覆盖之前的命令&lt;/p&gt;
-&lt;p&gt;触发器&lt;/p&gt;
-&lt;h3 id=&#34;18cmd和entrypoint区别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#18cmd和entrypoint区别&#34;&gt;#&lt;/a&gt; 18，CMD 和 ENTRYPOINT 区别：&lt;/h3&gt;
-&lt;p&gt;CMD  run 命令后加参数覆盖之前的命令&lt;/p&gt;
-&lt;p&gt;ENTRYPOINT  run 命令后的参数添加到命令里&lt;/p&gt;
-</content>
-        <category term="Docker" />
-        <updated>2020-09-12T07:59:46.000Z</updated>
-    </entry>
-</feed>
+ ]]></description>
+        </item>
+    </channel>
+</rss>
