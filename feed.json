@@ -5,6 +5,16 @@
     "home_page_url": "http://example.com",
     "items": [
         {
+            "id": "http://example.com/2020/09/15/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/",
+            "url": "http://example.com/2020/09/15/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/",
+            "title": "机器学习课后习题",
+            "date_published": "2020-09-15T06:02:26.000Z",
+            "content_html": "<h1 id=\"假设空间与版本空间\"><a class=\"markdownIt-Anchor\" href=\"#假设空间与版本空间\">#</a> 假设空间与版本空间</h1>\n<h2 id=\"概念\"><a class=\"markdownIt-Anchor\" href=\"#概念\">#</a> 概念</h2>\n<blockquote>\n<p>假设空间：所有可能取到的值组成的样本。</p>\n<p>版本空间：与给定正样本一致和与负样本不一致的假设子集集合。</p>\n</blockquote>\n<h2 id=\"计算\"><a class=\"markdownIt-Anchor\" href=\"#计算\">#</a> 计算</h2>\n<p>假设西瓜由青绿、乌黑、浅白三种颜色，同理，根蒂和敲声也由三种属性完全定义。求假设空间：</p>\n<blockquote>\n<p>假设空间大小：</p>\n<p>（3+1）✖（3+1）✖（3+1）+1 = 65</p>\n</blockquote>\n<p>（3+1）：就拿颜色来说，可能任意一种颜色都可以，其他属性也是一样。</p>\n<p>（+1）：世界上没有好瓜</p>\n<blockquote>\n<p>版本空间：根据给定的样本，从假设空间中<strong>剔除</strong>与正样本不一致，与负样本一致的假设。</p>\n</blockquote>\n<h1 id=\"模型评估与选择\"><a class=\"markdownIt-Anchor\" href=\"#模型评估与选择\">#</a> 模型评估与选择</h1>\n<h2 id=\"过拟合与欠拟合\"><a class=\"markdownIt-Anchor\" href=\"#过拟合与欠拟合\">#</a> 过拟合与欠拟合</h2>\n<blockquote>\n<ul>\n<li>过拟合：对训练样本的特征训练的太好了，导致泛化能力下降，对新样本的预测很差的现象。</li>\n<li>欠拟合：训练样本的特征不够，泛化能力太高了。比如模型可能训练出绿色是叶子的结论，那么对于一棵树，模型也将树判断为叶子。</li>\n</ul>\n</blockquote>\n<h2 id=\"评估方法\"><a class=\"markdownIt-Anchor\" href=\"#评估方法\">#</a> 评估方法</h2>\n<p><strong>通常用测试误差来近似模型的泛化误差。</strong></p>\n<h3 id=\"留出法hold-out\"><a class=\"markdownIt-Anchor\" href=\"#留出法hold-out\">#</a> 留出法（hold out）</h3>\n<p>留出法直接将数据集划分为两个互斥的部分，其中一部分用来做训练集，另一部分用来做测试集。通常训练集与测试集的比例为 7：3。</p>\n<blockquote>\n<p>注意：</p>\n<ol>\n<li>尽可能保持数据分布的一致性。通常采用 “分层采样” 的方法。</li>\n<li>采用若干次随机划分避免单次流出法的不稳定。</li>\n</ol>\n</blockquote>\n<h3 id=\"交叉验证法cross-validation\"><a class=\"markdownIt-Anchor\" href=\"#交叉验证法cross-validation\">#</a> 交叉验证法（cross validation)</h3>\n<p>交叉验证法先将数据集划分为 k 个大小相似的互斥子集，每次采用 k-1 个子集作为训练集，剩下的一个子集作为测试集。进行 k 次训练和测试，最终返回 k 个测试结果的均值。又称为 “k 折交叉验证”</p>\n<blockquote>\n<p>通常重复 p 次不同的划分，最终结果是 p 次 k 折交叉验证结果的均值。</p>\n</blockquote>\n<h3 id=\"留一法leave-one-outloo\"><a class=\"markdownIt-Anchor\" href=\"#留一法leave-one-outloo\">#</a> 留一法（leave-one-out，LOO）</h3>\n<p>留一法是交叉验证法的一种特殊情况，k = 样本数，即将样本分成一份一个样本，每次测试集只有一个样本。</p>\n<blockquote>\n<p>该方法的确定，计算的开销比较大。</p>\n</blockquote>\n<h3 id=\"自助法bootstrapping\"><a class=\"markdownIt-Anchor\" href=\"#自助法bootstrapping\">#</a> 自助法（bootstrapping）</h3>\n<p>自助法以自助采样为基础（有放回采样）。每次随机从数据集中挑选一个样本，放入另一个数据集合，然后将样本放回原数据中，重复操作 m 次，因此得到了一个含 m 个样本的数据集。</p>\n<blockquote>\n<p>样本在 m 次采样中始终不被采到的概率（1-1\\m）的 m 次方，当 m 足够大时，上述式子的极限约为 0.368。说明有 0.368 的样本不会出现在新的数据集中，新数据集中含有更多的数据，我们可以用来当作训练集，剩下的做测试集。</p>\n</blockquote>\n<ul>\n<li>优点：在数据集较小、难以有效划分训练和测试集的时候很有用。</li>\n<li>改变了初始数据集的分布，会引入估计偏差。</li>\n</ul>\n",
+            "tags": [
+                "机器学习"
+            ]
+        },
+        {
             "id": "http://example.com/2020/09/13/%E8%AE%A4%E8%AF%86Pandas-DataFrame/",
             "url": "http://example.com/2020/09/13/%E8%AE%A4%E8%AF%86Pandas-DataFrame/",
             "title": "认识Pandas-DataFrame",
