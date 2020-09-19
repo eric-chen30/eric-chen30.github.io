@@ -7,8 +7,8 @@
         <language>zh-CN</language>
         <pubDate>Sat, 12 Sep 2020 15:59:46 +0800</pubDate>
         <lastBuildDate>Sat, 12 Sep 2020 15:59:46 +0800</lastBuildDate>
-        <category>Docker</category>
         <category>机器学习</category>
+        <category>Docker</category>
         <category>Pandas</category>
         <item>
             <guid isPermalink="true">http://example.com/2020/09/12/Docker%E5%85%A5%E9%97%A8/</guid>
@@ -90,7 +90,7 @@ repository-------------&amp;gt; 仓库&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;docker rmi -f  $(docker images -qa)    // 删除全部镜像&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;img data-src=&#34;C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200410102315483.png&#34; alt=&#34;image-20200410102315483&#34; style=&#34;zoom:150%;&#34; /&gt;
+&lt;img data-src=&#34;C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200410102315483.png&#34; alt=&#34;image-20200410102315483&#34; style=&#34;zoom:150%;&#34;&gt;
 &lt;h3 id=&#34;docker-ps-的参数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker-ps-的参数&#34;&gt;#&lt;/a&gt; docker ps 的参数：&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;docker ps -a 可查看后台运行的容器 id，并根据需求删除&lt;/p&gt;
