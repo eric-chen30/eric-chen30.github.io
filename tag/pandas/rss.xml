@@ -8,8 +8,9 @@
         <pubDate>Sun, 13 Sep 2020 16:25:21 +0800</pubDate>
         <lastBuildDate>Sun, 13 Sep 2020 16:25:21 +0800</lastBuildDate>
         <category>Docker</category>
-        <category>机器学习</category>
         <category>Pandas</category>
+        <category>机器学习</category>
+        <category>单例模式</category>
         <item>
             <guid isPermalink="true">http://example.com/2020/09/13/%E8%AE%A4%E8%AF%86Pandas-DataFrame/</guid>
             <title>认识Pandas-DataFrame</title>

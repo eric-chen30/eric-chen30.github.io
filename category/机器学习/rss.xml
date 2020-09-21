@@ -8,8 +8,9 @@
         <pubDate>Tue, 15 Sep 2020 14:02:26 +0800</pubDate>
         <lastBuildDate>Tue, 15 Sep 2020 14:02:26 +0800</lastBuildDate>
         <category>Docker</category>
-        <category>机器学习</category>
         <category>Pandas</category>
+        <category>机器学习</category>
+        <category>单例模式</category>
         <item>
             <guid isPermalink="true">http://example.com/2020/09/15/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/</guid>
             <title>机器学习课后习题</title>
