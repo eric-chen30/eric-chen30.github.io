@@ -5,8 +5,8 @@
     <link href="http://example.com" />
     <updated>2020-09-21T11:07:10.000Z</updated>
     <category term="Docker" />
-    <category term="Pandas" />
     <category term="机器学习" />
+    <category term="Pandas" />
     <category term="单例模式" />
     <entry>
         <id>http://example.com/2020/09/21/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</id>
@@ -18,8 +18,8 @@
 &lt;h2 id=&#34;原因&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#原因&#34;&gt;#&lt;/a&gt; 原因&lt;/h2&gt;
 &lt;p&gt;该模式是为了防止创建多个对象造成的资源浪费和管理困难的问题，仅在内存中创建一个对象，让有需要调用的地方都使用这一个单例对象。&lt;/p&gt;
 &lt;h2 id=&#34;两种模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#两种模式&#34;&gt;#&lt;/a&gt; 两种模式&lt;/h2&gt;
-&lt;p&gt;** 饿汉式：** 只有在需要调用对象的时候采取调用单例对象。&lt;/p&gt;
-&lt;p&gt;** 懒汉式：** 类加载的时候就已经创建好了单例对象，随时等待调用。&lt;/p&gt;
+&lt;p&gt;饿汉式：只有在需要调用对象的时候采取调用单例对象。&lt;/p&gt;
+&lt;p&gt;懒汉式：类加载的时候就已经创建好了单例对象，随时等待调用。&lt;/p&gt;
 &lt;h1 id=&#34;使用方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#使用方法&#34;&gt;#&lt;/a&gt; 使用方法&lt;/h1&gt;
 &lt;h2 id=&#34;懒汉式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#懒汉式&#34;&gt;#&lt;/a&gt; 懒汉式：&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;当程序需要使用对象的时候，先判断对象是否已经实例化，如果没有，则实例化对象，如果已经实例化，则直接返回对象。&lt;/strong&gt;&lt;/p&gt;
