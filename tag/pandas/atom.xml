@@ -5,13 +5,13 @@
     <link href="http://example.com" />
     <updated>2020-09-13T08:25:21.000Z</updated>
     <category term="Docker" />
-    <category term="机器学习" />
     <category term="Pandas" />
+    <category term="机器学习" />
     <category term="单例模式" />
     <entry>
-        <id>http://example.com/2020/09/13/%E8%AE%A4%E8%AF%86Pandas-DataFrame/</id>
+        <id>http://example.com/2020/09/13/Pandas-DataFrame/</id>
         <title>认识Pandas-DataFrame</title>
-        <link rel="alternate" href="http://example.com/2020/09/13/%E8%AE%A4%E8%AF%86Pandas-DataFrame/"/>
+        <link rel="alternate" href="http://example.com/2020/09/13/Pandas-DataFrame/"/>
         <content type="html">&lt;h1 id=&#34;dataframe的创建&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#dataframe的创建&#34;&gt;#&lt;/a&gt; DataFrame 的创建&lt;/h1&gt;
 &lt;h2 id=&#34;dataframe和series简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#dataframe和series简介&#34;&gt;#&lt;/a&gt; DataFrame 和 Series 简介&lt;/h2&gt;
 &lt;p&gt;DataFrame 是一种表格型的数据结构。DataFrame 既有行索引，也有列索引，它可以看作是由 Series 组成的字典，并且这些 Series 共用一个索引。创建方式有很多种，主要是根据 dict 进行创建，或者是读取 csv 或者 txt 文件。&lt;/p&gt;

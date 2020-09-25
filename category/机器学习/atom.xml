@@ -5,8 +5,8 @@
     <link href="http://example.com" />
     <updated>2020-09-15T06:02:26.000Z</updated>
     <category term="Docker" />
-    <category term="机器学习" />
     <category term="Pandas" />
+    <category term="机器学习" />
     <category term="单例模式" />
     <entry>
         <id>http://example.com/2020/09/15/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/</id>
