@@ -2,19 +2,19 @@
 <rss version="2.0">
     <channel>
         <title>CsStar • Posts by &#34;机器学习&#34; category</title>
-        <link>http://example.com</link>
+        <link>http://csstar.top</link>
         <description>Work Hard To Be A Better Man</description>
         <language>zh-CN</language>
         <pubDate>Tue, 15 Sep 2020 14:02:26 +0800</pubDate>
         <lastBuildDate>Tue, 15 Sep 2020 14:02:26 +0800</lastBuildDate>
         <category>Docker</category>
         <category>Pandas</category>
-        <category>机器学习</category>
         <category>单例模式</category>
+        <category>机器学习</category>
         <item>
-            <guid isPermalink="true">http://example.com/2020/09/15/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/</guid>
+            <guid isPermalink="true">http://csstar.top/2020/09/15/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/</guid>
             <title>机器学习课后习题</title>
-            <link>http://example.com/2020/09/15/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/</link>
+            <link>http://csstar.top/2020/09/15/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/</link>
             <category>机器学习</category>
             <pubDate>Tue, 15 Sep 2020 14:02:26 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;假设空间与版本空间&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#假设空间与版本空间&#34;&gt;#&lt;/a&gt; 假设空间与版本空间&lt;/h1&gt;

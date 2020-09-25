@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://example.com</id>
+    <id>http://csstar.top</id>
     <title>CsStar • Posts by &#34;docker&#34; tag</title>
-    <link href="http://example.com" />
+    <link href="http://csstar.top" />
     <updated>2020-09-12T07:59:46.000Z</updated>
     <category term="Docker" />
     <category term="Pandas" />
-    <category term="机器学习" />
     <category term="单例模式" />
+    <category term="机器学习" />
     <entry>
-        <id>http://example.com/2020/09/12/Docker%E5%85%A5%E9%97%A8/</id>
+        <id>http://csstar.top/2020/09/12/Docker%E5%85%A5%E9%97%A8/</id>
         <title>Docker入门</title>
-        <link rel="alternate" href="http://example.com/2020/09/12/Docker%E5%85%A5%E9%97%A8/"/>
+        <link rel="alternate" href="http://csstar.top/2020/09/12/Docker%E5%85%A5%E9%97%A8/"/>
         <content type="html">&lt;h1 id=&#34;docker入门&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker入门&#34;&gt;#&lt;/a&gt; Docker 入门&lt;/h1&gt;
 &lt;h2 id=&#34;docker简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker简介&#34;&gt;#&lt;/a&gt; docker 简介&lt;/h2&gt;
 &lt;h3 id=&#34;三要素&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#三要素&#34;&gt;#&lt;/a&gt; 三要素：&lt;/h3&gt;
@@ -86,7 +86,6 @@ repository-------------&amp;gt; 仓库&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;docker rmi -f  $(docker images -qa)    // 删除全部镜像&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;img data-src=&#34;D:/FirstBlog/source/_posts/Docker入门.assets/image-20200410102315483.png&#34; alt=&#34;image-20200410102315483&#34; style=&#34;zoom:150%;&#34;&gt;
 &lt;h3 id=&#34;docker-ps-的参数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker-ps-的参数&#34;&gt;#&lt;/a&gt; docker ps 的参数：&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;docker ps -a 可查看后台运行的容器 id，并根据需求删除&lt;/p&gt;

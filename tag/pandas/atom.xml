@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://example.com</id>
+    <id>http://csstar.top</id>
     <title>CsStar • Posts by &#34;pandas&#34; tag</title>
-    <link href="http://example.com" />
+    <link href="http://csstar.top" />
     <updated>2020-09-13T08:25:21.000Z</updated>
     <category term="Docker" />
     <category term="Pandas" />
-    <category term="机器学习" />
     <category term="单例模式" />
+    <category term="机器学习" />
     <entry>
-        <id>http://example.com/2020/09/13/Pandas-DataFrame/</id>
+        <id>http://csstar.top/2020/09/13/Pandas-DataFrame/</id>
         <title>认识Pandas-DataFrame</title>
-        <link rel="alternate" href="http://example.com/2020/09/13/Pandas-DataFrame/"/>
+        <link rel="alternate" href="http://csstar.top/2020/09/13/Pandas-DataFrame/"/>
         <content type="html">&lt;h1 id=&#34;dataframe的创建&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#dataframe的创建&#34;&gt;#&lt;/a&gt; DataFrame 的创建&lt;/h1&gt;
 &lt;h2 id=&#34;dataframe和series简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#dataframe和series简介&#34;&gt;#&lt;/a&gt; DataFrame 和 Series 简介&lt;/h2&gt;
 &lt;p&gt;DataFrame 是一种表格型的数据结构。DataFrame 既有行索引，也有列索引，它可以看作是由 Series 组成的字典，并且这些 Series 共用一个索引。创建方式有很多种，主要是根据 dict 进行创建，或者是读取 csv 或者 txt 文件。&lt;/p&gt;

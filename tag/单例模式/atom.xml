@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://example.com</id>
+    <id>http://csstar.top</id>
     <title>CsStar • Posts by &#34;单例模式&#34; tag</title>
-    <link href="http://example.com" />
+    <link href="http://csstar.top" />
     <updated>2020-09-21T11:07:10.000Z</updated>
     <category term="Docker" />
     <category term="Pandas" />
-    <category term="机器学习" />
     <category term="单例模式" />
+    <category term="机器学习" />
     <entry>
-        <id>http://example.com/2020/09/21/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</id>
+        <id>http://csstar.top/2020/09/21/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</id>
         <title>设计模式之单例模式</title>
-        <link rel="alternate" href="http://example.com/2020/09/21/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/"/>
+        <link rel="alternate" href="http://csstar.top/2020/09/21/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/"/>
         <content type="html">&lt;h1 id=&#34;概括&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#概括&#34;&gt;#&lt;/a&gt; 概括&lt;/h1&gt;
 &lt;h2 id=&#34;定义&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#定义&#34;&gt;#&lt;/a&gt; 定义&lt;/h2&gt;
 &lt;p&gt;单例模式指在内存中只会创建一次且仅创建一次对象的模式。&lt;/p&gt;
