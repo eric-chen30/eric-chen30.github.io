@@ -9,8 +9,8 @@
         <lastBuildDate>Mon, 21 Sep 2020 19:07:10 +0800</lastBuildDate>
         <category>Docker</category>
         <category>Pandas</category>
-        <category>单例模式</category>
         <category>机器学习</category>
+        <category>单例模式</category>
         <item>
             <guid isPermalink="true">http://csstar.top/2020/09/21/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</guid>
             <title>设计模式之单例模式</title>
@@ -29,7 +29,7 @@
 &lt;h2 id=&#34;懒汉式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#懒汉式&#34;&gt;#&lt;/a&gt; 懒汉式：&lt;/h2&gt;
 &lt;p&gt;当程序需要使用对象的时候，先判断对象是否已经实例化，如果没有，则实例化对象，如果已经实例化，则直接返回对象。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;示意图：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://qh82kvit3.hn-bkt.clouddn.com/clipboard-1601039788093.png&#34; alt=&#34;avatar&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;http://qh82kvit3.hn-bkt.clouddn.com/clipboard-1601039788093.png&#34; alt&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;实例代码：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;http://qh82kvit3.hn-bkt.clouddn.com/clipboard-1601039836972.png&#34; alt=&#34;avatar&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;饿汉模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#饿汉模式&#34;&gt;#&lt;/a&gt; 饿汉模式&lt;/h2&gt;
