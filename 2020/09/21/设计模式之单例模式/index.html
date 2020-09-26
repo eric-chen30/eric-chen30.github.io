@@ -118,12 +118,12 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclxfdlttj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclwuom7cj20zk0m8dvn.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclwrdwyaj20zk0m8are.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclfw2t96j20zk0m8x6p.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciundwu5j20zk0m8n9e.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclh0m9pdj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciukx8a7j20zk0m8aio.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclgi503lj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciuv0socj20zk0m8qes.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicljitigmj20zk0m87fp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicliierfjj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclil3m4ej20zk0m8tn8.jpg"></li>
         </ul>
       </div>
     </header>
@@ -182,40 +182,40 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
 <h2 id="懒汉式"><a class="markdownIt-Anchor" href="#懒汉式">#</a> 懒汉式：</h2>
 <p>当程序需要使用对象的时候，先判断对象是否已经实例化，如果没有，则实例化对象，如果已经实例化，则直接返回对象。</p>
 <p><strong>示意图：</strong></p>
-<p><img data-src="%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.assets/clipboard-1601039788093-1601052494957.png" alt="avatar"></p>
+<p><img data-src="http://qh82kvit3.hn-bkt.clouddn.com/clipboard-1601039788093.png" alt="avatar"></p>
 <p><strong>实例代码：</strong></p>
-<p><img data-src="%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.assets/clipboard-1601039836972-1601052534729.png" alt="avatar"></p>
+<p><img data-src="http://qh82kvit3.hn-bkt.clouddn.com/clipboard-1601039836972.png" alt="avatar"></p>
 <h2 id="饿汉模式"><a class="markdownIt-Anchor" href="#饿汉模式">#</a> 饿汉模式</h2>
 <p>类加载的时候直接创建单例对象，当需要调用时，直接使用这个已经创建好的单例对象就行</p>
 <p><strong>示意图：</strong></p>
-<p><img data-src="%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.assets/clipboard-1601039865541-1601052569735.png" alt="avatar"></p>
+<p><img data-src="http://qh82kvit3.hn-bkt.clouddn.com/clipboard-1601039865541.png" alt="avatar"></p>
 <p><strong>示例代码：</strong></p>
-<p><img data-src="%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.assets/clipboard-1601039888935-1601052593250.png" alt="avatar"></p>
+<p><img data-src="http://qh82kvit3.hn-bkt.clouddn.com/clipboard-1601039888935.png" alt="avatar"></p>
 <p><strong>注意：</strong></p>
 <p>类在加载的时候会在内存中实例化一个对象，当类被撤除时，这个对象也会随之消失。</p>
 <h1 id="改进和优化"><a class="markdownIt-Anchor" href="#改进和优化">#</a> 改进和优化</h1>
 <h2 id="懒汉模式的优化"><a class="markdownIt-Anchor" href="#懒汉模式的优化">#</a> 懒汉模式的优化</h2>
 <p>问题 1：如果两个线程同时判断不存在已经实例化的对象，那么这两个线程都会实例化对象，就产生了两个对象，不符合单例模式。这里涉及到线程并发的问题。</p>
 <p><strong>示意图：</strong></p>
-<p><img data-src="%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.assets/clipboard-1601039901878-1601052631145.png" alt="avatar"></p>
+<p><img data-src="http://qh82kvit3.hn-bkt.clouddn.com/clipboard-1601039901878.png" alt="avatar"></p>
 <p><strong>解决方案 1：</strong></p>
 <p>在方法上或类对象上加锁</p>
 <p><strong>synchronized 的解释：</strong></p>
 <p>同步代码块中的锁，当有一个线程执行同步代码时，别的线程就不能执行此代码块。</p>
 <p><strong>示例代码：</strong></p>
-<p><img data-src="%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.assets/clipboard-1601039914173-1601052654661.png" alt="avatar"></p>
+<p><img data-src="http://qh82kvit3.hn-bkt.clouddn.com/clipboard-1601039914173.png" alt="avatar"></p>
 <p>问题 2：以上很好地解决了多个线程可能同时创建多个对象的情况，但是，每次去获取对象的时候都要先获取锁，并发性能非常的差，可能情况下，会出现卡帧的情况。</p>
 <p><strong>解决方案 2：</strong></p>
 <p>性能优化。如果还没有实例化对象，就需要先获取锁，一旦对象已经实例化后，就可以省去获取锁的过程。所以不能直接在方法上加锁。</p>
 <p><strong>示例代码：</strong></p>
-<p><img data-src="%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.assets/clipboard-1601039929391-1601052678439.png" alt="avatar"></p>
+<p><img data-src="http://qh82kvit3.hn-bkt.clouddn.com/clipboard-1601039929391.png" alt="avatar"></p>
 <p>因此，解决了线程并发和性能优化的问题。</p>
 <p><strong>解释：</strong></p>
 <p>【1】，第一个分支判断是否已经实例化对象，如果已经实例化，则直接返回对象，如果没有的话，就会进入下一个分支。</p>
 <p>【2】，多个线程获取争抢同一个锁，第一个获取锁的线程，就获取了判断的资格，会判断是否有其他线程已经实例化对象了，如果没有，就会实例化一个对象。也因此有了第一个且唯一的对象，当其他进程再次进行判断时，已经有了对象，就会直接返回实例化的对象，而不会再去创建对象。</p>
 <p>【3】懒汉模式可总结为：双重校验 + 锁。</p>
 <p><strong>完整代码：</strong></p>
-<p><img data-src="%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.assets/clipboard-1601039941802-1601052708006.png" alt="avatar"></p>
+<p><img data-src="http://qh82kvit3.hn-bkt.clouddn.com/clipboard-1601039941802.png" alt="avatar"></p>
 <p><strong>volatile 防止指令重排：</strong></p>
 <p><strong>创建一个对象，在 JVM 中会经过三步：</strong></p>
 <p>（1）为 singleehan 分配内存空间</p>
@@ -223,11 +223,11 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
 <p>（3）将 singleehan 指向分配好的内存空间</p>
 <p><strong>指令重排序：</strong></p>
 <p>JVM 在保证最终结果正确的情况下，可以不按照程序编码的顺序执行语句，仅可能提高程序的性能。</p>
-<p><img data-src="%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.assets/clipboard-1601039959416-1601052734016.png" alt="avatar"></p>
+<p><img data-src="http://qh82kvit3.hn-bkt.clouddn.com/clipboard-1601039959416.png" alt="avatar"></p>
 <p><strong>volatile 的作用：</strong></p>
 <p>使用 volatile 关键字修饰的变量，可以保证其指令执行的顺序与程序指明的顺序一致，不会发生顺序变换，这样在多线程环境下就不会发生 NPE 异常了。volatile 还有第二个作用：使用 volatile 关键字修饰的变量，可以保证其内存可见性，即每一时刻线程读取到该变量的值都是内存中最新的那个值，线程每次操作该变量都需要先读取该变量。</p>
 <p>因此，会需要对上述代码进行如下改进：</p>
-<p><img data-src="%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.assets/clipboard-1601052761339.png" alt="avatar"></p>
+<p><img data-src="http://qh82kvit3.hn-bkt.clouddn.com/clipboard.png" alt="avatar"></p>
 <p><strong>目的：为了防止指令重排导致的 NPE 异常。</strong></p>
 <h1 id="总结"><a class="markdownIt-Anchor" href="#总结">#</a> 总结</h1>
 <p>1，单例模式有两种类型：懒汉式和饿汉式。</p>
@@ -249,7 +249,7 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2020-09-26 00:52:46" itemprop="dateModified" datetime="2020-09-26T00:52:46+08:00">2020-09-26</time>
+    <time title="修改时间：2020-09-26 09:27:20" itemprop="dateModified" datetime="2020-09-26T09:27:20+08:00">2020-09-26</time>
   </span>
 </div>
 
@@ -304,7 +304,7 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
     <div class="item left">
       
 
-  <a href="/2020/09/15/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclh5u05ej20zk0m87df.jpg" title="机器学习课后习题">
+  <a href="/2020/09/15/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicljitigmj20zk0m87fp.jpg" title="机器学习课后习题">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> 机器学习</span>
   <h3>机器学习课后习题</h3>
