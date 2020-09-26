@@ -4,13 +4,13 @@
     <title>CsStar • Posts by &#34;机器学习&#34; tag</title>
     <link href="http://csstar.top" />
     <updated>2020-09-15T06:02:26.000Z</updated>
-    <category term="单例模式" />
     <category term="Docker" />
-    <category term="机器学习" />
     <category term="Pandas" />
+    <category term="单例模式" />
+    <category term="机器学习" />
     <entry>
         <id>http://csstar.top/2020/09/15/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/</id>
-        <title>机器学习课后习题</title>
+        <title>机器学习之模型评估</title>
         <link rel="alternate" href="http://csstar.top/2020/09/15/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/"/>
         <content type="html">&lt;h1 id=&#34;假设空间与版本空间&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#假设空间与版本空间&#34;&gt;#&lt;/a&gt; 假设空间与版本空间&lt;/h1&gt;
 &lt;h2 id=&#34;概念&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#概念&#34;&gt;#&lt;/a&gt; 概念&lt;/h2&gt;
