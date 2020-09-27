@@ -5,8 +5,8 @@
     <link href="http://csstar.top" />
     <updated>2020-09-27T01:28:06.000Z</updated>
     <category term="Docker" />
-    <category term="机器学习" />
     <category term="Pandas" />
+    <category term="机器学习" />
     <category term="小的知识点" />
     <category term="单例模式" />
     <entry>
@@ -24,10 +24,10 @@
 &lt;h2 id=&#34;添加图片链接的格式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#添加图片链接的格式&#34;&gt;#&lt;/a&gt; 添加图片链接的格式&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;img data-src=&#34;%E5%9B%BE%E7%89%87%E9%93%BE%E6%8E%A5&#34; alt=&#34;描述信息&#34;&gt;&lt;/p&gt;
+&lt;p&gt;！&lt;a href=&#34;%E5%9B%BE%E7%89%87%E9%93%BE%E6%8E%A5&#34;&gt;描述信息&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;img data-src=&#34;图片链接&#34; alt=&#34;描述信息&#34;&gt;
+&lt;p&gt;img 标签 + src（图片链接）+alt（描述信息）&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;data-src与src属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#data-src与src属性&#34;&gt;#&lt;/a&gt; data-src 与 src 属性&lt;/h2&gt;
