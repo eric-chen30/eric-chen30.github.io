@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://csstar.top</id>
+    <title>CsStar • Posts by &#34;每周知识总结&#34; category</title>
+    <link href="http://csstar.top" />
+    <updated>2020-09-27T01:28:06.000Z</updated>
+    <category term="Docker" />
+    <category term="机器学习" />
+    <category term="Pandas" />
+    <category term="小的知识点" />
+    <category term="单例模式" />
+    <entry>
+        <id>http://csstar.top/2020/09/27/%E7%AC%AC%E5%9B%9B%E5%91%A8%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</id>
+        <title>第四周知识点总结</title>
+        <link rel="alternate" href="http://csstar.top/2020/09/27/%E7%AC%AC%E5%9B%9B%E5%91%A8%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/"/>
+        <content type="html">&lt;h1 id=&#34;关于博客插入图片&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#关于博客插入图片&#34;&gt;#&lt;/a&gt; 关于博客插入图片&lt;/h1&gt;
+&lt;h2 id=&#34;遇到的问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#遇到的问题&#34;&gt;#&lt;/a&gt; 遇到的问题&lt;/h2&gt;
+&lt;p&gt;如果是阿里云服务器，你使用本地的图片路径，远端服务器是访问不到的。这和在 github 上部署有些不一样，因为你可以新建一个 images 文件专门用来存放图片，github 可以访问得到。&lt;/p&gt;
+&lt;h2 id=&#34;解决办法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#解决办法&#34;&gt;#&lt;/a&gt; 解决办法&lt;/h2&gt;
+&lt;p&gt;询问大佬后，建议使用图床来实现图片的加载，我就用自己的话说一下图床。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;图床：你把本地图片上传到一个云存储里，然后这个云存储会把这些图片自动生成网页链接，于是你就可以通过网络链接来访问这些图片，相当于你博客引用的图片就是引用网上的图片，这样远端服务器就可以访问的到。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;添加图片链接的格式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#添加图片链接的格式&#34;&gt;#&lt;/a&gt; 添加图片链接的格式&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;img data-src=&#34;%E5%9B%BE%E7%89%87%E9%93%BE%E6%8E%A5&#34; alt=&#34;描述信息&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;img data-src=&#34;图片链接&#34; alt=&#34;描述信息&#34;&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;data-src与src属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#data-src与src属性&#34;&gt;#&lt;/a&gt; data-src 与 src 属性&lt;/h2&gt;
+&lt;p&gt;img 标签如果只有 data-src 属性，是无法实现图片的显示的，它是图片懒加载的标志，负责存储照片的信息，只有同时存在 src 属性，才会把 data-src 中存储的图片信息赋值给 src，最终实现图片的实现。&lt;/p&gt;
+&lt;h1 id=&#34;进程的几种状态&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#进程的几种状态&#34;&gt;#&lt;/a&gt; 进程的几种状态&lt;/h1&gt;
+&lt;h2 id=&#34;三种基本状态&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#三种基本状态&#34;&gt;#&lt;/a&gt; 三种基本状态&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;准备状态，运行状态，就绪状态&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;就绪状态：一个进程获得了除处理机外的一切资源，只要被调度，就会由就绪状态变为运行状态。&lt;/li&gt;
+&lt;li&gt;运行状态：一个进程在处理机上运行。&lt;/li&gt;
+&lt;li&gt;阻塞状态：正在执行的进程，由于等待某个事件发生而无法执行时，放弃处理机便处于阻塞状态。例如：等待 I/O 完成、申请缓冲区不能满足、等待信号等。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;进程状态的变迁&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#进程状态的变迁&#34;&gt;#&lt;/a&gt; 进程状态的变迁&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;就绪 —&amp;gt; 执行&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;处于就绪的进曾，一旦被分配了处理机，配可以转换为执行状态。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;执行 —&amp;gt; 就绪&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;执行状态的进程所分配的时间片用完了，就不得不让出处理机，但同时又是非自愿推出执行状态，因此处于就绪队列，等待处理机处理。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;执行 —&amp;gt; 阻塞&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;正在执行的进程因为等待某件事情的执行结果而无法继续执行。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;阻塞 —&amp;gt; 就绪&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;处于阻塞状态的进程，若其等待的事情已经发生，进程便由阻塞态转变为就绪态。&lt;/p&gt;
+&lt;h2 id=&#34;阻塞状态和等待状态&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#阻塞状态和等待状态&#34;&gt;#&lt;/a&gt; 阻塞状态和等待状态&lt;/h2&gt;
+&lt;p&gt;阻塞时被动的阻塞，一个线程去争抢一个内部对象的锁，但是此时这个锁被其他线程所持有，那么该线程就会进入阻塞状态，也就是单例模式中，多个线程同时争抢锁，没有抢到锁的那个线程的状态。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;线程和别的线程争抢锁没有抢到，就处于阻塞状态；（此时线程还没有进入同步代码块）&lt;/p&gt;
+&lt;p&gt;线程抢到了锁进入同步代码块，某些条件下，就处于等待状态。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;操作系统的基本知识&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#操作系统的基本知识&#34;&gt;#&lt;/a&gt; 操作系统的基本知识&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;一个字节 = 8bit&lt;/li&gt;
+&lt;li&gt;发送延时 = 数据帧的长度 / 发送速率&lt;/li&gt;
+&lt;li&gt;传播延时 = 信道长度 / 电磁波在信道上的传播速率&lt;/li&gt;
+&lt;li&gt;除了发送和传播延时，还有处理延时和排队延时&lt;/li&gt;
+&lt;li&gt;总延时 = 发送延时 + 传播延时 + 处理延时 + 排队延时&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+        <category term="小的知识点" />
+        <updated>2020-09-27T01:28:06.000Z</updated>
+    </entry>
+</feed>
