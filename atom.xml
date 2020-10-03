@@ -3,12 +3,207 @@
     <id>http://csstar.top</id>
     <title>CsStar</title>
     <link href="http://csstar.top" />
-    <updated>2020-09-27T01:28:06.000Z</updated>
-    <category term="机器学习" />
+    <updated>2020-10-03T12:23:32.000Z</updated>
     <category term="Docker" />
-    <category term="小的知识点" />
     <category term="Pandas" />
+    <category term="机器学习" />
+    <category term="小的知识点" />
+    <category term="计算机组成原理" />
     <category term="单例模式" />
+    <entry>
+        <id>http://csstar.top/2020/10/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%A4%8D%E4%B9%A0/</id>
+        <title>计算机组成原理复习</title>
+        <link rel="alternate" href="http://csstar.top/2020/10/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%A4%8D%E4%B9%A0/"/>
+        <content type="html">&lt;h1 id=&#34;重点知识点&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#重点知识点&#34;&gt;#&lt;/a&gt; 重点知识点&lt;/h1&gt;
+&lt;p&gt;IEEE754 标准的 32/64 位浮点数的表示方法、补码的加减运算、双符号位运算判断是否溢出、指令格式的设计、存储器的扩展问题、静态存储图、SRAM 结构图、cache 的相关计算、寻址方式、CPU 模型、指令周期、双总线数据通路、指令周期流程图、ALU 运算器的结构图、微指令格式设计、微程序控制器、流水线时空图以及一些相关计算（吞吐率，加速比）、总线带宽、磁盘计算、刷新存储器、中断原理。&lt;/p&gt;
+&lt;h1 id=&#34;cache的相关计算&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#cache的相关计算&#34;&gt;#&lt;/a&gt; cache 的相关计算&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;命中率 H = 访问 cache 的次数 /（访问 cache 次数 + 访问主存的次数）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;平均访问时间 t=H✖访问 cache 的平均时间 +（1-H）✖访问主存的平均时间&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;主存慢于 cache 的倍率 r = 访问主存平均的时间 / 访问 cache 的平均时间&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;访问频率 e=t（c）/  t（a） =  1/ （r+（1-r）h）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;磁盘的相关计算&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#磁盘的相关计算&#34;&gt;#&lt;/a&gt; 磁盘的相关计算&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;平均存储时间 = 找道时间 + 等待时间（1/2r） + 数据传输时间（b/rN）&lt;/li&gt;
+&lt;li&gt;有效存储区域：外半径 - 内半径&lt;/li&gt;
+&lt;li&gt;圆柱面 = 道密度✖有效存储区域&lt;/li&gt;
+&lt;li&gt;每道信息量 N：有效道周长✖位密度 D&lt;/li&gt;
+&lt;li&gt;每道信息量：每道信息量✖圆柱面&lt;/li&gt;
+&lt;li&gt;总存储量：每道信息量✖有效面数&lt;/li&gt;
+&lt;li&gt;数据传输率：D（r）=r（转速）✖N（每道信息量）    D（r）=D（位密度）✖ v（线速度）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;ieee754标准&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ieee754标准&#34;&gt;#&lt;/a&gt; IEEE754 标准&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;阶符&lt;/th&gt;
+&lt;th&gt;阶码&lt;/th&gt;
+&lt;th&gt;数值位&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;32 位浮点数&lt;/td&gt;
+&lt;td&gt;1 位&lt;/td&gt;
+&lt;td&gt;8 位&lt;/td&gt;
+&lt;td&gt;23 位&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;64 位浮点数&lt;/td&gt;
+&lt;td&gt;1 位&lt;/td&gt;
+&lt;td&gt;11 位&lt;/td&gt;
+&lt;td&gt;52 位&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意：阶码用移码来表示，其中 32 位在指数的基础上加上 127，64 位在指数的基础上加上 1023&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;补码加减法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#补码加减法&#34;&gt;#&lt;/a&gt; 补码加减法&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;正数的补码是本身，负数的补码是符号位不变，数值为取反，末尾加一；&lt;/p&gt;
+&lt;p&gt;符号的最高位进位应该丢弃；&lt;/p&gt;
+&lt;p&gt;采用双符号位补码运算可确定是否溢出；&lt;/p&gt;
+&lt;p&gt;y 的补码求 - y 补码的原则：包含符号位取反末尾加一；&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;公式：&lt;/p&gt;
+&lt;p&gt;x 的补码 + y 的补码 =  （x+y）的补码&lt;/p&gt;
+&lt;p&gt;x 的补码 - y 的补码   = x 的补码 + （-y）的补码 = （x-y）的补码&lt;/p&gt;
+&lt;h1 id=&#34;机器的指令格式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#机器的指令格式&#34;&gt;#&lt;/a&gt; 机器的指令格式&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;操作码&lt;/th&gt;
+&lt;th&gt;寻址位&lt;/th&gt;
+&lt;th&gt;数据域&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;与指令的数量有关&lt;/td&gt;
+&lt;td&gt;与寻址方式的数量有关&lt;/td&gt;
+&lt;td&gt;机器字长减去前面两个域的位数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;以上是单地址的表示方法，还有双地址，三地址的表示方法。&lt;/p&gt;
+&lt;h1 id=&#34;主存地址格式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#主存地址格式&#34;&gt;#&lt;/a&gt; 主存地址格式&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;第一个域&lt;/th&gt;
+&lt;th&gt;第二个域&lt;/th&gt;
+&lt;th&gt;第三个域&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;直接映射方式&lt;/td&gt;
+&lt;td&gt;标记（s-r）&lt;/td&gt;
+&lt;td&gt;行号 r&lt;/td&gt;
+&lt;td&gt;字地址 w&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;组相联映射方式&lt;/td&gt;
+&lt;td&gt;标记（s-d）&lt;/td&gt;
+&lt;td&gt;组号 d&lt;/td&gt;
+&lt;td&gt;字地址 w&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;全相联映射方式&lt;/td&gt;
+&lt;td&gt;标记 s&lt;/td&gt;
+&lt;td&gt;字地址 w&lt;/td&gt;
+&lt;td&gt;无，只有两个域&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;解释：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;w 的计算：与块的大小有关&lt;/li&gt;
+&lt;li&gt;d 的计算：组数    （cache 的行数 = 组数✖每组的行数）&lt;/li&gt;
+&lt;li&gt;s 的计算：与主存的块数有关&lt;/li&gt;
+&lt;li&gt;主存地址的长度：（s+w）&lt;/li&gt;
+&lt;li&gt;主存寻址单元数 + 主存容量：2 的（s+w）次方&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;单位的换算：1MB  = 2 的 20 次方 B     1KB = 2 的 10 次方 B&lt;/p&gt;
+&lt;p&gt;同时注意 B 和 b 的区别，前者为字节，后者为比特，一个字节等于八个比特&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;存储器存储信息&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#存储器存储信息&#34;&gt;#&lt;/a&gt; 存储器存储信息&lt;/h1&gt;
+&lt;p&gt;存储位元总数：存储器容量（2 的地址位）✖存储器的字长&lt;/p&gt;
+&lt;p&gt;如：16 位地址，32 位字长的 RAM 存储器&lt;/p&gt;
+&lt;p&gt;存储容量为：2 的 16 次方✖2 的 5 次方 / 8  = 2 的 18 次方个字节&lt;/p&gt;
+&lt;h1 id=&#34;流水cpu&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#流水cpu&#34;&gt;#&lt;/a&gt; 流水 CPU&lt;/h1&gt;
+&lt;p&gt;同一个处理机同一时间只能处理一个程序。&lt;/p&gt;
+&lt;p&gt;吞吐率（每秒钟执行完毕的指令条数） =  总指令条数 / 总时间&lt;/p&gt;
+&lt;p&gt;加速比：非流水 CPU 所耗的时间 /  流水 CPU 耗时&lt;/p&gt;
+&lt;h1 id=&#34;微指令格式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#微指令格式&#34;&gt;#&lt;/a&gt; 微指令格式&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;操作控制 OP&lt;/th&gt;
+&lt;th&gt;测试字段 P&lt;/th&gt;
+&lt;th&gt;地址字段 A&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;操作控制&lt;/td&gt;
+&lt;td&gt;顺序控制&lt;/td&gt;
+&lt;td&gt;顺序控制&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;控存容量：1024✖64 位 —&amp;gt; 地址字段有 10 位&lt;/p&gt;
+&lt;p&gt;测试字段的位数：与控制转移条件的个数有关&lt;/p&gt;
+&lt;p&gt;操作控制字段：微指令字长减去上面两个字段所占的位数&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;控制存储器：只读存储器，存放全部指令系统的微程序；&lt;/p&gt;
+&lt;p&gt;微指令寄存器：微命令寄存器，负责存放 P 字段和控制字段。微地址寄存器，存放下一条微指令的地址信息。&lt;/p&gt;
+&lt;p&gt;地址转移逻辑：微程序出现分支时，根据测试标志的状态，去对微地址寄存器中的内容进行修改。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;中断&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#中断&#34;&gt;#&lt;/a&gt; 中断&lt;/h1&gt;
+&lt;p&gt;定义：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;子程序的数据准备就绪时，向 CPU 发送请求中断的信号。（我理解的是请求暂时中断主程序，来服务子程序，子程序处理完后，返回主程序继续执行）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;注意：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;向 CPU 发送中断信号的同时，同时将 “中断屏蔽触发器” 置为 1，关闭中断请求，防止其它程序中断请求&lt;/li&gt;
+&lt;li&gt;处理完子程序，“中断屏蔽触发器” 置为 0，开放，便于其它子程序发送中断请求信号&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;其它概念:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;保护现场：将 PC 内容、CPU 状态等保存到堆栈中；&lt;/p&gt;
+&lt;p&gt;四个标志触发器：RD（准备就绪）、EI（允许中断触发器）、IR（中断寄存器）、IM（中断屏蔽触发器）；&lt;/p&gt;
+&lt;p&gt;单级中断 / 多级中断&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;寻址方式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#寻址方式&#34;&gt;#&lt;/a&gt; 寻址方式&lt;/h1&gt;
+&lt;h2 id=&#34;指令的寻址方式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#指令的寻址方式&#34;&gt;#&lt;/a&gt; 指令的寻址方式&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;总共有两种：顺序寻址方式和跳跃寻址方式&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;操作数的基本寻址方式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#操作数的基本寻址方式&#34;&gt;#&lt;/a&gt; 操作数的基本寻址方式&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;隐含寻址、立即寻址、直接寻址、间接寻址、寄存器寻址、寄存器间接寻址、偏移寻址、堆栈寻址。&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+        <category term="计算机组成原理" />
+        <updated>2020-10-03T12:23:32.000Z</updated>
+    </entry>
     <entry>
         <id>http://csstar.top/2020/09/27/%E7%AC%AC%E5%9B%9B%E5%91%A8%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</id>
         <title>第四周知识点总结</title>

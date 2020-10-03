@@ -1,0 +1,626 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="CsStar" href="http://csstar.top/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="CsStar" href="http://csstar.top/atom.xml" />
+<link rel="alternate" type="application/json" title="CsStar" href="http://csstar.top/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.1.4">
+
+  
+  <meta name="keywords" content="计算机组成原理" />
+
+
+
+<meta name="description" content="Work Hard To Be A Better Man" >
+
+
+<link rel="canonical" href="http://csstar.top/2020/10/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%A4%8D%E4%B9%A0/">
+
+
+
+  <title>
+计算机组成原理复习 - 基础知识 |
+Eric Chen = CsStar = Work Hard To Be A Better Man</title>
+<meta name="generator" content="Hexo 5.1.1"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">计算机组成原理复习
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2020-10-03 20:23:32">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2020-10-03T20:23:32+08:00">2020-10-03</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>1.8k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>2 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Eric Chen</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicitspjpbj20zk0m81ky.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclfb3vzhj20zk0m8wny.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclhfehz7j20zk0m8u0x.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciryrr3rj20zk0m8nhk.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciub8ja1j20zk0m81ky.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclxp31goj20zk0m8qv5.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main id="main">
+      <div class="inner">
+        <div id="content" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span>
+<i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" itemprop="item" rel="index" title="分类于 基础知识"><span itemprop="name">基础知识</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://csstar.top/2020/10/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%A4%8D%E4%B9%A0/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="Eric Chen">
+    <meta itemprop="description" content="Work Hard To Be A Better Man, Work Hard To Be A Better Man">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="CsStar">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h1 id="重点知识点"><a class="markdownIt-Anchor" href="#重点知识点">#</a> 重点知识点</h1>
+<p>IEEE754 标准的 32/64 位浮点数的表示方法、补码的加减运算、双符号位运算判断是否溢出、指令格式的设计、存储器的扩展问题、静态存储图、SRAM 结构图、cache 的相关计算、寻址方式、CPU 模型、指令周期、双总线数据通路、指令周期流程图、ALU 运算器的结构图、微指令格式设计、微程序控制器、流水线时空图以及一些相关计算（吞吐率，加速比）、总线带宽、磁盘计算、刷新存储器、中断原理。</p>
+<h1 id="cache的相关计算"><a class="markdownIt-Anchor" href="#cache的相关计算">#</a> cache 的相关计算</h1>
+<ol>
+<li>
+<p>命中率 H = 访问 cache 的次数 /（访问 cache 次数 + 访问主存的次数）</p>
+</li>
+<li>
+<p>平均访问时间 t=H✖访问 cache 的平均时间 +（1-H）✖访问主存的平均时间</p>
+</li>
+<li>
+<p>主存慢于 cache 的倍率 r = 访问主存平均的时间 / 访问 cache 的平均时间</p>
+</li>
+<li>
+<p>访问频率 e=t（c）/  t（a） =  1/ （r+（1-r）h）</p>
+</li>
+</ol>
+<h1 id="磁盘的相关计算"><a class="markdownIt-Anchor" href="#磁盘的相关计算">#</a> 磁盘的相关计算</h1>
+<ol>
+<li>平均存储时间 = 找道时间 + 等待时间（1/2r） + 数据传输时间（b/rN）</li>
+<li>有效存储区域：外半径 - 内半径</li>
+<li>圆柱面 = 道密度✖有效存储区域</li>
+<li>每道信息量 N：有效道周长✖位密度 D</li>
+<li>每道信息量：每道信息量✖圆柱面</li>
+<li>总存储量：每道信息量✖有效面数</li>
+<li>数据传输率：D（r）=r（转速）✖N（每道信息量）    D（r）=D（位密度）✖ v（线速度）</li>
+</ol>
+<h1 id="ieee754标准"><a class="markdownIt-Anchor" href="#ieee754标准">#</a> IEEE754 标准</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>阶符</th>
+<th>阶码</th>
+<th>数值位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>32 位浮点数</td>
+<td>1 位</td>
+<td>8 位</td>
+<td>23 位</td>
+</tr>
+<tr>
+<td>64 位浮点数</td>
+<td>1 位</td>
+<td>11 位</td>
+<td>52 位</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注意：阶码用移码来表示，其中 32 位在指数的基础上加上 127，64 位在指数的基础上加上 1023</p>
+</blockquote>
+<h1 id="补码加减法"><a class="markdownIt-Anchor" href="#补码加减法">#</a> 补码加减法</h1>
+<blockquote>
+<p>正数的补码是本身，负数的补码是符号位不变，数值为取反，末尾加一；</p>
+<p>符号的最高位进位应该丢弃；</p>
+<p>采用双符号位补码运算可确定是否溢出；</p>
+<p>y 的补码求 - y 补码的原则：包含符号位取反末尾加一；</p>
+</blockquote>
+<p>公式：</p>
+<p>x 的补码 + y 的补码 =  （x+y）的补码</p>
+<p>x 的补码 - y 的补码   = x 的补码 + （-y）的补码 = （x-y）的补码</p>
+<h1 id="机器的指令格式"><a class="markdownIt-Anchor" href="#机器的指令格式">#</a> 机器的指令格式</h1>
+<table>
+<thead>
+<tr>
+<th>操作码</th>
+<th>寻址位</th>
+<th>数据域</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>与指令的数量有关</td>
+<td>与寻址方式的数量有关</td>
+<td>机器字长减去前面两个域的位数</td>
+</tr>
+</tbody>
+</table>
+<p>以上是单地址的表示方法，还有双地址，三地址的表示方法。</p>
+<h1 id="主存地址格式"><a class="markdownIt-Anchor" href="#主存地址格式">#</a> 主存地址格式</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>第一个域</th>
+<th>第二个域</th>
+<th>第三个域</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>直接映射方式</td>
+<td>标记（s-r）</td>
+<td>行号 r</td>
+<td>字地址 w</td>
+</tr>
+<tr>
+<td>组相联映射方式</td>
+<td>标记（s-d）</td>
+<td>组号 d</td>
+<td>字地址 w</td>
+</tr>
+<tr>
+<td>全相联映射方式</td>
+<td>标记 s</td>
+<td>字地址 w</td>
+<td>无，只有两个域</td>
+</tr>
+</tbody>
+</table>
+<p>解释：</p>
+<ol>
+<li>w 的计算：与块的大小有关</li>
+<li>d 的计算：组数    （cache 的行数 = 组数✖每组的行数）</li>
+<li>s 的计算：与主存的块数有关</li>
+<li>主存地址的长度：（s+w）</li>
+<li>主存寻址单元数 + 主存容量：2 的（s+w）次方</li>
+</ol>
+<blockquote>
+<p>单位的换算：1MB  = 2 的 20 次方 B     1KB = 2 的 10 次方 B</p>
+<p>同时注意 B 和 b 的区别，前者为字节，后者为比特，一个字节等于八个比特</p>
+</blockquote>
+<h1 id="存储器存储信息"><a class="markdownIt-Anchor" href="#存储器存储信息">#</a> 存储器存储信息</h1>
+<p>存储位元总数：存储器容量（2 的地址位）✖存储器的字长</p>
+<p>如：16 位地址，32 位字长的 RAM 存储器</p>
+<p>存储容量为：2 的 16 次方✖2 的 5 次方 / 8  = 2 的 18 次方个字节</p>
+<h1 id="流水cpu"><a class="markdownIt-Anchor" href="#流水cpu">#</a> 流水 CPU</h1>
+<p>同一个处理机同一时间只能处理一个程序。</p>
+<p>吞吐率（每秒钟执行完毕的指令条数） =  总指令条数 / 总时间</p>
+<p>加速比：非流水 CPU 所耗的时间 /  流水 CPU 耗时</p>
+<h1 id="微指令格式"><a class="markdownIt-Anchor" href="#微指令格式">#</a> 微指令格式</h1>
+<table>
+<thead>
+<tr>
+<th>操作控制 OP</th>
+<th>测试字段 P</th>
+<th>地址字段 A</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>操作控制</td>
+<td>顺序控制</td>
+<td>顺序控制</td>
+</tr>
+</tbody>
+</table>
+<p>控存容量：1024✖64 位 —&gt; 地址字段有 10 位</p>
+<p>测试字段的位数：与控制转移条件的个数有关</p>
+<p>操作控制字段：微指令字长减去上面两个字段所占的位数</p>
+<blockquote>
+<p>控制存储器：只读存储器，存放全部指令系统的微程序；</p>
+<p>微指令寄存器：微命令寄存器，负责存放 P 字段和控制字段。微地址寄存器，存放下一条微指令的地址信息。</p>
+<p>地址转移逻辑：微程序出现分支时，根据测试标志的状态，去对微地址寄存器中的内容进行修改。</p>
+</blockquote>
+<h1 id="中断"><a class="markdownIt-Anchor" href="#中断">#</a> 中断</h1>
+<p>定义：</p>
+<blockquote>
+<p>子程序的数据准备就绪时，向 CPU 发送请求中断的信号。（我理解的是请求暂时中断主程序，来服务子程序，子程序处理完后，返回主程序继续执行）</p>
+</blockquote>
+<p>注意：</p>
+<blockquote>
+<ul>
+<li>向 CPU 发送中断信号的同时，同时将 “中断屏蔽触发器” 置为 1，关闭中断请求，防止其它程序中断请求</li>
+<li>处理完子程序，“中断屏蔽触发器” 置为 0，开放，便于其它子程序发送中断请求信号</li>
+</ul>
+</blockquote>
+<p>其它概念:</p>
+<blockquote>
+<p>保护现场：将 PC 内容、CPU 状态等保存到堆栈中；</p>
+<p>四个标志触发器：RD（准备就绪）、EI（允许中断触发器）、IR（中断寄存器）、IM（中断屏蔽触发器）；</p>
+<p>单级中断 / 多级中断</p>
+</blockquote>
+<h1 id="寻址方式"><a class="markdownIt-Anchor" href="#寻址方式">#</a> 寻址方式</h1>
+<h2 id="指令的寻址方式"><a class="markdownIt-Anchor" href="#指令的寻址方式">#</a> 指令的寻址方式</h2>
+<blockquote>
+<p>总共有两种：顺序寻址方式和跳跃寻址方式</p>
+</blockquote>
+<h2 id="操作数的基本寻址方式"><a class="markdownIt-Anchor" href="#操作数的基本寻址方式">#</a> 操作数的基本寻址方式</h2>
+<blockquote>
+<p>隐含寻址、立即寻址、直接寻址、间接寻址、寄存器寻址、寄存器间接寻址、偏移寻址、堆栈寻址。</p>
+</blockquote>
+
+      <div class="tags">
+          <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" rel="tag"><i class="ic i-tag"></i> 计算机组成原理</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2020-10-03 23:40:38" itemprop="dateModified" datetime="2020-10-03T23:40:38+08:00">2020-10-03</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="Eric Chen 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="Eric Chen 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="Eric Chen 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>Eric Chen <i class="ic i-at"><em>@</em></i>CsStar
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://csstar.top/2020/10/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%A4%8D%E4%B9%A0/" title="计算机组成原理复习">http://csstar.top/2020/10/03/计算机组成原理复习/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="nav">
+    <div class="item left">
+      
+
+  <a href="/2020/09/27/%E7%AC%AC%E5%9B%9B%E5%91%A8%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclh0m9pdj20zk0m8hdt.jpg" title="第四周知识点总结">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> 每周知识总结</span>
+  <h3>第四周知识点总结</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments" data-id="2020/10/03/计算机组成原理复习/"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%87%8D%E7%82%B9%E7%9F%A5%E8%AF%86%E7%82%B9"><span class="toc-number">1.</span> <span class="toc-text"> 重点知识点</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#cache%E7%9A%84%E7%9B%B8%E5%85%B3%E8%AE%A1%E7%AE%97"><span class="toc-number">2.</span> <span class="toc-text"> cache 的相关计算</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%A3%81%E7%9B%98%E7%9A%84%E7%9B%B8%E5%85%B3%E8%AE%A1%E7%AE%97"><span class="toc-number">3.</span> <span class="toc-text"> 磁盘的相关计算</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ieee754%E6%A0%87%E5%87%86"><span class="toc-number">4.</span> <span class="toc-text"> IEEE754 标准</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%A1%A5%E7%A0%81%E5%8A%A0%E5%87%8F%E6%B3%95"><span class="toc-number">5.</span> <span class="toc-text"> 补码加减法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9C%BA%E5%99%A8%E7%9A%84%E6%8C%87%E4%BB%A4%E6%A0%BC%E5%BC%8F"><span class="toc-number">6.</span> <span class="toc-text"> 机器的指令格式</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%BB%E5%AD%98%E5%9C%B0%E5%9D%80%E6%A0%BC%E5%BC%8F"><span class="toc-number">7.</span> <span class="toc-text"> 主存地址格式</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E5%99%A8%E5%AD%98%E5%82%A8%E4%BF%A1%E6%81%AF"><span class="toc-number">8.</span> <span class="toc-text"> 存储器存储信息</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B5%81%E6%B0%B4cpu"><span class="toc-number">9.</span> <span class="toc-text"> 流水 CPU</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BE%AE%E6%8C%87%E4%BB%A4%E6%A0%BC%E5%BC%8F"><span class="toc-number">10.</span> <span class="toc-text"> 微指令格式</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%AD%E6%96%AD"><span class="toc-number">11.</span> <span class="toc-text"> 中断</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F"><span class="toc-number">12.</span> <span class="toc-text"> 寻址方式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8C%87%E4%BB%A4%E7%9A%84%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F"><span class="toc-number">12.1.</span> <span class="toc-text"> 指令的寻址方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E6%95%B0%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F"><span class="toc-number">12.2.</span> <span class="toc-text"> 操作数的基本寻址方式</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li class="active"><a href="/2020/10/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%A4%8D%E4%B9%A0/" rel="bookmark" title="计算机组成原理复习">计算机组成原理复习</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="Eric Chen"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">Eric Chen</p>
+  <div class="description" itemprop="description">Work Hard To Be A Better Man</div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+        <a href="/archives">
+        <span class="count">6</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories">
+        <span class="count">6</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags">
+        <span class="count">6</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL2VyaWMtY2hlbjMw" title="https:&#x2F;&#x2F;github.com&#x2F;eric-chen30"><i class="ic i-github"></i></span>
+      <span class="exturl item twitter" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;twitter.com&#x2F;yourname"><i class="ic i-twitter"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS9FcmljX3NodWFp" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;Eric_shuai"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTQzODMzOTMwNA==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;438339304"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item weibo" data-url="aHR0cHM6Ly93ZWliby5jb20vNjg5MzcwODY2My9wcm9maWxlP3JpZ2h0bW9kPTEmd3ZyPTYmbW9kPXBlcnNvbmluZm8=" title="https:&#x2F;&#x2F;weibo.com&#x2F;6893708663&#x2F;profile?rightmod&#x3D;1&amp;wvr&#x3D;6&amp;mod&#x3D;personinfo"><i class="ic i-weibo"></i></span>
+      <span class="exturl item about" data-url="aHR0cHM6Ly9hYm91dC5tZS9jc3N0YXI=" title="https:&#x2F;&#x2F;about.me&#x2F;csstar"><i class="ic i-address-card"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+        
+  <li class="item dropdown">
+    <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/friends/" rel="section"><i class="ic i-heart"></i>友達</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/links/" rel="section"><i class="ic i-magic"></i>网址</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="ic i-sakura rotate"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Eric Chen @ Eric Chen</span>
+</div>
+<div>
+  <span class="post-meta-item-icon">
+    <i class="ic i-chart-area"></i>
+  </span>
+  <span title="站点总字数">18k 字</span>
+
+  <span class="post-meta-divider">|</span>
+  <span class="post-meta-item-icon">
+    <i class="ic i-coffee"></i>
+  </span>
+  <span title="站点阅读时长">16 分钟</span>
+</div>
+
+<div class="powered-by">
+  基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'http://csstar.top/2020/10/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%A4%8D%E4%B9%A0/',
+    favicon: {
+      show: "Eric Chen",
+      hide: "Eric Chen"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 ${query} ，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return uri === LOCAL.path;
+      }
+    ]
+  };
+</script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/velocity-animate@1.5.2/velocity.min.js,npm/velocity-animate@1.5.2/velocity.ui.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.1.4"></script>
+
+
+
+
+</body>
+</html>
