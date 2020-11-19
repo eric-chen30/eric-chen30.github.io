@@ -4,12 +4,13 @@
     <title>CsStar • Posts by &#34;单例模式&#34; tag</title>
     <link href="http://csstar.top" />
     <updated>2020-09-21T11:07:10.000Z</updated>
-    <category term="Docker" />
-    <category term="Pandas" />
-    <category term="机器学习" />
-    <category term="计算机组成原理" />
+    <category term="随便写点儿星季" />
     <category term="小的知识点" />
+    <category term="计算机组成原理" />
+    <category term="Docker" />
+    <category term="机器学习" />
     <category term="单例模式" />
+    <category term="Pandas" />
     <entry>
         <id>http://csstar.top/2020/09/21/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</id>
         <title>设计模式之单例模式</title>
