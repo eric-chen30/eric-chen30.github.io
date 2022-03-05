@@ -7,13 +7,12 @@
         <language>zh-CN</language>
         <pubDate>Sun, 13 Sep 2020 16:25:21 +0800</pubDate>
         <lastBuildDate>Sun, 13 Sep 2020 16:25:21 +0800</lastBuildDate>
-        <category>随便写点儿星季</category>
+        <category>Docker</category>
+        <category>Pandas</category>
+        <category>机器学习</category>
         <category>小的知识点</category>
         <category>计算机组成原理</category>
-        <category>Docker</category>
-        <category>机器学习</category>
         <category>单例模式</category>
-        <category>Pandas</category>
         <item>
             <guid isPermalink="true">http://csstar.top/2020/09/13/Pandas-DataFrame/</guid>
             <title>认识Pandas-DataFrame</title>
