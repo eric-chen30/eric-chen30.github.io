@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://csstar.top</id>
+    <title>CsStar • Posts by &#34;快捷操作&#34; tag</title>
+    <link href="http://csstar.top" />
+    <updated>2022-03-09T05:16:51.000Z</updated>
+    <category term="Docker" />
+    <category term="Pandas" />
+    <category term="快捷操作" />
+    <category term="机器学习" />
+    <category term="小的知识点" />
+    <category term="计算机组成原理" />
+    <category term="单例模式" />
+    <entry>
+        <id>http://csstar.top/2022/03/09/vscode%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</id>
+        <title>vscode常用快捷键</title>
+        <link rel="alternate" href="http://csstar.top/2022/03/09/vscode%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+        <content type="html">&lt;h1 id=&#34;vscode常用快捷键&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#vscode常用快捷键&#34;&gt;#&lt;/a&gt; vscode 常用快捷键&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;向上 / 下复制当前行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;alt + shift  +  ⬆/⬇&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;逐个选择文本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CTRL  +  shift  +  ⬅/➡&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;批量替换匹配文本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CTRL  +  F2&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;将当前行代码上 / 下移&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;alt   +  ⬆/⬇&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;删除当前行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CTRL  +  x&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;多行同时编辑&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;CTRL  +  alt   +   ⬆/⬇&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;alt  +  鼠标选中特定位置&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;快速定位文件首位行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CTRL  +  home/end&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;删除上一个词&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CTRL  +  backspace&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;选择光标左 / 右侧全部内容&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CTRL  +  shift  +   home/end&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;按名称搜索文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CTRL  +  p&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+        <category term="快捷操作" />
+        <updated>2022-03-09T05:16:51.000Z</updated>
+    </entry>
+</feed>

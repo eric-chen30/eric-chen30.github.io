@@ -9,6 +9,7 @@
         <lastBuildDate>Sun, 27 Sep 2020 09:28:06 +0800</lastBuildDate>
         <category>Docker</category>
         <category>Pandas</category>
+        <category>快捷操作</category>
         <category>机器学习</category>
         <category>小的知识点</category>
         <category>计算机组成原理</category>
@@ -23,7 +24,7 @@
 &lt;h2 id=&#34;遇到的问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#遇到的问题&#34;&gt;#&lt;/a&gt; 遇到的问题&lt;/h2&gt;
 &lt;p&gt;如果是阿里云服务器，你使用本地的图片路径，远端服务器是访问不到的。这和在 github 上部署有些不一样，因为你可以新建一个 images 文件专门用来存放图片，github 可以访问得到。&lt;/p&gt;
 &lt;h2 id=&#34;解决办法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#解决办法&#34;&gt;#&lt;/a&gt; 解决办法&lt;/h2&gt;
-&lt;p&gt;询问大佬后，建议使用图床来实现图片的加载，我就用自己的话说一下图床。&lt;/p&gt;
+&lt;p&gt;使用图床来实现图片的加载，我就用自己的话说一下图床。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;图床：你把本地图片上传到一个云存储里，然后这个云存储会把这些图片自动生成网页链接，于是你就可以通过网络链接来访问这些图片，相当于你博客引用的图片就是引用网上的图片，这样远端服务器就可以访问的到。&lt;/p&gt;
 &lt;/blockquote&gt;

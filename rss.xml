@@ -5,14 +5,91 @@
         <link>http://csstar.top</link>
         <description>Work Hard To Be A Better Man</description>
         <language>zh-CN</language>
-        <pubDate>Sat, 03 Oct 2020 20:23:32 +0800</pubDate>
-        <lastBuildDate>Sat, 03 Oct 2020 20:23:32 +0800</lastBuildDate>
+        <pubDate>Wed, 09 Mar 2022 13:16:51 +0800</pubDate>
+        <lastBuildDate>Wed, 09 Mar 2022 13:16:51 +0800</lastBuildDate>
         <category>Docker</category>
         <category>Pandas</category>
+        <category>快捷操作</category>
         <category>机器学习</category>
         <category>小的知识点</category>
         <category>计算机组成原理</category>
         <category>单例模式</category>
+        <item>
+            <guid isPermalink="true">http://csstar.top/2022/03/09/vscode%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
+            <title>vscode常用快捷键</title>
+            <link>http://csstar.top/2022/03/09/vscode%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+            <category>快捷操作</category>
+            <pubDate>Wed, 09 Mar 2022 13:16:51 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;vscode常用快捷键&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#vscode常用快捷键&#34;&gt;#&lt;/a&gt; vscode 常用快捷键&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;向上 / 下复制当前行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;alt + shift  +  ⬆/⬇&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;逐个选择文本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CTRL  +  shift  +  ⬅/➡&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;批量替换匹配文本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CTRL  +  F2&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;将当前行代码上 / 下移&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;alt   +  ⬆/⬇&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;删除当前行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CTRL  +  x&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;多行同时编辑&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;CTRL  +  alt   +   ⬆/⬇&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;alt  +  鼠标选中特定位置&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;快速定位文件首位行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CTRL  +  home/end&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;删除上一个词&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CTRL  +  backspace&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;选择光标左 / 右侧全部内容&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CTRL  +  shift  +   home/end&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;按名称搜索文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CTRL  +  p&lt;/p&gt;
+&lt;/blockquote&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://csstar.top/2020/10/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%A4%8D%E4%B9%A0/</guid>
             <title>计算机组成原理复习</title>
@@ -217,7 +294,7 @@
 &lt;h2 id=&#34;遇到的问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#遇到的问题&#34;&gt;#&lt;/a&gt; 遇到的问题&lt;/h2&gt;
 &lt;p&gt;如果是阿里云服务器，你使用本地的图片路径，远端服务器是访问不到的。这和在 github 上部署有些不一样，因为你可以新建一个 images 文件专门用来存放图片，github 可以访问得到。&lt;/p&gt;
 &lt;h2 id=&#34;解决办法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#解决办法&#34;&gt;#&lt;/a&gt; 解决办法&lt;/h2&gt;
-&lt;p&gt;询问大佬后，建议使用图床来实现图片的加载，我就用自己的话说一下图床。&lt;/p&gt;
+&lt;p&gt;使用图床来实现图片的加载，我就用自己的话说一下图床。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;图床：你把本地图片上传到一个云存储里，然后这个云存储会把这些图片自动生成网页链接，于是你就可以通过网络链接来访问这些图片，相当于你博客引用的图片就是引用网上的图片，这样远端服务器就可以访问的到。&lt;/p&gt;
 &lt;/blockquote&gt;
