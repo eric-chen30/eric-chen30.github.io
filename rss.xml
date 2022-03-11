@@ -5,17 +5,114 @@
         <link>http://csstar.top</link>
         <description>Work Hard To Be A Better Man</description>
         <language>zh-CN</language>
-        <pubDate>Fri, 11 Mar 2022 14:00:54 +0800</pubDate>
-        <lastBuildDate>Fri, 11 Mar 2022 14:00:54 +0800</lastBuildDate>
-        <category>Pandas</category>
-        <category>ES7-11</category>
+        <pubDate>Fri, 11 Mar 2022 23:17:08 +0800</pubDate>
+        <lastBuildDate>Fri, 11 Mar 2022 23:17:08 +0800</lastBuildDate>
         <category>Docker</category>
+        <category>ES7-11</category>
+        <category>Pandas</category>
         <category>快捷操作</category>
+        <category>前端学习网站</category>
+        <category>机器学习</category>
         <category>小的知识点</category>
         <category>计算机组成原理</category>
         <category>单例模式</category>
-        <category>机器学习</category>
         <category>ES6</category>
+        <item>
+            <guid isPermalink="true">http://csstar.top/2022/03/11/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99/</guid>
+            <title>前端学习网站</title>
+            <link>http://csstar.top/2022/03/11/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99/</link>
+            <category>前端学习网站</category>
+            <pubDate>Fri, 11 Mar 2022 23:17:08 +0800</pubDate>
+            <description><![CDATA[ &lt;blockquote&gt;
+&lt;p&gt;GitHub：代码管理、开源项目、技术源码、博客托管&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tLw==&#34;&gt;https://github.com/&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;B 站：大量的计算机学习视频&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tLw==&#34;&gt;https://www.bilibili.com/&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;力扣：提高编程能力，学习别人编码方式&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS1jbi5jb20v&#34;&gt;https://leetcode-cn.com/&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Vue：渐进式 JavaScript 框架&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jbi52dWVqcy5vcmcv&#34;&gt;https://cn.vuejs.org/&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;W3school：技术基础文档，简单介绍技术包含内容&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cudzNzY2hvb2wuY29tLmNuLw==&#34;&gt;https://www.w3school.com.cn/&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Bootstrap：最受欢迎的 HTML、CSS 和 JS 框架，用于开发响应式布局、移动设备优先的 WEB 项目&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly92My5ib290Y3NzLmNvbS8=&#34;&gt;https://v3.bootcss.com/&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;webpack：流行的打包工具&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cud2VicGFja2pzLmNvbS8=&#34;&gt;https://www.webpackjs.com/&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Axios：基于 Promise 的 HTTP 库，用于向服务器发送请求，请求数据&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5heGlvcy1qcy5jb20vemgtY24vZG9jcy8=&#34;&gt;http://www.axios-js.com/zh-cn/docs/&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;uniapp：使用 Vue.js 开发所有前端应用的框架，一套代码，多平台发布&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly91bmlhcHAuZGNsb3VkLmlvLw==&#34;&gt;https://uniapp.dcloud.io/&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Element UI：基于 Vue 的样式组件库&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9lbGVtZW50LmVsZW1lLmNuLyMvemgtQ04v&#34;&gt;https://element.eleme.cn/#/zh-CN/&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Vuex：一个专为 Vue.js 应用程序开发的&lt;strong&gt;状态管理模式 + 库&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly92dWV4LnZ1ZWpzLm9yZy96aC9ndWlkZS8=&#34;&gt;https://vuex.vuejs.org/zh/guide/&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;MDN：面向 Web 开发者的文档，内容齐全，具有权威性&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvemgtQ04vZG9jcy9XZWI=&#34;&gt;https://developer.mozilla.org/zh-CN/docs/Web&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;阮一峰：ES6 入门教程&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9lczYucnVhbnlpZmVuZy5jb20v&#34;&gt;https://es6.ruanyifeng.com/&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;React：用于构建用户界面的 JavaScript 库&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9yZWFjdGpzLm9yZy8=&#34;&gt;https://reactjs.org/&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Node：一个基于 Chrome V8 引擎的 JavaScript 运行环境&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL25vZGVqcy5jbi8=&#34;&gt;http://nodejs.cn/&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;TypeScript：JavaScript 类型的超集，可以编译为纯 JavaScript，可在任何浏览器、计算机、操作系统运行，开源&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cudHNsYW5nLmNuLw==&#34;&gt;https://www.tslang.cn/&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Electron：使用 JavaScript，HTML 和 CSS 构建跨平台的桌面应用程序&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZWxlY3Ryb25qcy5vcmcv&#34;&gt;https://www.electronjs.org/&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Babel：Babel 是一个 JavaScript 编译器，可将 ES6 编译为 ES5 代码，使部分浏览器兼容&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWJlbGpzLmlvLw==&#34;&gt;https://babeljs.io/&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;RequireJS：一个 JavaScript 文件和模块加载器&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9yZXF1aXJlanMub3JnLw==&#34;&gt;https://requirejs.org/&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;开发者资源：自 2005 年以来记录 Web 技术，包括 CSS、HTML 和 JavaScript&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvemgtQ04v&#34;&gt;https://developer.mozilla.org/zh-CN/&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;阮一峰 JS 教程&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2phdmFzY3JpcHQucnVhbnlpZmVuZy5jb20v&#34;&gt;http://javascript.ruanyifeng.com/&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;微信开发文档：微信小程序、微信公众号、小游戏等&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kZXZlbG9wZXJzLndlaXhpbi5xcS5jb20vZG9jLw==&#34;&gt;https://developers.weixin.qq.com/doc/&lt;/span&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://csstar.top/2022/03/11/ES7-11/</guid>
             <title>ES7-11</title>
