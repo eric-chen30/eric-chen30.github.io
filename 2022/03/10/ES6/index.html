@@ -77,7 +77,7 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>10k</span>
+    <span>14k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -85,7 +85,7 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
       <i class="ic i-clock"></i>
     </span>
     <span class="text">阅读时长</span>
-    <span>9 分钟</span>
+    <span>13 分钟</span>
   </span>
 </div>
 
@@ -118,12 +118,12 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclimtf7dj20zk0m8qav.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclxfdlttj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclj9410cj20zk0m8h12.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclwuom7cj20zk0m8dvn.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclh0m9pdj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclhfehz7j20zk0m8u0x.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclwuom7cj20zk0m8dvn.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclfw2t96j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciryrr3rj20zk0m8nhk.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclj61ylzj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclgrvbd6j20zk0m8qv5.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicivghyooj20zk0m8dir.jpg"></li>
         </ul>
       </div>
     </header>
@@ -426,6 +426,119 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
 <p>类似于对象，是键值对的集合</p>
 </blockquote>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 定义Map</span></span><br><span class="line"><span class="keyword">let</span> m = <span class="keyword">new</span> <span class="built_in">Map</span>();</span><br><span class="line"><span class="comment">// 设置键值</span></span><br><span class="line">m.set(<span class="string">&#x27;name&#x27;</span>,<span class="string">&#x27;shangguigu&#x27;</span>);</span><br><span class="line">m.set(<span class="string">&#x27;change&#x27;</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;i can change you&#x27;</span>);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="keyword">let</span> key = &#123;</span><br><span class="line">    school : <span class="string">&#x27;atguigu&#x27;</span></span><br><span class="line">&#125;;</span><br><span class="line">m.set(key, [<span class="string">&#x27;北京&#x27;</span>,<span class="string">&#x27;上海&#x27;</span>]);</span><br><span class="line"><span class="comment">// 获取键值对个数</span></span><br><span class="line"><span class="built_in">console</span>.log(m.size);</span><br><span class="line"><span class="comment">// 删除</span></span><br><span class="line">m.delete(<span class="string">&#x27;name&#x27;</span>);</span><br><span class="line"><span class="comment">// 获取键的值</span></span><br><span class="line"><span class="built_in">console</span>.log(m.get(<span class="string">&#x27;change&#x27;</span>));</span><br><span class="line"><span class="built_in">console</span>.log(m.get(<span class="string">&#x27;key&#x27;</span>));</span><br></pre></td></tr></table></figure>
+<h2 id="class类"><a class="markdownIt-Anchor" href="#class类">#</a> class 类</h2>
+<blockquote>
+<p>ES6 引入 class 类，作为对象的模板，可以看作是一个语法糖</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ES5</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Phone</span>(<span class="params">brand, price</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">this</span>.brand = brand;</span><br><span class="line">    <span class="built_in">this</span>.price = price;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Phone.prototype.call = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;i can call&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> one = <span class="keyword">new</span> Phone(<span class="string">&#x27;1+&#x27;</span>,<span class="number">1999</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// ES6</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">PhonePlus</span></span>&#123;</span><br><span class="line">    <span class="comment">// 构造方法，名字不能更改</span></span><br><span class="line">    <span class="keyword">constructor</span>(brand,price)&#123;</span><br><span class="line">        <span class="built_in">this</span>.brand = brand;</span><br><span class="line">        <span class="built_in">this</span>.price = price;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 方法必须使用该语法，不能使用 ES 5的对象完整形式</span></span><br><span class="line">    call() &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&#x27;i can call&#x27;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> onePlus = <span class="keyword">new</span> PhonePlus(<span class="string">&#x27;1+&#x27;</span>,<span class="number">1999</span>);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>实例对象和函数对象的属性和方法是不相通的，函数对象的属性称为静态成员，以面向对象的角度来看，函数对象的属性属于类，不属于实例对象</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Phone</span>(<span class="params"></span>) </span>&#123;&#125;</span><br><span class="line"></span><br><span class="line">Phone.name = <span class="string">&#x27;shouji&#x27;</span>;</span><br><span class="line">Phone.change = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;i can change&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> nokia = <span class="keyword">new</span> Phone();</span><br><span class="line"><span class="built_in">console</span>.log(nokia.name);   <span class="comment">// undefined</span></span><br><span class="line">nokia.change();   		   <span class="comment">// is not a function</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 函数的原型对象和实例对象的属性和方法是相通的</span></span><br><span class="line">Phone.prototype.size = <span class="string">&#x27;5.5inch&#x27;</span>;</span><br><span class="line"><span class="built_in">console</span>.log(nokia.size);	<span class="comment">// 5.5inch</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// static 标注的属性和方法属于类而不属于实例对象</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">PhonePlus</span></span>&#123;</span><br><span class="line">    <span class="keyword">static</span> name = <span class="string">&#x27;shouji&#x27;</span>;</span><br><span class="line">	<span class="keyword">static</span> change()&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&#x27;i can change&#x27;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> onePlus = <span class="keyword">new</span> PhonePlus();</span><br><span class="line"><span class="built_in">console</span>.log(onePlus.name);	<span class="comment">// undefined</span></span><br><span class="line"><span class="built_in">console</span>.log(Phone.name);    <span class="comment">// shouji</span></span><br><span class="line">onePlus.change();</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>对象继承</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ES 5 实现函数继承</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Phone</span>(<span class="params">brand, price</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">this</span>.brand = brand;</span><br><span class="line">    <span class="built_in">this</span>.price = price;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Phone.prototype.call = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;i can call&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">SmartPhone</span>(<span class="params">brand,price,color,size</span>)</span>&#123;</span><br><span class="line">    Phone.call(<span class="built_in">this</span>,brand,price);</span><br><span class="line">    <span class="built_in">this</span>.color = color;</span><br><span class="line">    <span class="built_in">this</span>.size = size;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 设置子级构造函数的模型</span></span><br><span class="line">SmartPhone.prototype = <span class="keyword">new</span> Phone;</span><br><span class="line">SmartPhone.prototype.constructor = SmartPhone;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 声明字类的方法</span></span><br><span class="line">SmartPhone.prototype.photo = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;i can take photos&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">SmartPhone.prototype.game = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;i can play game&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> stin = <span class="keyword">new</span> SmartPhone(<span class="string">&#x27;stin&#x27;</span>,<span class="number">2499</span>,<span class="string">&#x27;black&#x27;</span>,<span class="string">&#x27;5.5inch&#x27;</span>);</span><br><span class="line"><span class="built_in">console</span>.log(stin);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ES 6 实现继承</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Phone</span> </span>&#123;</span><br><span class="line">    <span class="keyword">constructor</span>(brand,price) &#123;</span><br><span class="line">        <span class="built_in">this</span>.brand = brand;</span><br><span class="line">        <span class="built_in">this</span>.price = price;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    call() &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&#x27;i can call&#x27;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SmartPhone</span> <span class="keyword">extends</span> <span class="title">Phone</span> </span>&#123;</span><br><span class="line">    <span class="keyword">constructor</span>(brand,price,color,size)&#123;</span><br><span class="line">        <span class="built_in">super</span>(brand,price);</span><br><span class="line">        <span class="built_in">this</span>.color = color;</span><br><span class="line">        <span class="built_in">this</span>.size = size;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    photo() &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&#x27;i can take photo&#x27;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    game()&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&#x27;i can play games&#x27;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> xiaomi = <span class="keyword">new</span> SmartPhone(<span class="string">&#x27;xiaomi&#x27;</span>,<span class="number">1999</span>,<span class="string">&#x27;black&#x27;</span>,<span class="string">&#x27;4.7inch&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>字类对父类进行重写</p>
+</blockquote>
+<ul>
+<li>字类不能调用通过 super 调用父类的同名方法，只能进行重写</li>
+<li>字类重写的方法覆盖父类同名方法，自定义字类功能</li>
+</ul>
+<blockquote>
+<p>get 和 set</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Phone</span> </span>&#123;</span><br><span class="line">    <span class="keyword">get</span> <span class="title">price</span>()&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&#x27;调用price属性就会执行，且属性值为return返回值&#x27;</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&#x27;abcdefg&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 必须有一个参数</span></span><br><span class="line">    <span class="keyword">set</span> <span class="title">price</span>(<span class="params">newVal</span>)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&#x27;价格属性被修改了&#x27;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 实例化对象</span></span><br><span class="line"><span class="keyword">let</span> s = <span class="keyword">new</span> Phone();</span><br><span class="line"><span class="built_in">console</span>.log(s.price);    <span class="comment">// 上面的字符串     adcdefg</span></span><br><span class="line"></span><br><span class="line">s.price = <span class="string">&#x27;free&#x27;</span>;	<span class="comment">// 对price属性进行修改，触发set函数</span></span><br></pre></td></tr></table></figure>
+<h2 id="数值扩展"><a class="markdownIt-Anchor" href="#数值扩展">#</a> 数值扩展</h2>
+<ul>
+<li>Number.EPSILON    			表示最小精度，常用于浮点数运算</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">eqal</span>(<span class="params">a,b</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">Math</span>.abx(a-b) &lt; <span class="built_in">Number</span>.EPSILON)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="number">0.1</span> + <span class="number">0.2</span> === <span class="number">0.3</span>);   <span class="comment">// false</span></span><br><span class="line"><span class="built_in">console</span>.log(eqal(<span class="number">0.1</span>+<span class="number">0.2</span>, <span class="number">0.3</span>));  <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>二进制和八进制</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> b = <span class="number">0b1010</span>;		<span class="comment">// 二进制</span></span><br><span class="line"><span class="keyword">let</span> o = <span class="number">0o777</span>;		<span class="comment">// 八进制</span></span><br><span class="line"><span class="keyword">let</span> x - <span class="number">0xff</span>;		<span class="comment">// 十六进制</span></span><br><span class="line"><span class="built_in">console</span>.log(b);</span><br><span class="line"><span class="built_in">console</span>.log(o);</span><br><span class="line"><span class="built_in">console</span>.log(x);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Number.isFinite		检测一个数值是否为有限数</li>
+<li>Number.isNaN         检查一个数值是否为  NaN</li>
+<li>Number.parseInt      Number.parseFloat       截取</li>
+<li>Number.isInteger      判断一个数是否为整数</li>
+<li>Math.trunc                 将小数部分抹掉</li>
+<li>Math.sign                   判断一个数是正数、0、负数</li>
+</ul>
+<h2 id="对象方法扩展"><a class="markdownIt-Anchor" href="#对象方法扩展">#</a> 对象方法扩展</h2>
+<ul>
+<li>
+<p><span class="exturl" data-url="aHR0cDovL09iamVjdC5pcw==">Object.is</span> 			判断两个值是否完全相等    大致相当于 ====</p>
+<ol>
+<li>NaN  ===  NaN                   	结果为 false</li>
+<li><span class="exturl" data-url="aHR0cDovL09iamVjdC5pcw==">Object.is</span> (NaN,NaN)              结果为 true</li>
+</ol>
+</li>
+<li>
+<p>Object.assign                                     对象的合并</p>
+</li>
+<li>
+<p>Object.setPrototypeOf                      设置原型对象</p>
+</li>
+<li>
+<p>Object.getPrototypeOf                      获取原型对象</p>
+</li>
+</ul>
+<h2 id="模块化"><a class="markdownIt-Anchor" href="#模块化">#</a> 模块化</h2>
+<blockquote>
+<p>将大程序文件拆分成一个个功能模块，然后最后将模块汇总</p>
+</blockquote>
+<p>模块化的优势如下：</p>
+<ol>
+<li>防止命名冲突</li>
+<li>高维护性      解决依赖之间模糊的关系问题</li>
+<li>代码复用</li>
+</ol>
+<blockquote>
+<p>模块化产品</p>
+</blockquote>
+<ol>
+<li>CommonJS 		NodeJS、Browserify</li>
+<li>AMD                    requireJS</li>
+<li>CMD                    seaJS</li>
+<li>ES6 模块化          通过 export  import 进行模块的导入与导出</li>
+</ol>
+<blockquote>
+<p>暴露模块的语法</p>
+</blockquote>
+<ol>
+<li>分别暴露               exoprt    方法 1               export  方法 2       export 属性 1</li>
+<li 暴露的方法和属性>统一暴露               export    </li>
+<li 暴露的方法、属性、对象>默认暴露                export   default  </li>
+</ol>
+<blockquote>
+<p>引入模块的语法</p>
+</blockquote>
+<ol>
+<li>import   *  as   别名   from “路径”	 												通用模式</li>
+<li>import   {school,  teach}    from “路径”;                                解构赋值形式</li>
+<li>import   {school as campus,  findJob}    from “路径”;         如果解构重名，需要起别名</li>
+<li>import    {default   as   m3}  from “路径”;                             default 对象</li>
+<li>import    m3  from “路径”;                                                      简便形式    针对默认暴露</li>
+</ol>
+<blockquote>
+<p>app.js    入口文件</p>
+</blockquote>
+<ul>
+<li>将模块和需要导入的 package 全部放入 app.js 入口文件</li>
+<li>在 html 主页面只需要引入入口文件即可，设置 type 为 module</li>
+</ul>
+<blockquote>
+<p>babel 对模块化代码的转换</p>
+</blockquote>
+<ol>
+<li>安装工具     babel-cli      babel-preset-env      browserify (正式项目里使用 webpack)</li>
+<li>npx  babel     打包文件    -d    目标文件</li>
+<li>npx   browserify    dist/js/app.js    -o   dist/bundle.js</li>
+</ol>
 
       <div class="tags">
           <a href="/tags/ES6/" rel="tag"><i class="ic i-tag"></i> ES6</a>
@@ -440,7 +553,7 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2022-03-10 22:54:01" itemprop="dateModified" datetime="2022-03-10T22:54:01+08:00">2022-03-10</time>
+    <time title="修改时间：2022-03-11 11:48:12" itemprop="dateModified" datetime="2022-03-11T11:48:12+08:00">2022-03-11</time>
   </span>
 </div>
 
@@ -495,7 +608,7 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
     <div class="item left">
       
 
-  <a href="/2022/03/09/vscode%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitf0kl1j20zk0m87fe.jpg" title="vscode常用快捷键">
+  <a href="/2022/03/09/vscode%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicmnywqgpj20zk0m8dwx.jpg" title="vscode常用快捷键">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>vscode常用快捷键</h3>
@@ -519,7 +632,7 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#es6"><span class="toc-number">1.</span> <span class="toc-text"> ES6</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#const%E5%92%8Clet"><span class="toc-number">1.1.</span> <span class="toc-text"> const 和 let</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%98%E9%87%8F%E7%9A%84%E8%A7%A3%E6%9E%84%E8%B5%8B%E5%80%BC"><span class="toc-number">1.2.</span> <span class="toc-text"> 变量的解构赋值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A8%A1%E6%9D%BF%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">1.3.</span> <span class="toc-text"> 模板字符串</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%AE%80%E5%8C%96%E5%86%99%E6%B3%95"><span class="toc-number">1.4.</span> <span class="toc-text"> 对象的简化写法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0"><span class="toc-number">1.5.</span> <span class="toc-text"> 箭头函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#es6%E5%85%81%E8%AE%B8%E7%BB%99%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E8%B5%8B%E5%80%BC%E5%88%9D%E5%A7%8B%E5%80%BC"><span class="toc-number">1.6.</span> <span class="toc-text"> ES6 允许给函数参数赋值初始值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#es6-rest%E5%8F%82%E6%95%B0%E8%8E%B7%E5%8F%96%E5%87%BD%E6%95%B0%E7%9A%84%E5%AE%9E%E5%8F%82%E4%BB%A3%E6%9B%BFarguments"><span class="toc-number">1.7.</span> <span class="toc-text"> ES6 rest 参数，获取函数的实参，代替 arguments</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%A9%E5%B1%95%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.8.</span> <span class="toc-text"> 扩展运算符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#symbol-%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="toc-number">1.9.</span> <span class="toc-text"> symbol 的基本使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%AD%E4%BB%A3%E5%99%A8"><span class="toc-number">1.10.</span> <span class="toc-text"> 迭代器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E6%88%90%E5%99%A8"><span class="toc-number">1.11.</span> <span class="toc-text"> 生成器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#promise"><span class="toc-number">1.12.</span> <span class="toc-text"> Promise</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#set%E9%9B%86%E5%90%88"><span class="toc-number">1.13.</span> <span class="toc-text"> Set (集合)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#map"><span class="toc-number">1.14.</span> <span class="toc-text"> Map</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#es6"><span class="toc-number">1.</span> <span class="toc-text"> ES6</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#const%E5%92%8Clet"><span class="toc-number">1.1.</span> <span class="toc-text"> const 和 let</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%98%E9%87%8F%E7%9A%84%E8%A7%A3%E6%9E%84%E8%B5%8B%E5%80%BC"><span class="toc-number">1.2.</span> <span class="toc-text"> 变量的解构赋值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A8%A1%E6%9D%BF%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">1.3.</span> <span class="toc-text"> 模板字符串</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%AE%80%E5%8C%96%E5%86%99%E6%B3%95"><span class="toc-number">1.4.</span> <span class="toc-text"> 对象的简化写法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0"><span class="toc-number">1.5.</span> <span class="toc-text"> 箭头函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#es6%E5%85%81%E8%AE%B8%E7%BB%99%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E8%B5%8B%E5%80%BC%E5%88%9D%E5%A7%8B%E5%80%BC"><span class="toc-number">1.6.</span> <span class="toc-text"> ES6 允许给函数参数赋值初始值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#es6-rest%E5%8F%82%E6%95%B0%E8%8E%B7%E5%8F%96%E5%87%BD%E6%95%B0%E7%9A%84%E5%AE%9E%E5%8F%82%E4%BB%A3%E6%9B%BFarguments"><span class="toc-number">1.7.</span> <span class="toc-text"> ES6 rest 参数，获取函数的实参，代替 arguments</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%A9%E5%B1%95%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.8.</span> <span class="toc-text"> 扩展运算符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#symbol-%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="toc-number">1.9.</span> <span class="toc-text"> symbol 的基本使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%AD%E4%BB%A3%E5%99%A8"><span class="toc-number">1.10.</span> <span class="toc-text"> 迭代器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E6%88%90%E5%99%A8"><span class="toc-number">1.11.</span> <span class="toc-text"> 生成器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#promise"><span class="toc-number">1.12.</span> <span class="toc-text"> Promise</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#set%E9%9B%86%E5%90%88"><span class="toc-number">1.13.</span> <span class="toc-text"> Set (集合)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#map"><span class="toc-number">1.14.</span> <span class="toc-text"> Map</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#class%E7%B1%BB"><span class="toc-number">1.15.</span> <span class="toc-text"> class 类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E5%80%BC%E6%89%A9%E5%B1%95"><span class="toc-number">1.16.</span> <span class="toc-text"> 数值扩展</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95%E6%89%A9%E5%B1%95"><span class="toc-number">1.17.</span> <span class="toc-text"> 对象方法扩展</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A8%A1%E5%9D%97%E5%8C%96"><span class="toc-number">1.18.</span> <span class="toc-text"> 模块化</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
       </div>
@@ -642,13 +755,13 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
   <span class="post-meta-item-icon">
     <i class="ic i-chart-area"></i>
   </span>
-  <span title="站点总字数">29k 字</span>
+  <span title="站点总字数">33k 字</span>
 
   <span class="post-meta-divider">|</span>
   <span class="post-meta-item-icon">
     <i class="ic i-coffee"></i>
   </span>
-  <span title="站点阅读时长">26 分钟</span>
+  <span title="站点阅读时长">30 分钟</span>
 </div>
 
 <div class="powered-by">

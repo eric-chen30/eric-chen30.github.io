@@ -8,13 +8,13 @@
         <pubDate>Mon, 21 Sep 2020 19:07:10 +0800</pubDate>
         <lastBuildDate>Mon, 21 Sep 2020 19:07:10 +0800</lastBuildDate>
         <category>Docker</category>
-        <category>ES6</category>
         <category>Pandas</category>
-        <category>机器学习</category>
         <category>快捷操作</category>
         <category>小的知识点</category>
-        <category>计算机组成原理</category>
+        <category>机器学习</category>
         <category>单例模式</category>
+        <category>计算机组成原理</category>
+        <category>ES6</category>
         <item>
             <guid isPermalink="true">http://csstar.top/2020/09/21/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</guid>
             <title>设计模式之单例模式</title>

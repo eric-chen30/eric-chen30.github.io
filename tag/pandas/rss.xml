@@ -8,13 +8,13 @@
         <pubDate>Sun, 13 Sep 2020 16:25:21 +0800</pubDate>
         <lastBuildDate>Sun, 13 Sep 2020 16:25:21 +0800</lastBuildDate>
         <category>Docker</category>
-        <category>ES6</category>
         <category>Pandas</category>
-        <category>机器学习</category>
         <category>快捷操作</category>
         <category>小的知识点</category>
-        <category>计算机组成原理</category>
+        <category>机器学习</category>
         <category>单例模式</category>
+        <category>计算机组成原理</category>
+        <category>ES6</category>
         <item>
             <guid isPermalink="true">http://csstar.top/2020/09/13/Pandas-DataFrame/</guid>
             <title>认识Pandas-DataFrame</title>
