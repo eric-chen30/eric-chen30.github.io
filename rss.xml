@@ -16,8 +16,8 @@
         <category>小的知识点</category>
         <category>Vue</category>
         <category>计算机组成原理</category>
-        <category>页面渲染模式</category>
         <category>单例模式</category>
+        <category>页面渲染模式</category>
         <category>ES6</category>
         <item>
             <guid isPermalink="true">http://csstar.top/2022/03/12/%E8%99%9A%E6%8B%9FDOM/</guid>
@@ -66,6 +66,20 @@
 &lt;p&gt;选择 diff 算法&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;两棵树完全比较的时间复杂度是 O (n^3)，实际上 Reacte 的 diff 算法的时间复杂度为 O（n）。要实现这么低的时间复杂度，意味着只能比较平层的比较两棵树的节点，放弃了深度遍历。这样是一种以精确度换速度的做法，并且现实中前端页面通常也不会跨层移动 DOM 元素，使用这种算法是最优的。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第一步，调用 patch 方法，传入新旧虚拟 DOM 进行同层对比&lt;/li&gt;
+&lt;li&gt;第二步，调用 isSameNode 方法，对比新旧节点是否是同类型节点&lt;/li&gt;
+&lt;li&gt;第三步， 如果不同，那么新节点将代替旧节点&lt;/li&gt;
+&lt;li&gt;第四步，如果相同，调用 patchNode 进行节点对比
+&lt;ol&gt;
+&lt;li&gt;如果新旧节点都是文本节点，则新文本代替旧文本&lt;/li&gt;
+&lt;li&gt;如果旧节点有子节点而新节点没有，则删除旧节点的子节点&lt;/li&gt;
+&lt;li&gt;如果旧节点没有子节点，新节点有，则把子节点新增上去&lt;/li&gt;
+&lt;li&gt;如果都有子节点，则调用 updateChildren 方法进行新旧子节点的对比&lt;/li&gt;
+&lt;li&gt;子节点对比为首位对比法&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;附参考文档链接：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuamlhbnNodS5jb20vcC9hZjBiMzk4NjAyYmM=&#34;&gt;https://www.jianshu.com/p/af0b398602bc&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
