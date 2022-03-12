@@ -16,8 +16,8 @@
         <category>小的知识点</category>
         <category>Vue</category>
         <category>计算机组成原理</category>
-        <category>单例模式</category>
         <category>页面渲染模式</category>
+        <category>单例模式</category>
         <category>ES6</category>
         <item>
             <guid isPermalink="true">http://csstar.top/2022/03/12/%E8%99%9A%E6%8B%9FDOM/</guid>
@@ -53,7 +53,7 @@
 &lt;li&gt;CSS 的解析是从右往左逆向解析的&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;DOM 树从下往上解析比从上往下解析效率高，嵌套标签越多，解析越慢&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;D:%5CFirstBlog%5Csource_posts%5C%E8%99%9A%E6%8B%9FDOM%5Cimage-20220312223408053.png&#34; alt=&#34;image-20220312223408053&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;%E8%99%9A%E6%8B%9FDOM/hexo.png&#34; alt&gt;&lt;/p&gt;
 &lt;h2 id=&#34;js操作真实dom&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#js操作真实dom&#34;&gt;#&lt;/a&gt; JS 操作真实 DOM&lt;/h2&gt;
 &lt;p&gt;原生 JS 或者 JQ 操作 DOM 时，浏览器会从构建 DOM 树开始从头到尾执行一遍流程。比如我们要更新多个 DOM 节点，浏览器会依次从头到尾进行执行，最终执行多次，其中包含了大量无用操作。频繁计算 DOM 节点坐标浪费了大量的性能，同时影响用户体验&lt;/p&gt;
 &lt;h2 id=&#34;虚拟dom-2&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟dom-2&#34;&gt;#&lt;/a&gt; 虚拟 DOM&lt;/h2&gt;
