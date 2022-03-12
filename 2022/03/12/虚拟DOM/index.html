@@ -21,19 +21,19 @@
 <link rel="stylesheet" href="/css/app.css?v=0.1.4">
 
   
-  <meta name="keywords" content="机器学习" />
+  <meta name="keywords" content="Vue" />
 
 
 
 <meta name="description" content="Work Hard To Be A Better Man" >
 
 
-<link rel="canonical" href="http://csstar.top/2020/09/15/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/">
+<link rel="canonical" href="http://csstar.top/2022/03/12/%E8%99%9A%E6%8B%9FDOM/">
 
 
 
   <title>
-机器学习之模型评估 - 机器学习 |
+虚拟DOM |
 Eric Chen = CsStar = Work Hard To Be A Better Man</title>
 <meta name="generator" content="Hexo 5.1.1"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -61,23 +61,23 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
         <div id="brand">
           <div class="pjax">
           
-  <h1 itemprop="name headline">机器学习之模型评估
+  <h1 itemprop="name headline">虚拟DOM
   </h1>
   
 <div class="meta">
-  <span class="item" title="创建时间：2020-09-15 14:02:26">
+  <span class="item" title="创建时间：2022-03-12 22:23:14">
     <span class="icon">
       <i class="ic i-calendar"></i>
     </span>
     <span class="text">发表于</span>
-    <time itemprop="dateCreated datePublished" datetime="2020-09-15T14:02:26+08:00">2020-09-15</time>
+    <time itemprop="dateCreated datePublished" datetime="2022-03-12T22:23:14+08:00">2022-03-12</time>
   </span>
   <span class="item" title="本文字数">
     <span class="icon">
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>971</span>
+    <span>1k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -118,12 +118,12 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicm0n457cj20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclhpw3lwj20zk0m8gvw.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicli9lfebj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclh3brzpj20zk0m8ann.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicljgocqbj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclize41wj20zk0m87gk.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclxp31goj20zk0m8qv5.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciusoyjnj219g0u0x56.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciuja1j1j20zk0m8kjl.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclh5u05ej20zk0m87df.jpg"></li>
         </ul>
       </div>
     </header>
@@ -149,13 +149,10 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
 <div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
 <i class="ic i-home"></i>
 <span><a href="/">首页</a></span>
-<i class="ic i-angle-right"></i>
-<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" itemprop="item" rel="index" title="分类于 机器学习"><span itemprop="name">机器学习</span></a>
-<meta itemprop="position" content="1" /></span>
 </div>
 
     <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
-  <link itemprop="mainEntityOfPage" href="http://csstar.top/2020/09/15/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/">
+  <link itemprop="mainEntityOfPage" href="http://csstar.top/2022/03/12/%E8%99%9A%E6%8B%9FDOM/">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="image" content="/images/avatar.jpg">
@@ -170,64 +167,53 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="假设空间与版本空间"><a class="markdownIt-Anchor" href="#假设空间与版本空间">#</a> 假设空间与版本空间</h1>
-<h2 id="概念"><a class="markdownIt-Anchor" href="#概念">#</a> 概念</h2>
+    <h1 id="虚拟dom"><a class="markdownIt-Anchor" href="#虚拟dom">#</a> 虚拟 DOM</h1>
+<h2 id="真实dom及其解析流程"><a class="markdownIt-Anchor" href="#真实dom及其解析流程">#</a> 真实 DOM 及其解析流程</h2>
 <blockquote>
-<p>假设空间：所有可能取到的值组成的样本。</p>
-<p>版本空间：与给定正样本一致和与负样本不一致的假设子集集合。</p>
+<p>浏览器渲染引擎工作流程</p>
 </blockquote>
-<h2 id="计算"><a class="markdownIt-Anchor" href="#计算">#</a> 计算</h2>
-<p>假设西瓜由青绿、乌黑、浅白三种颜色，同理，根蒂和敲声也由三种属性完全定义。求假设空间：</p>
-<blockquote>
-<p>假设空间大小：</p>
-<p>（3+1）✖（3+1）✖（3+1）+1 = 65</p>
-</blockquote>
-<p>（3+1）：就拿颜色来说，可能任意一种颜色都可以，其他属性也是一样。</p>
-<p>（+1）：世界上没有好瓜</p>
-<blockquote>
-<p>版本空间：根据给定的样本，从假设空间中<strong>剔除</strong>与正样本不一致，与负样本一致的假设。</p>
-</blockquote>
-<h1 id="模型评估与选择"><a class="markdownIt-Anchor" href="#模型评估与选择">#</a> 模型评估与选择</h1>
-<h2 id="过拟合与欠拟合"><a class="markdownIt-Anchor" href="#过拟合与欠拟合">#</a> 过拟合与欠拟合</h2>
-<blockquote>
-<ul>
-<li>过拟合：对训练样本的特征训练的太好了，导致泛化能力下降，对新样本的预测很差的现象。</li>
-<li>欠拟合：训练样本的特征不够，泛化能力太高了。比如模型可能训练出绿色是叶子的结论，那么对于一棵树，模型也将树判断为叶子。</li>
-</ul>
-</blockquote>
-<h2 id="评估方法"><a class="markdownIt-Anchor" href="#评估方法">#</a> 评估方法</h2>
-<p><strong>通常用测试误差来近似模型的泛化误差。</strong></p>
-<h3 id="留出法hold-out"><a class="markdownIt-Anchor" href="#留出法hold-out">#</a> 留出法（hold out）</h3>
-<p>留出法直接将数据集划分为两个互斥的部分，其中一部分用来做训练集，另一部分用来做测试集。通常训练集与测试集的比例为 7：3。</p>
-<blockquote>
-<p>注意：</p>
+<p>创建 DOM 树 ——》创建样式规则 ——》创建 Render 树 ——》布局 Layout——》绘制 painting</p>
 <ol>
-<li>尽可能保持数据分布的一致性。通常采用 “分层采样” 的方法。</li>
-<li>采用若干次随机划分避免单次流出法的不稳定。</li>
+<li>HTML 分析器分析 HTML 元素，构建 DOM 树</li>
+<li>CSS 分析器分析 CSS 样式以及内联样式，生成页面的样式表</li>
+<li>将 DOM 树和样式表相关联，构建一颗 Render 树，这一过程称为 Attachment，每个 DOM 节点有 attach 方法，接收样式信息，返回 render 对象，这些 render 对象最终构建成一颗 render 树</li>
+<li>有了 Render 树，浏览器开始布局，为每个 render 对象在显示屏上确定精确坐标</li>
+<li>render 树和节点坐标都有了，然后调用每个节点的 paint 方法，进行页面绘制</li>
 </ol>
-</blockquote>
-<h3 id="交叉验证法cross-validation"><a class="markdownIt-Anchor" href="#交叉验证法cross-validation">#</a> 交叉验证法（cross validation)</h3>
-<p>交叉验证法先将数据集划分为 k 个大小相似的互斥子集，每次采用 k-1 个子集作为训练集，剩下的一个子集作为测试集。进行 k 次训练和测试，最终返回 k 个测试结果的均值。又称为 “k 折交叉验证”</p>
 <blockquote>
-<p>通常重复 p 次不同的划分，最终结果是 p 次 k 折交叉验证结果的均值。</p>
-</blockquote>
-<h3 id="留一法leave-one-outloo"><a class="markdownIt-Anchor" href="#留一法leave-one-outloo">#</a> 留一法（leave-one-out，LOO）</h3>
-<p>留一法是交叉验证法的一种特殊情况，k = 样本数，即将样本分成一份一个样本，每次测试集只有一个样本。</p>
-<blockquote>
-<p>该方法的确定，计算的开销比较大。</p>
-</blockquote>
-<h3 id="自助法bootstrapping"><a class="markdownIt-Anchor" href="#自助法bootstrapping">#</a> 自助法（bootstrapping）</h3>
-<p>自助法以自助采样为基础（有放回采样）。每次随机从数据集中挑选一个样本，放入另一个数据集合，然后将样本放回原数据中，重复操作 m 次，因此得到了一个含 m 个样本的数据集。</p>
-<blockquote>
-<p>样本在 m 次采样中始终不被采到的概率（1-1\m）的 m 次方，当 m 足够大时，上述式子的极限约为 0.368。说明有 0.368 的样本不会出现在新的数据集中，新数据集中含有更多的数据，我们可以用来当作训练集，剩下的做测试集。</p>
+<p>需要注意的几个问题</p>
 </blockquote>
 <ul>
-<li>优点：在数据集较小、难以有效划分训练和测试集的时候很有用。</li>
-<li>改变了初始数据集的分布，会引入估计偏差。</li>
+<li>DOM 树的构建是从文档加载完成开始的？</li>
 </ul>
+<p>构建 DOM 是一个渐进过程，为了提高用户体验度，需要尽快将渲染内容显示在页面上</p>
+<ul>
+<li>Render 树是 DOM 树和 CSS 样式表都构建完毕后才开始构建的吗？</li>
+</ul>
+<p>交叉进行的，一边加载、一边解析、一边渲染</p>
+<ul>
+<li>CSS 的解析是从右往左逆向解析的</li>
+</ul>
+<p>DOM 树从下往上解析比从上往下解析效率高，嵌套标签越多，解析越慢</p>
+<p><img data-src="D:%5CFirstBlog%5Csource_posts%5C%E8%99%9A%E6%8B%9FDOM%5Cimage-20220312223408053.png" alt="image-20220312223408053"></p>
+<h2 id="js操作真实dom"><a class="markdownIt-Anchor" href="#js操作真实dom">#</a> JS 操作真实 DOM</h2>
+<p>原生 JS 或者 JQ 操作 DOM 时，浏览器会从构建 DOM 树开始从头到尾执行一遍流程。比如我们要更新多个 DOM 节点，浏览器会依次从头到尾进行执行，最终执行多次，其中包含了大量无用操作。频繁计算 DOM 节点坐标浪费了大量的性能，同时影响用户体验</p>
+<h2 id="虚拟dom-2"><a class="markdownIt-Anchor" href="#虚拟dom-2">#</a> 虚拟 DOM</h2>
+<blockquote>
+<p>虚拟 DOM 就是为了解决浏览器性能问题而被设计出来的。</p>
+</blockquote>
+<p>对于多次更新 DOM 的操作，虚拟 DOM 不会立即执行 DOM，而是将这些 DOM 操作的更新经过 diff 算法后的内容保存到本地一个 JS 对象中，最终将这个 JS 对象一次性 attach 到 DOM 树上，再进行后续操作，避免了大量无用计算。</p>
+<p>页面的更新先反应到 JS 对象上，操作内存中的 JS 对象速度要快得多，更新完成后，再将最终的 JS 对象映射成真实的 DOM，交给浏览器去绘制。</p>
+<blockquote>
+<p>选择 diff 算法</p>
+</blockquote>
+<p>两棵树完全比较的时间复杂度是 O (n^3)，实际上 Reacte 的 diff 算法的时间复杂度为 O（n）。要实现这么低的时间复杂度，意味着只能比较平层的比较两棵树的节点，放弃了深度遍历。这样是一种以精确度换速度的做法，并且现实中前端页面通常也不会跨层移动 DOM 元素，使用这种算法是最优的。</p>
+<blockquote>
+<p>附参考文档链接：<span class="exturl" data-url="aHR0cHM6Ly93d3cuamlhbnNodS5jb20vcC9hZjBiMzk4NjAyYmM=">https://www.jianshu.com/p/af0b398602bc</span></p>
+</blockquote>
 
       <div class="tags">
-          <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="tag"><i class="ic i-tag"></i> 机器学习</a>
+          <a href="/tags/Vue/" rel="tag"><i class="ic i-tag"></i> Vue</a>
       </div>
   </div>
 
@@ -239,7 +225,7 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2020-09-26 09:36:25" itemprop="dateModified" datetime="2020-09-26T09:36:25+08:00">2020-09-26</time>
+    <time title="修改时间：2022-03-12 22:49:21" itemprop="dateModified" datetime="2022-03-12T22:49:21+08:00">2022-03-12</time>
   </span>
 </div>
 
@@ -275,7 +261,7 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
   </li>
   <li class="link">
     <strong>本文链接：</strong>
-    <a href="http://csstar.top/2020/09/15/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/" title="机器学习之模型评估">http://csstar.top/2020/09/15/机器学习课后习题/</a>
+    <a href="http://csstar.top/2022/03/12/%E8%99%9A%E6%8B%9FDOM/" title="虚拟DOM">http://csstar.top/2022/03/12/虚拟DOM/</a>
   </li>
   <li class="license">
     <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
@@ -294,27 +280,19 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
     <div class="item left">
       
 
-  <a href="/2020/09/13/Pandas-DataFrame/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclimtf7dj20zk0m8qav.jpg" title="认识Pandas-DataFrame">
+  <a href="/2022/03/12/%E9%A1%B5%E9%9D%A2%E6%B8%B2%E6%9F%93%E6%A8%A1%E5%BC%8F/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclgi503lj20zk0m8hdt.jpg" title="CSR、SSR、SPA">
   <span class="type">上一篇</span>
-  <span class="category"><i class="ic i-flag"></i> 数据分析</span>
-  <h3>认识Pandas-DataFrame</h3>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>CSR、SSR、SPA</h3>
   </a>
 
     </div>
     <div class="item right">
-      
-
-  <a href="/2020/09/21/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclj61ylzj20zk0m8b29.jpg" title="设计模式之单例模式">
-  <span class="type">下一篇</span>
-  <span class="category"><i class="ic i-flag"></i> 设计模式</span>
-  <h3>设计模式之单例模式</h3>
-  </a>
-
     </div>
 </div>
 
   
-  <div class="wrap" id="comments" data-id="2020/09/15/机器学习课后习题/"></div>
+  <div class="wrap" id="comments" data-id="2022/03/12/虚拟DOM/"></div>
 
 
         </div>
@@ -326,12 +304,9 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%81%87%E8%AE%BE%E7%A9%BA%E9%97%B4%E4%B8%8E%E7%89%88%E6%9C%AC%E7%A9%BA%E9%97%B4"><span class="toc-number">1.</span> <span class="toc-text"> 假设空间与版本空间</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E5%BF%B5"><span class="toc-number">1.1.</span> <span class="toc-text"> 概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97"><span class="toc-number">1.2.</span> <span class="toc-text"> 计算</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0%E4%B8%8E%E9%80%89%E6%8B%A9"><span class="toc-number">2.</span> <span class="toc-text"> 模型评估与选择</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%87%E6%8B%9F%E5%90%88%E4%B8%8E%E6%AC%A0%E6%8B%9F%E5%90%88"><span class="toc-number">2.1.</span> <span class="toc-text"> 过拟合与欠拟合</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%84%E4%BC%B0%E6%96%B9%E6%B3%95"><span class="toc-number">2.2.</span> <span class="toc-text"> 评估方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%95%99%E5%87%BA%E6%B3%95hold-out"><span class="toc-number">2.2.1.</span> <span class="toc-text"> 留出法（hold out）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81%E6%B3%95cross-validation"><span class="toc-number">2.2.2.</span> <span class="toc-text"> 交叉验证法（cross validation)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%95%99%E4%B8%80%E6%B3%95leave-one-outloo"><span class="toc-number">2.2.3.</span> <span class="toc-text"> 留一法（leave-one-out，LOO）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E5%8A%A9%E6%B3%95bootstrapping"><span class="toc-number">2.2.4.</span> <span class="toc-text"> 自助法（bootstrapping）</span></a></li></ol></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%99%9A%E6%8B%9Fdom"><span class="toc-number">1.</span> <span class="toc-text"> 虚拟 DOM</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9C%9F%E5%AE%9Edom%E5%8F%8A%E5%85%B6%E8%A7%A3%E6%9E%90%E6%B5%81%E7%A8%8B"><span class="toc-number">1.1.</span> <span class="toc-text"> 真实 DOM 及其解析流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#js%E6%93%8D%E4%BD%9C%E7%9C%9F%E5%AE%9Edom"><span class="toc-number">1.2.</span> <span class="toc-text"> JS 操作真实 DOM</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%99%9A%E6%8B%9Fdom-2"><span class="toc-number">1.3.</span> <span class="toc-text"> 虚拟 DOM</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
-        <ul>
-          <li class="active"><a href="/2020/09/15/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/" rel="bookmark" title="机器学习之模型评估">机器学习之模型评估</a></li>
-        </ul>
       </div>
       <div class="overview panel" data-title="站点概览">
         <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -423,12 +398,10 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
 
   <ul id="quick">
     <li class="prev pjax">
-        <a href="/2020/09/13/Pandas-DataFrame/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/2020/09/21/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -472,7 +445,7 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
   </div>
 <script data-config type="text/javascript">
   var LOCAL = {
-    path: 'http://csstar.top/2020/09/15/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98/',
+    path: 'http://csstar.top/2022/03/12/%E8%99%9A%E6%8B%9FDOM/',
     favicon: {
       show: "Eric Chen",
       hide: "Eric Chen"
