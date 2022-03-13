@@ -3,12 +3,13 @@
     <id>http://csstar.top</id>
     <title>CsStar</title>
     <link href="http://csstar.top" />
-    <updated>2022-03-12T14:23:14.000Z</updated>
+    <updated>2022-03-13T09:41:01.000Z</updated>
     <category term="Docker" />
     <category term="ES7-11" />
     <category term="Pandas" />
     <category term="快捷操作" />
     <category term="前端学习网站" />
+    <category term="前端知识" />
     <category term="机器学习" />
     <category term="小的知识点" />
     <category term="Vue" />
@@ -16,6 +17,240 @@
     <category term="单例模式" />
     <category term="页面渲染模式" />
     <category term="ES6" />
+    <entry>
+        <id>http://csstar.top/2022/03/13/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%951/</id>
+        <title>前端知识点汇总（一）</title>
+        <link rel="alternate" href="http://csstar.top/2022/03/13/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%951/"/>
+        <content type="html">&lt;h1 id=&#34;前端知识点汇总一&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#前端知识点汇总一&#34;&gt;#&lt;/a&gt; 前端知识点汇总（一）&lt;/h1&gt;
+&lt;h2 id=&#34;vue&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#vue&#34;&gt;#&lt;/a&gt; Vue&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Vue 的优缺点&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;优点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;渐进式，Vue 全家桶包含了很多组件，可以按需选择，而不是全部使用&lt;/li&gt;
+&lt;li&gt;组件化开发，代码可维护性和复用性都大大提高&lt;/li&gt;
+&lt;li&gt;虚拟 DOM，相比于传统的浏览器渲染更加高效&lt;/li&gt;
+&lt;li&gt;数据双向绑定，响应式数据&lt;/li&gt;
+&lt;li&gt;单页面路由（SPA），由于不用频繁切换页面，减小了服务器的压力，同时页面更流畅，增强用户体验&lt;/li&gt;
+&lt;li&gt;数据与视图分开，便于前后端分离&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;缺点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;单页面不利用 SEO&lt;/li&gt;
+&lt;li&gt;首屏加载事件长&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;MVC 和  MVVM&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;MVC&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Model： 负责从数据库中取数据&lt;/li&gt;
+&lt;li&gt;View：负责视图部分，展示数据&lt;/li&gt;
+&lt;li&gt;Controller：用户进行交互&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;MVVM&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;VM：View-Model  数据双向绑定&lt;/li&gt;
+&lt;li&gt;View：数据展示&lt;/li&gt;
+&lt;li&gt;Model：取数据的地方&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Vue 和 Jquery 的区别&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Jquery 直接操作 DOM，而 Vue 不直接操作 DOM，使用虚拟 DOM 对象&lt;/li&gt;
+&lt;li&gt;Vue 集成了一些库，大大提高了开发效率&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Vue 常用修饰符&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;.lazy					输入框失去焦点的时候更新 v-model 值&lt;/li&gt;
+&lt;li&gt;trim                  v-model 绑定的值会去掉首位空格&lt;/li&gt;
+&lt;li&gt;.number           将 v-model 绑定的值转换为数字&lt;/li&gt;
+&lt;li&gt;.stop                  阻止事件冒泡&lt;/li&gt;
+&lt;li&gt;.capture             事件的捕获&lt;/li&gt;
+&lt;li&gt;.once                  事件只触发一次&lt;/li&gt;
+&lt;li&gt;.left | .middle | .right      点击鼠标左 | 中 | 右键触发&lt;/li&gt;
+&lt;li&gt;.self                       点击事件绑定本身才触发&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;路由的集中模式&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;hash 模式：  根据 hash 值的改变进行组件的跳转，而不刷新页面&lt;/li&gt;
+&lt;li&gt;history 模式：每进行一次跳转，会记录在 history 中，可以进行页面返回&lt;/li&gt;
+&lt;li&gt;abstract 模式： 适用于 Node&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Vue 指令&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;v-show&lt;/li&gt;
+&lt;li&gt;v-for&lt;/li&gt;
+&lt;li&gt;v-if&lt;/li&gt;
+&lt;li&gt;v-else&lt;/li&gt;
+&lt;li&gt;v-model&lt;/li&gt;
+&lt;li&gt;v-text&lt;/li&gt;
+&lt;li&gt;v-html&lt;/li&gt;
+&lt;li&gt;v-on&lt;/li&gt;
+&lt;li&gt;v-bind&lt;/li&gt;
+&lt;li&gt;v-once&lt;/li&gt;
+&lt;li&gt;v-cloak&lt;/li&gt;
+&lt;li&gt;v-slot&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;组件之间的传值方式&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;父组件通过 props 传递给子组件&lt;/li&gt;
+&lt;li&gt;子组件通过 $emit 对父组件进行传值&lt;/li&gt;
+&lt;li&gt;父与子之间通过 $parent  和  $children 获取实例进行通信&lt;/li&gt;
+&lt;li&gt;通过 vuex 进行状态管理&lt;/li&gt;
+&lt;li&gt;通过 eventBus 进行跨组件值传递&lt;/li&gt;
+&lt;li&gt;$ref 获取实例，进行传值&lt;/li&gt;
+&lt;li&gt;路由传参&lt;/li&gt;
+&lt;li&gt;localStorage、sessionStorage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;v-if 和 v-show 的区别&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;v-if   通过操作 DOM 来决定元素的显隐，会改变 DOM 树的结构，比较消耗性能，适用于偶尔显隐的情况&lt;/li&gt;
+&lt;li&gt;v-show 通过元素的 display 样式来决定显隐，不改变 DOM 树结构，适用于经常显隐的情况&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;computed 和  watch&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;computed 依赖多个变量计算出一个变量，且有缓存机制，如果这个变量值不变，可以被复用，不能进行异步操作&lt;/li&gt;
+&lt;li&gt;watch 通常监听一个变量的变化，然后做一些事情，可异步操作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Vue 的声明周期&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;beforeCreate       实例 Vue，没有进行初始化和响应式数据&lt;/li&gt;
+&lt;li&gt;created                 已经初始化和响应式数据，可以进行数据访问&lt;/li&gt;
+&lt;li&gt;beforeMount         render 调用，虚拟 DOM 生成，没有转换成真实 DOM&lt;/li&gt;
+&lt;li&gt;mounted                真实 DOM 挂载完成&lt;/li&gt;
+&lt;li&gt;beforeUpdate         数据更新，新的虚拟 DOM 生成&lt;/li&gt;
+&lt;li&gt;updated                   新旧虚拟 DOM 进行对比，然后更新&lt;/li&gt;
+&lt;li&gt;beforeDestroy         实例销毁前，任然可以访问数据&lt;/li&gt;
+&lt;li&gt;destroy                    实例销毁、解绑事件&lt;/li&gt;
+&lt;li&gt;activated                  keep-alive  所缓存组件激活时调用&lt;/li&gt;
+&lt;li&gt;deactivated               keep-alive 所缓存的组件停止时调用&lt;/li&gt;
+&lt;li&gt;errorCaptured           子孙组件的错误捕获，此函数可返回 false 阻止继续向上传播，也就是拦截错误&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;v-if  和 v-for 的优先级&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;v-for 的优先级比 v-if 的优先级高，所以尽量不要在一个标签中同时使用，因为每项都 v-for 渲染后再进行显隐判断，做了很多无用功，消耗性能。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;vuex  的属性&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;state                定义初始状态&lt;/li&gt;
+&lt;li&gt;getter              从 store 中取数据&lt;/li&gt;
+&lt;li&gt;mutation          更新 store 中的状态，只能同步操作&lt;/li&gt;
+&lt;li&gt;action                用于提交 mutation，而不能直接更改状态，可异步操作&lt;/li&gt;
+&lt;li&gt;module              store 的模块拆分&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不需要响应的数据应该怎么处理&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;将其放在 data 的 return 之外&lt;/li&gt;
+&lt;li&gt;通过 Object.freeze 进行数据冻结&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;watch 有哪些属性&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;immediate              初次加载时立即执行&lt;/li&gt;
+&lt;li&gt;deep                        是否进行深监听&lt;/li&gt;
+&lt;li&gt;handler                    监听的回调函数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;父子组件生命周期的顺序&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;父 beforeCreate——》父 created——》父 beforeMount——》子 beforeCreate——》子 created——》子 beforeMount——》子 mounted——》父 mounted&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Vue 中为什么对对象劫持，而对于数组进行方法重写&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;数组的元素一般都是成百上千的，对数组下标进行劫持的话会非常消耗性能。Vue 通过对数组原型上的方法进行一个重写，实现数组的响应式。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Vue 的响应式是如何实现的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;观察者模式&lt;/li&gt;
+&lt;li&gt;发布订阅模式&lt;/li&gt;
+&lt;li&gt;数组没有使用劫持的模式，而是对数组原型上的方法进行一个重写&lt;/li&gt;
+&lt;li&gt;劫持 ——》通过 Object.defineProperty 对对象进行递归劫持属性的 get、set&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;事件流的三个阶段&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;捕获阶段&lt;/li&gt;
+&lt;li&gt;执行目标阶段&lt;/li&gt;
+&lt;li&gt;冒泡阶段&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;事件委托&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;事件委托是指将子元素的事件绑定给父元素，这样可以减少绑定的次数，同时如果后期新增子元素，也可以共享绑定在父元素上的方法，这个方法可以供子元素共享。事件委托的原理是冒泡，真正触发事件的是子元素，通过 event.target 找到触发事件的对象。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;currentTarget   VS    target
+&lt;ol&gt;
+&lt;li&gt;currentTarget  要求绑定事件的元素一定是触发事件的元素&lt;/li&gt;
+&lt;li&gt;target 绑定事件的元素不一定是触发事件的元素&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;为什么不建议使用  index 或者  随机数做 key&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;使用 index  做 key 的话，如果我们需要在渲染的列表前加一个新的元素，那么该元素就会使整个列表的对应关系和之前的完全不一样，随机数也是如此，比较消耗性能，可以理解为牵一发而动全身。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果子组件改变 props 里的数据？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;如果改变的是基础类型，修改就会报错&lt;/li&gt;
+&lt;li&gt;如果改变的是引用类型，那么会同时修改父组件的数据&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Vue 的 el 属性和 $mount 优先级&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;同时存在时，el  &amp;gt;  $mount&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;获取 data 数据中某一个数据的初始状态&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;通过  this.$options.data（）.xxxx   获取初始值&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;计算变量时，methods  和  computed 哪个好&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;由于 computed 具有缓存机制，对于相同的计算值可以进行复用，更加节省性能&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;router.push     router.replace   router.go&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;router.push              跳转，并向 history 中添加记录，可返回上一页面&lt;/li&gt;
+&lt;li&gt;router.replace          跳转到指定页面，并且不会保留上一页面记录，无法返回&lt;/li&gt;
+&lt;li&gt;router.go                  如果为正数，向后跳转，如果为负数，向前跳转&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;附参考链接：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tcC53ZWl4aW4ucXEuY29tL3MvcnFvWjVLV3FUXzFRQXg5MWJKTWVJZw==&#34;&gt;https://mp.weixin.qq.com/s/rqoZ5KWqT_1QAx91bJMeIg&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+        <category term="前端知识" />
+        <updated>2022-03-13T09:41:01.000Z</updated>
+    </entry>
     <entry>
         <id>http://csstar.top/2022/03/12/%E8%99%9A%E6%8B%9FDOM/</id>
         <title>虚拟DOM</title>
