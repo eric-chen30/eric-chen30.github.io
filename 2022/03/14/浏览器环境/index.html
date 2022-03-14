@@ -28,12 +28,12 @@
 <meta name="description" content="Work Hard To Be A Better Man" >
 
 
-<link rel="canonical" href="http://csstar.top/2022/03/13/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%951/">
+<link rel="canonical" href="http://csstar.top/2022/03/14/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%8E%AF%E5%A2%83/">
 
 
 
   <title>
-前端知识点汇总（一） |
+浏览器环境 |
 Eric Chen = CsStar = Work Hard To Be A Better Man</title>
 <meta name="generator" content="Hexo 5.1.1"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -61,23 +61,23 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
         <div id="brand">
           <div class="pjax">
           
-  <h1 itemprop="name headline">前端知识点汇总（一）
+  <h1 itemprop="name headline">浏览器环境
   </h1>
   
 <div class="meta">
-  <span class="item" title="创建时间：2022-03-13 17:41:01">
+  <span class="item" title="创建时间：2022-03-14 10:32:24">
     <span class="icon">
       <i class="ic i-calendar"></i>
     </span>
     <span class="text">发表于</span>
-    <time itemprop="dateCreated datePublished" datetime="2022-03-13T17:41:01+08:00">2022-03-13</time>
+    <time itemprop="dateCreated datePublished" datetime="2022-03-14T10:32:24+08:00">2022-03-14</time>
   </span>
   <span class="item" title="本文字数">
     <span class="icon">
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>2.7k</span>
+    <span>2.4k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -118,12 +118,12 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclj61ylzj20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclimtf7dj20zk0m8qav.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclhfehz7j20zk0m8u0x.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclhpw3lwj20zk0m8gvw.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicliierfjj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciryrr3rj20zk0m8nhk.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclfb3vzhj20zk0m8wny.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciundwu5j20zk0m8n9e.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclfdu6exj20zk0m87hw.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclh5u05ej20zk0m87df.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicljgocqbj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg"></li>
         </ul>
       </div>
     </header>
@@ -152,7 +152,7 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
 </div>
 
     <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
-  <link itemprop="mainEntityOfPage" href="http://csstar.top/2022/03/13/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%951/">
+  <link itemprop="mainEntityOfPage" href="http://csstar.top/2022/03/14/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%8E%AF%E5%A2%83/">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="image" content="/images/avatar.jpg">
@@ -167,231 +167,135 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="前端知识点汇总一"><a class="markdownIt-Anchor" href="#前端知识点汇总一">#</a> 前端知识点汇总（一）</h1>
-<h2 id="vue"><a class="markdownIt-Anchor" href="#vue">#</a> Vue</h2>
-<blockquote>
-<p>Vue 的优缺点</p>
-</blockquote>
-<ul>
-<li>优点</li>
-</ul>
+    <h1 id="script元素"><a class="markdownIt-Anchor" href="#script元素">#</a> script 元素</h1>
+<h2 id="工作原理"><a class="markdownIt-Anchor" href="#工作原理">#</a> 工作原理</h2>
 <ol>
-<li>渐进式，Vue 全家桶包含了很多组件，可以按需选择，而不是全部使用</li>
-<li>组件化开发，代码可维护性和复用性都大大提高</li>
-<li>虚拟 DOM，相比于传统的浏览器渲染更加高效</li>
-<li>数据双向绑定，响应式数据</li>
-<li>单页面路由（SPA），由于不用频繁切换页面，减小了服务器的压力，同时页面更流畅，增强用户体验</li>
-<li>数据与视图分开，便于前后端分离</li>
-</ol>
-<ul>
-<li>缺点</li>
-</ul>
-<ol>
-<li>单页面不利用 SEO</li>
-<li>首屏加载事件长</li>
+<li>浏览器一边下载 HTML 网页，一边开始解析，而不是等下载完后才可以解析</li>
+<li>解析的过程中，如果发现 script 元素，就会停止解析，渲染引擎将控制权转交给 JavaScript 引擎</li>
+<li>如果 script 元素引用了外部脚本，需要先下载外部脚本，如果没有引入，直接执行 script 元素内代码</li>
+<li>JavaScript 引擎执行完毕后，将控制权还给渲染引擎，然后继续向下解析 HTML 网页</li>
 </ol>
 <blockquote>
-<p>MVC 和  MVVM</p>
-</blockquote>
-<p><strong>MVC</strong></p>
 <ul>
-<li>Model： 负责从数据库中取数据</li>
-<li>View：负责视图部分，展示数据</li>
-<li>Controller：用户进行交互</li>
-</ul>
-<p><strong>MVVM</strong></p>
-<ul>
-<li>VM：View-Model  数据双向绑定</li>
-<li>View：数据展示</li>
-<li>Model：取数据的地方</li>
-</ul>
-<blockquote>
-<p>Vue 和 Jquery 的区别</p>
-</blockquote>
-<ul>
-<li>Jquery 直接操作 DOM，而 Vue 不直接操作 DOM，使用虚拟 DOM 对象</li>
-<li>Vue 集成了一些库，大大提高了开发效率</li>
-</ul>
-<blockquote>
-<p>Vue 常用修饰符</p>
-</blockquote>
-<ul>
-<li>.lazy					输入框失去焦点的时候更新 v-model 值</li>
-<li>trim                  v-model 绑定的值会去掉首位空格</li>
-<li>.number           将 v-model 绑定的值转换为数字</li>
-<li>.stop                  阻止事件冒泡</li>
-<li>.capture             事件的捕获</li>
-<li>.once                  事件只触发一次</li>
-<li>.left | .middle | .right      点击鼠标左 | 中 | 右键触发</li>
-<li>.self                       点击事件绑定本身才触发</li>
-</ul>
-<blockquote>
-<p>路由的集中模式</p>
-</blockquote>
-<ul>
-<li>hash 模式：  根据 hash 值的改变进行组件的跳转，而不刷新页面</li>
-<li>history 模式：每进行一次跳转，会记录在 history 中，可以进行页面返回</li>
-<li>abstract 模式： 适用于 Node</li>
-</ul>
-<blockquote>
-<p>Vue 指令</p>
-</blockquote>
-<ul>
-<li>v-show</li>
-<li>v-for</li>
-<li>v-if</li>
-<li>v-else</li>
-<li>v-model</li>
-<li>v-text</li>
-<li>v-html</li>
-<li>v-on</li>
-<li>v-bind</li>
-<li>v-once</li>
-<li>v-cloak</li>
-<li>v-slot</li>
-</ul>
-<blockquote>
-<p>组件之间的传值方式</p>
-</blockquote>
-<ul>
-<li>父组件通过 props 传递给子组件</li>
-<li>子组件通过 $emit 对父组件进行传值</li>
-<li>父与子之间通过 $parent  和  $children 获取实例进行通信</li>
-<li>通过 vuex 进行状态管理</li>
-<li>通过 eventBus 进行跨组件值传递</li>
-<li>$ref 获取实例，进行传值</li>
-<li>路由传参</li>
-<li>localStorage、sessionStorage</li>
-</ul>
-<blockquote>
-<p>v-if 和 v-show 的区别</p>
-</blockquote>
-<ul>
-<li>v-if   通过操作 DOM 来决定元素的显隐，会改变 DOM 树的结构，比较消耗性能，适用于偶尔显隐的情况</li>
-<li>v-show 通过元素的 display 样式来决定显隐，不改变 DOM 树结构，适用于经常显隐的情况</li>
-</ul>
-<blockquote>
-<p>computed 和  watch</p>
-</blockquote>
-<ul>
-<li>computed 依赖多个变量计算出一个变量，且有缓存机制，如果这个变量值不变，可以被复用，不能进行异步操作</li>
-<li>watch 通常监听一个变量的变化，然后做一些事情，可异步操作</li>
-</ul>
-<blockquote>
-<p>Vue 的声明周期</p>
-</blockquote>
-<ul>
-<li>beforeCreate       实例 Vue，没有进行初始化和响应式数据</li>
-<li>created                 已经初始化和响应式数据，可以进行数据访问</li>
-<li>beforeMount         render 调用，虚拟 DOM 生成，没有转换成真实 DOM</li>
-<li>mounted                真实 DOM 挂载完成</li>
-<li>beforeUpdate         数据更新，新的虚拟 DOM 生成</li>
-<li>updated                   新旧虚拟 DOM 进行对比，然后更新</li>
-<li>beforeDestroy         实例销毁前，任然可以访问数据</li>
-<li>destroy                    实例销毁、解绑事件</li>
-<li>activated                  keep-alive  所缓存组件激活时调用</li>
-<li>deactivated               keep-alive 所缓存的组件停止时调用</li>
-<li>errorCaptured           子孙组件的错误捕获，此函数可返回 false 阻止继续向上传播，也就是拦截错误</li>
-</ul>
-<blockquote>
-<p>v-if  和 v-for 的优先级</p>
-</blockquote>
-<p>v-for 的优先级比 v-if 的优先级高，所以尽量不要在一个标签中同时使用，因为每项都 v-for 渲染后再进行显隐判断，做了很多无用功，消耗性能。</p>
-<blockquote>
-<p>vuex  的属性</p>
-</blockquote>
-<ul>
-<li>state                定义初始状态</li>
-<li>getter              从 store 中取数据</li>
-<li>mutation          更新 store 中的状态，只能同步操作</li>
-<li>action                用于提交 mutation，而不能直接更改状态，可异步操作</li>
-<li>module              store 的模块拆分</li>
-</ul>
-<blockquote>
-<p>不需要响应的数据应该怎么处理</p>
-</blockquote>
-<ul>
-<li>将其放在 data 的 return 之外</li>
-<li>通过 Object.freeze 进行数据冻结</li>
-</ul>
-<blockquote>
-<p>watch 有哪些属性</p>
-</blockquote>
-<ul>
-<li>immediate              初次加载时立即执行</li>
-<li>deep                        是否进行深监听</li>
-<li>handler                    监听的回调函数</li>
-</ul>
-<blockquote>
-<p>父子组件生命周期的顺序</p>
-</blockquote>
-<p>父 beforeCreate——》父 created——》父 beforeMount——》子 beforeCreate——》子 created——》子 beforeMount——》子 mounted——》父 mounted</p>
-<blockquote>
-<p>Vue 中为什么对对象劫持，而对于数组进行方法重写</p>
-</blockquote>
-<p>数组的元素一般都是成百上千的，对数组下标进行劫持的话会非常消耗性能。Vue 通过对数组原型上的方法进行一个重写，实现数组的响应式。</p>
-<blockquote>
-<p>Vue 的响应式是如何实现的</p>
-</blockquote>
-<ul>
-<li>观察者模式</li>
-<li>发布订阅模式</li>
-<li>数组没有使用劫持的模式，而是对数组原型上的方法进行一个重写</li>
-<li>劫持 ——》通过 Object.defineProperty 对对象进行递归劫持属性的 get、set</li>
-</ul>
-<blockquote>
-<p>事件流的三个阶段</p>
-</blockquote>
-<ul>
-<li>捕获阶段</li>
-<li>执行目标阶段</li>
-<li>冒泡阶段</li>
-</ul>
-<blockquote>
-<p>事件委托</p>
-</blockquote>
-<p>事件委托是指将子元素的事件绑定给父元素，这样可以减少绑定的次数，同时如果后期新增子元素，也可以共享绑定在父元素上的方法，这个方法可以供子元素共享。事件委托的原理是冒泡，真正触发事件的是子元素，通过 event.target 找到触发事件的对象。</p>
-<ul>
-<li>currentTarget   VS    target
-<ol>
-<li>currentTarget  要求绑定事件的元素一定是触发事件的元素</li>
-<li>target 绑定事件的元素不一定是触发事件的元素</li>
-</ol>
+<li>
+<p>为什么需要外部脚本下载完毕后才能渲染页面？  因为外部脚本可以修改 DOM，所以必须将控制权交给它，否则就很难控制</p>
+</li>
+<li>
+<p>加载外部脚本的时候，由于渲染引擎已经停止，如果这个外部文件加载需要很长时间，那么浏览器就会一直等，导致页面长时间没有响应，造成一种假死的状态，这被称为 “阻塞效应”</p>
+</li>
+<li>
+<p>重要的脚本最好放在文件头部，或者直接写入 script 标签，对于不重要的脚本可以放到页面底部，等页面渲染完后才执行，这样能缩短加载时间，避免浏览器首屏加载慢等情况</p>
+</li>
+<li>
+<p>当脚本文件位置不恰当时，还会产生一个问题：当页面 DOM 元素还没生成之前就进行 DOM 操作，代码执行肯定会报错，对于这种情况我们可以使用 DOMContentLoaded 事件的回调函数。DOM 结构生成之后才会触发，也可以使用 script 标签的 onload 属性。</p>
 </li>
 </ul>
-<blockquote>
-<p>为什么不建议使用  index 或者  随机数做 key</p>
 </blockquote>
-<p>使用 index  做 key 的话，如果我们需要在渲染的列表前加一个新的元素，那么该元素就会使整个列表的对应关系和之前的完全不一样，随机数也是如此，比较消耗性能，可以理解为牵一发而动全身。</p>
+<h2 id="defer属性"><a class="markdownIt-Anchor" href="#defer属性">#</a> defer 属性</h2>
 <blockquote>
-<p>如果子组件改变 props 里的数据？</p>
+<p>解决脚本文件下载阻塞网页渲染的问题，使用 defer 属性，可以延迟脚本的执行，等 DOM 加载生成后，再执行脚本。</p>
 </blockquote>
+<p><strong>运行流程</strong></p>
+<ol>
+<li>浏览器开始解析 HTML 网页</li>
+<li>解析过程中，发现带有 defer 属性的 script 标签</li>
+<li>浏览器继续向下解析 HTML 网页，同时下载 script 标签加载的外部脚本</li>
+<li>浏览器完成解析 HTML 网页，返回去执行已经下载完成的脚本</li>
+</ol>
+<p><strong>注意</strong></p>
+<ol>
+<li>对于内置而不是外部加载的脚本，以及动态生成的 script 标签，defer 属性不起作用</li>
+<li>使用  <code>defer</code>  加载的外部脚本不应该使用 document.write 方法</li>
+</ol>
+<h2 id="async属性"><a class="markdownIt-Anchor" href="#async属性">#</a> async 属性</h2>
+<blockquote>
+<p>使用另一个进程下载脚本，下载时不会阻塞页面渲染，解决 “阻塞效应” 的另一个方法</p>
+</blockquote>
+<ol>
+<li>浏览器开始解析 HTML 网页。</li>
+<li>解析过程中，发现带有 <code>async</code>  属性的 <code>script</code>  标签。</li>
+<li>浏览器继续往下解析 HTML 网页，同时并行下载 `` 标签中的外部脚本。</li>
+<li>脚本下载完成，浏览器暂停解析 HTML 网页，开始执行下载的脚本。</li>
+<li>脚本执行完毕，浏览器恢复解析 HTML 网页。</li>
+</ol>
+<blockquote>
+<p><code>async</code>  属性可以保证脚本下载的同时，浏览器继续渲染，一旦采用这个属性，脚本就无法顺序执行，先下载完的脚本先执行。</p>
+<p>脚本之间没有依赖关系，使用 <code>async</code>  属性，有依赖关系使用 <code>defer</code>  属性，同时存在，后者不起作用</p>
+</blockquote>
+<h2 id="脚本动态加载"><a class="markdownIt-Anchor" href="#脚本动态加载">#</a> 脚本动态加载</h2>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">&#x27;a.js&#x27;</span>,<span class="string">&#x27;b.js&#x27;</span>].forEach(<span class="function"><span class="keyword">function</span>(<span class="params">src</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> script = <span class="built_in">document</span>.createElement(<span class="string">&#x27;script&#x27;</span>);</span><br><span class="line">    script.src = src;</span><br><span class="line">    <span class="built_in">document</span>.head.appendChild(script);</span><br><span class="line">    src.async = <span class="literal">false</span>;  	<span class="comment">// 保证脚本执行的顺序，同步执行</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>动态加载 <code>script</code>  标签的好处就是不会阻止页面渲染，也不会造成浏览器假死。</p>
+</blockquote>
+<h2 id="加载脚本使用的协议"><a class="markdownIt-Anchor" href="#加载脚本使用的协议">#</a> 加载脚本使用的协议</h2>
 <ul>
-<li>如果改变的是基础类型，修改就会报错</li>
-<li>如果改变的是引用类型，那么会同时修改父组件的数据</li>
+<li>如果不指定协议，浏览器默认使用  <code>HTTP</code>  协议下载</li>
+<li>如果需要使用  <code>HTTPS</code>  协议下载，需要指明</li>
+</ul>
+<h1 id="浏览器"><a class="markdownIt-Anchor" href="#浏览器">#</a> 浏览器</h1>
+<blockquote>
+<p>核心：渲染引擎 和 JavaScript 解释器</p>
+</blockquote>
+<h2 id="渲染引擎"><a class="markdownIt-Anchor" href="#渲染引擎">#</a> 渲染引擎</h2>
+<blockquote>
+<p>将网页代码渲染为用户可见的页面</p>
+</blockquote>
+<p><strong>不同浏览器的渲染引擎</strong></p>
+<ul>
+<li>Firefox：Gecko 引擎</li>
+<li>Safari：WebKit 引擎</li>
+<li>Chrome：Blink 引擎</li>
+<li>IE: Trident 引擎</li>
+<li>Edge: EdgeHTML 引擎</li>
+</ul>
+<p><strong>四个阶段</strong></p>
+<ul>
+<li>解析代码   HTML 解析器解析 HTML 代码为 DOM   CSS 解析器将 CSS 代码解析为 CSS 样式表</li>
+<li>对象合成    将 DOM 和 CSS 样式表进行结合，生成一个个 render 对象，最后构成 render 树</li>
+<li>布局          确定对象的坐标，计算出渲染树的布局</li>
+<li>绘制          将渲染树绘制到屏幕</li>
 </ul>
 <blockquote>
-<p>Vue 的 el 属性和 $mount 优先级</p>
+<p>注：上面四步不是严格按顺序执行的，而是同步交叉执行</p>
 </blockquote>
-<p>同时存在时，el  &gt;  $mount</p>
+<h2 id="重流和重绘"><a class="markdownIt-Anchor" href="#重流和重绘">#</a> 重流和重绘</h2>
 <blockquote>
-<p>获取 data 数据中某一个数据的初始状态</p>
+<p>渲染树转换为网页布局的过程为重流，布局显示到页面的过程为重绘。</p>
+<ul>
+<li>页面生成以后，脚本和样式的操作都会导致重流和重绘</li>
+<li>重流和重绘并不一定一起发生，重流一定会导致重绘，重绘不一定导致重流，比如改变元素颜色，进行了重绘，但没有改变布局，所以没有进行重流</li>
+<li>浏览器会进行智能优化，将重流和重绘的范围尽可能限制到较小的局部，最小化代价消耗</li>
+</ul>
 </blockquote>
-<p>通过  this.$options.data（）.xxxx   获取初始值</p>
+<p><strong>优化技巧</strong></p>
+<ul>
+<li>读取 DOM 或者写入 DOM，尽量不要写在一起，不要读一个 DOM 节点，就写入一个，这样会导致多次重流，影响页面渲染速度</li>
+<li>缓存 DOM 信息</li>
+<li>不要一项一项地改变 CSS 样式，使用 class 一次性改变样式</li>
+<li>使用  <code>documentFragment</code>  操作 DOM</li>
+<li>动画使用 <code>absolute</code>  定位或者 <code>fixed</code>  定位，减少对其它元素的影响</li>
+<li>只在必要时才显示隐藏元素</li>
+<li>使用 <code>window.requestAnimationFrame()</code> ，因为它可以推迟到代码下一次重流时执行，而不是立即要求页面重流</li>
+<li>使用 <code>虚拟DOM</code></li>
+</ul>
+<h2 id="javascript引擎"><a class="markdownIt-Anchor" href="#javascript引擎">#</a> JavaScript 引擎</h2>
 <blockquote>
-<p>计算变量时，methods  和  computed 哪个好</p>
-</blockquote>
-<p>由于 computed 具有缓存机制，对于相同的计算值可以进行复用，更加节省性能</p>
-<blockquote>
-<p>router.push     router.replace   router.go</p>
+<p>JavaScript 是一种 <code>解释型语言</code> ，也就是说，它不需要编译，由解释器实时运行。</p>
 </blockquote>
 <ul>
-<li>router.push              跳转，并向 history 中添加记录，可返回上一页面</li>
-<li>router.replace          跳转到指定页面，并且不会保留上一页面记录，无法返回</li>
-<li>router.go                  如果为正数，向后跳转，如果为负数，向前跳转</li>
+<li>好处：运行和修改比较方便，刷新页面就可以重新解释</li>
+<li>缺点：每次运行都要调用解释器，系统开销大，运行速度慢于编译型语言</li>
 </ul>
+<p>现在的浏览器都将 JavaScript 进行一定的编译，生成类似于 <code>字节码</code> 的中间代码，以提高运行速度</p>
+<p>早期，浏览器内部对 JavaScript 处理过程如下：</p>
+<ol>
+<li>读取代码，进行词法分析（Lexical analysis），将代码分解成词元（token）。</li>
+<li>对词元进行语法分析（parsing），将代码整理成 “语法树”（syntax tree）。</li>
+<li>使用 “翻译器”（translator），将代码转为字节码（bytecode）。</li>
+<li>使用 “字节码解释器”（bytecode interpreter），将字节码转为机器码。</li>
+</ol>
 <blockquote>
-<p>附参考链接：<span class="exturl" data-url="aHR0cHM6Ly9tcC53ZWl4aW4ucXEuY29tL3MvcnFvWjVLV3FUXzFRQXg5MWJKTWVJZw==">https://mp.weixin.qq.com/s/rqoZ5KWqT_1QAx91bJMeIg</span></p>
+<p>参考链接：<span class="exturl" data-url="aHR0cDovL2phdmFzY3JpcHQucnVhbnlpZmVuZy5jb20vYm9tL2VuZ2luZS5odG1s">http://javascript.ruanyifeng.com/bom/engine.html</span></p>
 </blockquote>
 
       <div class="tags">
@@ -407,7 +311,7 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2022-03-13 17:42:12" itemprop="dateModified" datetime="2022-03-13T17:42:12+08:00">2022-03-13</time>
+    <time title="修改时间：2022-03-14 10:34:35" itemprop="dateModified" datetime="2022-03-14T10:34:35+08:00">2022-03-14</time>
   </span>
 </div>
 
@@ -443,7 +347,7 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
   </li>
   <li class="link">
     <strong>本文链接：</strong>
-    <a href="http://csstar.top/2022/03/13/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%951/" title="前端知识点汇总（一）">http://csstar.top/2022/03/13/前端知识记录1/</a>
+    <a href="http://csstar.top/2022/03/14/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%8E%AF%E5%A2%83/" title="浏览器环境">http://csstar.top/2022/03/14/浏览器环境/</a>
   </li>
   <li class="license">
     <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
@@ -462,27 +366,19 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
     <div class="item left">
       
 
-  <a href="/2022/03/12/%E8%99%9A%E6%8B%9FDOM/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclgi503lj20zk0m8hdt.jpg" title="虚拟DOM">
+  <a href="/2022/03/13/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%951/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicm07ih54j20zk0m84qp.jpg" title="前端知识点汇总（一）">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> </span>
-  <h3>虚拟DOM</h3>
+  <h3>前端知识点汇总（一）</h3>
   </a>
 
     </div>
     <div class="item right">
-      
-
-  <a href="/2022/03/14/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%8E%AF%E5%A2%83/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclh0m9pdj20zk0m8hdt.jpg" title="浏览器环境">
-  <span class="type">下一篇</span>
-  <span class="category"><i class="ic i-flag"></i> </span>
-  <h3>浏览器环境</h3>
-  </a>
-
     </div>
 </div>
 
   
-  <div class="wrap" id="comments" data-id="2022/03/13/前端知识记录1/"></div>
+  <div class="wrap" id="comments" data-id="2022/03/14/浏览器环境/"></div>
 
 
         </div>
@@ -494,7 +390,7 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB%E4%B8%80"><span class="toc-number">1.</span> <span class="toc-text"> 前端知识点汇总（一）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#vue"><span class="toc-number">1.1.</span> <span class="toc-text"> Vue</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#script%E5%85%83%E7%B4%A0"><span class="toc-number">1.</span> <span class="toc-text"> script 元素</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="toc-number">1.1.</span> <span class="toc-text"> 工作原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#defer%E5%B1%9E%E6%80%A7"><span class="toc-number">1.2.</span> <span class="toc-text"> defer 属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#async%E5%B1%9E%E6%80%A7"><span class="toc-number">1.3.</span> <span class="toc-text"> async 属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%84%9A%E6%9C%AC%E5%8A%A8%E6%80%81%E5%8A%A0%E8%BD%BD"><span class="toc-number">1.4.</span> <span class="toc-text"> 脚本动态加载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%A0%E8%BD%BD%E8%84%9A%E6%9C%AC%E4%BD%BF%E7%94%A8%E7%9A%84%E5%8D%8F%E8%AE%AE"><span class="toc-number">1.5.</span> <span class="toc-text"> 加载脚本使用的协议</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B5%8F%E8%A7%88%E5%99%A8"><span class="toc-number">2.</span> <span class="toc-text"> 浏览器</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B8%B2%E6%9F%93%E5%BC%95%E6%93%8E"><span class="toc-number">2.1.</span> <span class="toc-text"> 渲染引擎</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%87%8D%E6%B5%81%E5%92%8C%E9%87%8D%E7%BB%98"><span class="toc-number">2.2.</span> <span class="toc-text"> 重流和重绘</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#javascript%E5%BC%95%E6%93%8E"><span class="toc-number">2.3.</span> <span class="toc-text"> JavaScript 引擎</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
       </div>
@@ -588,12 +484,10 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
 
   <ul id="quick">
     <li class="prev pjax">
-        <a href="/2022/03/12/%E8%99%9A%E6%8B%9FDOM/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/2022/03/14/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%8E%AF%E5%A2%83/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -637,7 +531,7 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
   </div>
 <script data-config type="text/javascript">
   var LOCAL = {
-    path: 'http://csstar.top/2022/03/13/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%951/',
+    path: 'http://csstar.top/2022/03/14/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%8E%AF%E5%A2%83/',
     favicon: {
       show: "Eric Chen",
       hide: "Eric Chen"

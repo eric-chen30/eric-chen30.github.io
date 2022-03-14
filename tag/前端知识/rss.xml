@@ -5,12 +5,12 @@
         <link>http://csstar.top</link>
         <description>Work Hard To Be A Better Man</description>
         <language>zh-CN</language>
-        <pubDate>Sun, 13 Mar 2022 17:41:01 +0800</pubDate>
-        <lastBuildDate>Sun, 13 Mar 2022 17:41:01 +0800</lastBuildDate>
-        <category>Docker</category>
+        <pubDate>Mon, 14 Mar 2022 10:32:24 +0800</pubDate>
+        <lastBuildDate>Mon, 14 Mar 2022 10:32:24 +0800</lastBuildDate>
         <category>ES7-11</category>
-        <category>Pandas</category>
+        <category>Docker</category>
         <category>快捷操作</category>
+        <category>Pandas</category>
         <category>前端学习网站</category>
         <category>前端知识</category>
         <category>机器学习</category>
@@ -20,6 +20,144 @@
         <category>单例模式</category>
         <category>页面渲染模式</category>
         <category>ES6</category>
+        <item>
+            <guid isPermalink="true">http://csstar.top/2022/03/14/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%8E%AF%E5%A2%83/</guid>
+            <title>浏览器环境</title>
+            <link>http://csstar.top/2022/03/14/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%8E%AF%E5%A2%83/</link>
+            <category>前端知识</category>
+            <pubDate>Mon, 14 Mar 2022 10:32:24 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;script元素&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#script元素&#34;&gt;#&lt;/a&gt; script 元素&lt;/h1&gt;
+&lt;h2 id=&#34;工作原理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#工作原理&#34;&gt;#&lt;/a&gt; 工作原理&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;浏览器一边下载 HTML 网页，一边开始解析，而不是等下载完后才可以解析&lt;/li&gt;
+&lt;li&gt;解析的过程中，如果发现 script 元素，就会停止解析，渲染引擎将控制权转交给 JavaScript 引擎&lt;/li&gt;
+&lt;li&gt;如果 script 元素引用了外部脚本，需要先下载外部脚本，如果没有引入，直接执行 script 元素内代码&lt;/li&gt;
+&lt;li&gt;JavaScript 引擎执行完毕后，将控制权还给渲染引擎，然后继续向下解析 HTML 网页&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;为什么需要外部脚本下载完毕后才能渲染页面？  因为外部脚本可以修改 DOM，所以必须将控制权交给它，否则就很难控制&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;加载外部脚本的时候，由于渲染引擎已经停止，如果这个外部文件加载需要很长时间，那么浏览器就会一直等，导致页面长时间没有响应，造成一种假死的状态，这被称为 “阻塞效应”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;重要的脚本最好放在文件头部，或者直接写入 script 标签，对于不重要的脚本可以放到页面底部，等页面渲染完后才执行，这样能缩短加载时间，避免浏览器首屏加载慢等情况&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;当脚本文件位置不恰当时，还会产生一个问题：当页面 DOM 元素还没生成之前就进行 DOM 操作，代码执行肯定会报错，对于这种情况我们可以使用 DOMContentLoaded 事件的回调函数。DOM 结构生成之后才会触发，也可以使用 script 标签的 onload 属性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;defer属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#defer属性&#34;&gt;#&lt;/a&gt; defer 属性&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;解决脚本文件下载阻塞网页渲染的问题，使用 defer 属性，可以延迟脚本的执行，等 DOM 加载生成后，再执行脚本。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;运行流程&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;浏览器开始解析 HTML 网页&lt;/li&gt;
+&lt;li&gt;解析过程中，发现带有 defer 属性的 script 标签&lt;/li&gt;
+&lt;li&gt;浏览器继续向下解析 HTML 网页，同时下载 script 标签加载的外部脚本&lt;/li&gt;
+&lt;li&gt;浏览器完成解析 HTML 网页，返回去执行已经下载完成的脚本&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;对于内置而不是外部加载的脚本，以及动态生成的 script 标签，defer 属性不起作用&lt;/li&gt;
+&lt;li&gt;使用  &lt;code&gt;defer&lt;/code&gt;  加载的外部脚本不应该使用 document.write 方法&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;async属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#async属性&#34;&gt;#&lt;/a&gt; async 属性&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;使用另一个进程下载脚本，下载时不会阻塞页面渲染，解决 “阻塞效应” 的另一个方法&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;浏览器开始解析 HTML 网页。&lt;/li&gt;
+&lt;li&gt;解析过程中，发现带有 &lt;code&gt;async&lt;/code&gt;  属性的 &lt;code&gt;script&lt;/code&gt;  标签。&lt;/li&gt;
+&lt;li&gt;浏览器继续往下解析 HTML 网页，同时并行下载 `` 标签中的外部脚本。&lt;/li&gt;
+&lt;li&gt;脚本下载完成，浏览器暂停解析 HTML 网页，开始执行下载的脚本。&lt;/li&gt;
+&lt;li&gt;脚本执行完毕，浏览器恢复解析 HTML 网页。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;async&lt;/code&gt;  属性可以保证脚本下载的同时，浏览器继续渲染，一旦采用这个属性，脚本就无法顺序执行，先下载完的脚本先执行。&lt;/p&gt;
+&lt;p&gt;脚本之间没有依赖关系，使用 &lt;code&gt;async&lt;/code&gt;  属性，有依赖关系使用 &lt;code&gt;defer&lt;/code&gt;  属性，同时存在，后者不起作用&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;脚本动态加载&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#脚本动态加载&#34;&gt;#&lt;/a&gt; 脚本动态加载&lt;/h2&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;[&lt;span class=&#34;string&#34;&gt;&amp;#x27;a.js&amp;#x27;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;#x27;b.js&amp;#x27;&lt;/span&gt;].forEach(&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;src&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; script = &lt;span class=&#34;built_in&#34;&gt;document&lt;/span&gt;.createElement(&lt;span class=&#34;string&#34;&gt;&amp;#x27;script&amp;#x27;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    script.src = src;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;document&lt;/span&gt;.head.appendChild(script);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    src.async = &lt;span class=&#34;literal&#34;&gt;false&lt;/span&gt;;  	&lt;span class=&#34;comment&#34;&gt;// 保证脚本执行的顺序，同步执行&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;动态加载 &lt;code&gt;script&lt;/code&gt;  标签的好处就是不会阻止页面渲染，也不会造成浏览器假死。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;加载脚本使用的协议&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#加载脚本使用的协议&#34;&gt;#&lt;/a&gt; 加载脚本使用的协议&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;如果不指定协议，浏览器默认使用  &lt;code&gt;HTTP&lt;/code&gt;  协议下载&lt;/li&gt;
+&lt;li&gt;如果需要使用  &lt;code&gt;HTTPS&lt;/code&gt;  协议下载，需要指明&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;浏览器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#浏览器&#34;&gt;#&lt;/a&gt; 浏览器&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;核心：渲染引擎 和 JavaScript 解释器&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;渲染引擎&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#渲染引擎&#34;&gt;#&lt;/a&gt; 渲染引擎&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;将网页代码渲染为用户可见的页面&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;不同浏览器的渲染引擎&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Firefox：Gecko 引擎&lt;/li&gt;
+&lt;li&gt;Safari：WebKit 引擎&lt;/li&gt;
+&lt;li&gt;Chrome：Blink 引擎&lt;/li&gt;
+&lt;li&gt;IE: Trident 引擎&lt;/li&gt;
+&lt;li&gt;Edge: EdgeHTML 引擎&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;四个阶段&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;解析代码   HTML 解析器解析 HTML 代码为 DOM   CSS 解析器将 CSS 代码解析为 CSS 样式表&lt;/li&gt;
+&lt;li&gt;对象合成    将 DOM 和 CSS 样式表进行结合，生成一个个 render 对象，最后构成 render 树&lt;/li&gt;
+&lt;li&gt;布局          确定对象的坐标，计算出渲染树的布局&lt;/li&gt;
+&lt;li&gt;绘制          将渲染树绘制到屏幕&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注：上面四步不是严格按顺序执行的，而是同步交叉执行&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;重流和重绘&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#重流和重绘&#34;&gt;#&lt;/a&gt; 重流和重绘&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;渲染树转换为网页布局的过程为重流，布局显示到页面的过程为重绘。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;页面生成以后，脚本和样式的操作都会导致重流和重绘&lt;/li&gt;
+&lt;li&gt;重流和重绘并不一定一起发生，重流一定会导致重绘，重绘不一定导致重流，比如改变元素颜色，进行了重绘，但没有改变布局，所以没有进行重流&lt;/li&gt;
+&lt;li&gt;浏览器会进行智能优化，将重流和重绘的范围尽可能限制到较小的局部，最小化代价消耗&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;优化技巧&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;读取 DOM 或者写入 DOM，尽量不要写在一起，不要读一个 DOM 节点，就写入一个，这样会导致多次重流，影响页面渲染速度&lt;/li&gt;
+&lt;li&gt;缓存 DOM 信息&lt;/li&gt;
+&lt;li&gt;不要一项一项地改变 CSS 样式，使用 class 一次性改变样式&lt;/li&gt;
+&lt;li&gt;使用  &lt;code&gt;documentFragment&lt;/code&gt;  操作 DOM&lt;/li&gt;
+&lt;li&gt;动画使用 &lt;code&gt;absolute&lt;/code&gt;  定位或者 &lt;code&gt;fixed&lt;/code&gt;  定位，减少对其它元素的影响&lt;/li&gt;
+&lt;li&gt;只在必要时才显示隐藏元素&lt;/li&gt;
+&lt;li&gt;使用 &lt;code&gt;window.requestAnimationFrame()&lt;/code&gt; ，因为它可以推迟到代码下一次重流时执行，而不是立即要求页面重流&lt;/li&gt;
+&lt;li&gt;使用 &lt;code&gt;虚拟DOM&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;javascript引擎&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#javascript引擎&#34;&gt;#&lt;/a&gt; JavaScript 引擎&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;JavaScript 是一种 &lt;code&gt;解释型语言&lt;/code&gt; ，也就是说，它不需要编译，由解释器实时运行。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;好处：运行和修改比较方便，刷新页面就可以重新解释&lt;/li&gt;
+&lt;li&gt;缺点：每次运行都要调用解释器，系统开销大，运行速度慢于编译型语言&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;现在的浏览器都将 JavaScript 进行一定的编译，生成类似于 &lt;code&gt;字节码&lt;/code&gt; 的中间代码，以提高运行速度&lt;/p&gt;
+&lt;p&gt;早期，浏览器内部对 JavaScript 处理过程如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;读取代码，进行词法分析（Lexical analysis），将代码分解成词元（token）。&lt;/li&gt;
+&lt;li&gt;对词元进行语法分析（parsing），将代码整理成 “语法树”（syntax tree）。&lt;/li&gt;
+&lt;li&gt;使用 “翻译器”（translator），将代码转为字节码（bytecode）。&lt;/li&gt;
+&lt;li&gt;使用 “字节码解释器”（bytecode interpreter），将字节码转为机器码。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参考链接：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2phdmFzY3JpcHQucnVhbnlpZmVuZy5jb20vYm9tL2VuZ2luZS5odG1s&#34;&gt;http://javascript.ruanyifeng.com/bom/engine.html&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://csstar.top/2022/03/13/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%951/</guid>
             <title>前端知识点汇总（一）</title>
