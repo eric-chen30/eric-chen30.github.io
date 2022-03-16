@@ -21,19 +21,19 @@
 <link rel="stylesheet" href="/css/app.css?v=0.1.4">
 
   
-  <meta name="keywords" content="页面渲染模式" />
+  <meta name="keywords" content="前端知识" />
 
 
 
 <meta name="description" content="Work Hard To Be A Better Man" >
 
 
-<link rel="canonical" href="http://csstar.top/2022/03/12/%E9%A1%B5%E9%9D%A2%E6%B8%B2%E6%9F%93%E6%A8%A1%E5%BC%8F/">
+<link rel="canonical" href="http://csstar.top/2022/03/16/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%952/">
 
 
 
   <title>
-CSR、SSR、SPA |
+前端知识点汇总(二) |
 Eric Chen = CsStar = Work Hard To Be A Better Man</title>
 <meta name="generator" content="Hexo 5.1.1"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -61,16 +61,16 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
         <div id="brand">
           <div class="pjax">
           
-  <h1 itemprop="name headline">CSR、SSR、SPA
+  <h1 itemprop="name headline">前端知识点汇总(二)
   </h1>
   
 <div class="meta">
-  <span class="item" title="创建时间：2022-03-12 22:19:37">
+  <span class="item" title="创建时间：2022-03-16 23:21:33">
     <span class="icon">
       <i class="ic i-calendar"></i>
     </span>
     <span class="text">发表于</span>
-    <time itemprop="dateCreated datePublished" datetime="2022-03-12T22:19:37+08:00">2022-03-12</time>
+    <time itemprop="dateCreated datePublished" datetime="2022-03-16T23:21:33+08:00">2022-03-16</time>
   </span>
   <span class="item" title="本文字数">
     <span class="icon">
@@ -118,12 +118,12 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclimtf7dj20zk0m8qav.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciuv0socj20zk0m8qes.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclize41wj20zk0m87gk.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclwuom7cj20zk0m8dvn.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicitspjpbj20zk0m81ky.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicit4jrvuj20zk0m8785.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclh3brzpj20zk0m8ann.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclimtf7dj20zk0m8qav.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicivghyooj20zk0m8dir.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicli9lfebj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclxxcb6rj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicit31ffoj20zk0m8naf.jpg"></li>
         </ul>
       </div>
     </header>
@@ -152,7 +152,7 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
 </div>
 
     <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
-  <link itemprop="mainEntityOfPage" href="http://csstar.top/2022/03/12/%E9%A1%B5%E9%9D%A2%E6%B8%B2%E6%9F%93%E6%A8%A1%E5%BC%8F/">
+  <link itemprop="mainEntityOfPage" href="http://csstar.top/2022/03/16/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%952/">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="image" content="/images/avatar.jpg">
@@ -167,66 +167,97 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="csr-ssr-spa"><a class="markdownIt-Anchor" href="#csr-ssr-spa">#</a> CSR、SSR、SPA</h1>
-<h2 id="csr"><a class="markdownIt-Anchor" href="#csr">#</a> CSR</h2>
-<blockquote>
-<p>什么是 CSR</p>
-</blockquote>
-<p>页面由 JS 渲染，JS 运行于浏览器端，称为客户端渲染。Vue、React 都是基于这种模式。</p>
-<blockquote>
-<p>优缺点</p>
-</blockquote>
+    <h1 id="前端知识点汇总二"><a class="markdownIt-Anchor" href="#前端知识点汇总二">#</a> 前端知识点汇总 (二)</h1>
+<h2 id="vuex属性"><a class="markdownIt-Anchor" href="#vuex属性">#</a> <strong>Vuex 属性</strong></h2>
 <ul>
-<li>优点：</li>
+<li>
+<p>state             state 是存储的单一状态，是存储的基本数据</p>
+</li>
+<li>
+<p>Getters         getters 是 store 的计算属性，对 state 的加工，是派生出来的数据（跟 computed 计算属性一样）</p>
+</li>
+<li>
+<p>Mutations      更改 Vuex 的 store 中状态的唯一方法就是提交 mutaions</p>
+</li>
+<li>
+<p>Actions         Actions 提交的是 mutation，而不是直接变更状态，可包含异步操作</p>
+</li>
+<li>
+<p>Moudle         Module 是 store 分割的模块，每个模块拥有自己的 state、getters、mutations、actions</p>
+</li>
+<li>
+<p>辅助函数       mapState、MapGetters、MapActions、mapMutations 等辅助函数</p>
+</li>
+</ul>
+<h2 id="首页白屏问题"><a class="markdownIt-Anchor" href="#首页白屏问题">#</a> <strong>首页白屏问题</strong></h2>
+<ul>
+<li>路由懒加载</li>
+<li>cdn 加速</li>
+<li>开启 vue 服务渲染模式</li>
+<li>用 webpack 的 externals 属性将不需要打包的库文件分离出去，减少打包后文件的大小</li>
+<li>生产环境中删除掉不必要的 console.log</li>
+<li>vue-cli 开启打包压缩 和 后台配合 gzip 访问</li>
+</ul>
+<h2 id="进程和线程"><a class="markdownIt-Anchor" href="#进程和线程">#</a> <strong>进程和线程</strong></h2>
+<ul>
+<li><strong>进程</strong></li>
 </ul>
 <ol>
-<li>前后端分离的架构，有利于开发效率的提升</li>
+<li>系统进行资源调度和分配的基本单位</li>
+<li>进程是线程的容器</li>
 </ol>
 <ul>
-<li>缺点：</li>
+<li><strong>线程</strong></li>
 </ul>
 <ol>
-<li>首屏渲染时间较长</li>
-<li>不利于 SEO (搜索引擎优化)</li>
+<li>操作系统能够运算调度的最小单位</li>
+<li>包含在进程之间，进程运行的单位</li>
+<li>一个进程中可以有许多线程，这些线程共享进程的变量和资源</li>
+<li>线程与线程之间的资源和变量不共享</li>
 </ol>
-<blockquote>
-<p>基于 React 的 csr 渲染流程</p>
-</blockquote>
-<p>浏览器下载 HTML 文档 ——&gt; 下载 JS——&gt; 运行 react 代码构建页面 ——&gt; 展示页面</p>
-<h2 id="ssr"><a class="markdownIt-Anchor" href="#ssr">#</a> SSR</h2>
-<blockquote>
-<p>什么是 SSR</p>
-</blockquote>
-<p>把 Vue 组件渲染为服务器的 HTML 字符串，将他们直接发送到浏览器，最后将静态标记 混和 为客户端上完成全交互应用程序。</p>
-<blockquote>
-<p>优缺点</p>
-</blockquote>
+<h2 id="进程通信"><a class="markdownIt-Anchor" href="#进程通信">#</a> <strong>进程通信</strong></h2>
 <ul>
-<li>优点：</li>
+<li>管道</li>
+<li>有名管道</li>
+<li>信号量</li>
+<li>消息队列</li>
+<li>信号</li>
 </ul>
-<ol>
-<li>SEO    搜索引擎优化</li>
-<li>首屏显示时间</li>
-</ol>
+<h2 id="选择器的权重"><a class="markdownIt-Anchor" href="#选择器的权重">#</a> <strong>选择器的权重</strong></h2>
 <ul>
-<li>缺点：</li>
+<li>通配选择器的权重为 0     <code>*</code></li>
+<li>类型选择器和伪元素选择器的权重为 1     <code>div</code>   <code>:before</code></li>
+<li>类选择器、伪类选择器、属性选择器权重为 10    <code>class</code>    <code>:hover</code>    <code>['attr=#']</code></li>
+<li>id 选择器权重为 100         <code>id</code></li>
+<li>内联样式权重为 1000      <code>&lt;div style=&quot;color: red&quot;&gt;内联样式的权重为1000&lt;/div&gt;</code></li>
+<li>！important 的规则权重为 10000</li>
 </ul>
+<h2 id="宏任务和微任务"><a class="markdownIt-Anchor" href="#宏任务和微任务">#</a> <strong>宏任务和微任务</strong></h2>
+<p><strong>微任务</strong>： process.nextTick ， promise ， Object.observe ， MutationObserver</p>
+<p><strong>宏任务</strong>： script ， setTimeout ， setInterval ， setImmediate ， I/O ， UI rendering</p>
+<blockquote>
+<p>] 误区：并不是微任务快于宏任务，因为宏任务中包含了 script ，浏览器会	执行一个宏任务，接下来如果有异步代码就先执行微任务。</p>
+</blockquote>
+<p><strong>Event Loop 的顺序</strong></p>
 <ol>
-<li>开发逻辑复杂</li>
-<li>开发条件有所限制，比如一些生命周期、第三方库不能使用</li>
-<li>服务器的负载增大</li>
+<li>执行同步代码，这属于宏任务</li>
+<li>执行栈为空，查询是否有微任务需要执行</li>
+<li>执行所有微任务</li>
+<li>必要的话渲染 UI</li>
+<li>然后开始下一轮 Event Loop，执行宏任务中的异步代码</li>
 </ol>
-<blockquote>
-<p>实例代码</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 导入 express 作为渲染服务器</span></span><br><span class="line"><span class="keyword">const</span> exprss = <span class="built_in">require</span>(<span class="string">&#x27;express&#x27;</span>);</span><br><span class="line"><span class="comment">// 导入 createRender 用于获取渲染器</span></span><br><span class="line"><span class="keyword">const</span> &#123;createRender&#125; = <span class="built_in">require</span>(<span class="string">&#x27;vue-server-render&#x27;</span>);</span><br><span class="line"><span class="comment">// 导入 fs 模块</span></span><br><span class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">&#x27;fs&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">&#x27;path&#x27;</span>);</span><br><span class="line"><span class="comment">// 导入 Vue 用于声明待渲染实例</span></span><br><span class="line"><span class="keyword">const</span> Vue = <span class="built_in">require</span>(<span class="string">&#x27;vue&#x27;</span>);</span><br><span class="line"><span class="comment">// 创建 express 实例</span></span><br><span class="line"><span class="keyword">const</span> app = express();</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> template = fs.readFileSync(path.join(_dirname, <span class="string">&#x27;./public/index.html&#x27;</span>));</span><br><span class="line"><span class="comment">// 获取渲染器</span></span><br><span class="line"><span class="keyword">const</span> render = createRender(&#123;</span><br><span class="line">    template: template.toString()</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">app.get(<span class="string">&#x27;*&#x27;</span>, <span class="keyword">async</span> <span class="function"><span class="keyword">function</span>(<span class="params">req,res</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// 待渲染的 Vue 实例</span></span><br><span class="line">    <span class="keyword">const</span> template = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">       template: <span class="string">&#x27;&lt;h1&gt;hello world&lt;/h&gt;&#x27;</span> </span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="comment">// renderToString 可以将vue实例转换为HTML字符串</span></span><br><span class="line">    <span class="comment">// 若未传递回调函数，返回一个Promise</span></span><br><span class="line">    <span class="keyword">const</span> html = <span class="keyword">await</span> renderer.renderToSting(template,&#123;</span><br><span class="line">        title: <span class="string">&#x27;vue ssr&#x27;</span></span><br><span class="line">    &#125;)</span><br><span class="line">    res.send(html);</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 绑定程序监听端口到指定的主机端口号</span></span><br><span class="line">app.listen(<span class="number">3000</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;running&#x27;</span>);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<h2 id="spa"><a class="markdownIt-Anchor" href="#spa">#</a> SPA</h2>
-<blockquote>
-<p>单页面模式。Vue、React 的路由都是 SPA 模式</p>
-</blockquote>
+<h2 id="其它"><a class="markdownIt-Anchor" href="#其它">#</a> <strong>其它</strong></h2>
+<p>Vue2.0 的数据响应是采用数据劫持结合发布者 - 订阅者模式的方式，通过<strong> Object.defineProperty ()</strong> 来劫持各个属性的 setter、getter</p>
+<p>vue3.0 实现数据双向绑定是通过<strong> Proxy</strong></p>
+<p>单页面 ——》资源局部刷新				内容改变不需加载整个页面，响应速度快；对服务器的压力小写；前后端分离；</p>
+<p>多页面 ——》页面跳转，整页刷新</p>
+<p>路由跳转，无刷新页面，静态跳转</p>
+<p>location.href = ‘url’  来跳转，刷新了页面</p>
+<p><code>computer:</code>  依赖多个值计算计算出一个属性值，并且具有缓存机制，如果没有更新，属性值值可以复用，如果更新，属性值需要重新计算。（同步）</p>
+<p><code>watch:</code>  监听一个值的变化，做多件事情。（异步）</p>
 
       <div class="tags">
-          <a href="/tags/%E9%A1%B5%E9%9D%A2%E6%B8%B2%E6%9F%93%E6%A8%A1%E5%BC%8F/" rel="tag"><i class="ic i-tag"></i> 页面渲染模式</a>
+          <a href="/tags/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86/" rel="tag"><i class="ic i-tag"></i> 前端知识</a>
       </div>
   </div>
 
@@ -238,7 +269,7 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2022-03-12 22:20:49" itemprop="dateModified" datetime="2022-03-12T22:20:49+08:00">2022-03-12</time>
+    <time title="修改时间：2022-03-16 23:22:57" itemprop="dateModified" datetime="2022-03-16T23:22:57+08:00">2022-03-16</time>
   </span>
 </div>
 
@@ -274,7 +305,7 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
   </li>
   <li class="link">
     <strong>本文链接：</strong>
-    <a href="http://csstar.top/2022/03/12/%E9%A1%B5%E9%9D%A2%E6%B8%B2%E6%9F%93%E6%A8%A1%E5%BC%8F/" title="CSR、SSR、SPA">http://csstar.top/2022/03/12/页面渲染模式/</a>
+    <a href="http://csstar.top/2022/03/16/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%952/" title="前端知识点汇总(二)">http://csstar.top/2022/03/16/前端知识记录2/</a>
   </li>
   <li class="license">
     <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
@@ -293,27 +324,19 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
     <div class="item left">
       
 
-  <a href="/2022/03/11/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclh0m9pdj20zk0m8hdt.jpg" title="前端学习网站">
+  <a href="/2022/03/16/%E7%BD%91%E7%BB%9C/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicis081o9j20zk0m8dmr.jpg" title="网络">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> </span>
-  <h3>前端学习网站</h3>
+  <h3>网络</h3>
   </a>
 
     </div>
     <div class="item right">
-      
-
-  <a href="/2022/03/12/%E8%99%9A%E6%8B%9FDOM/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclxp31goj20zk0m8qv5.jpg" title="虚拟DOM">
-  <span class="type">下一篇</span>
-  <span class="category"><i class="ic i-flag"></i> </span>
-  <h3>虚拟DOM</h3>
-  </a>
-
     </div>
 </div>
 
   
-  <div class="wrap" id="comments" data-id="2022/03/12/页面渲染模式/"></div>
+  <div class="wrap" id="comments" data-id="2022/03/16/前端知识记录2/"></div>
 
 
         </div>
@@ -325,7 +348,7 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#csr-ssr-spa"><span class="toc-number">1.</span> <span class="toc-text"> CSR、SSR、SPA</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#csr"><span class="toc-number">1.1.</span> <span class="toc-text"> CSR</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ssr"><span class="toc-number">1.2.</span> <span class="toc-text"> SSR</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#spa"><span class="toc-number">1.3.</span> <span class="toc-text"> SPA</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB%E4%BA%8C"><span class="toc-number">1.</span> <span class="toc-text"> 前端知识点汇总 (二)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#vuex%E5%B1%9E%E6%80%A7"><span class="toc-number">1.1.</span> <span class="toc-text"> Vuex 属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A6%96%E9%A1%B5%E7%99%BD%E5%B1%8F%E9%97%AE%E9%A2%98"><span class="toc-number">1.2.</span> <span class="toc-text"> 首页白屏问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B"><span class="toc-number">1.3.</span> <span class="toc-text"> 进程和线程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B%E9%80%9A%E4%BF%A1"><span class="toc-number">1.4.</span> <span class="toc-text"> 进程通信</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E5%99%A8%E7%9A%84%E6%9D%83%E9%87%8D"><span class="toc-number">1.5.</span> <span class="toc-text"> 选择器的权重</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%8F%E4%BB%BB%E5%8A%A1%E5%92%8C%E5%BE%AE%E4%BB%BB%E5%8A%A1"><span class="toc-number">1.6.</span> <span class="toc-text"> 宏任务和微任务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E5%AE%83"><span class="toc-number">1.7.</span> <span class="toc-text"> 其它</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
       </div>
@@ -419,12 +442,10 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
 
   <ul id="quick">
     <li class="prev pjax">
-        <a href="/2022/03/11/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/2022/03/12/%E8%99%9A%E6%8B%9FDOM/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -468,7 +489,7 @@ Eric Chen = CsStar = Work Hard To Be A Better Man</title>
   </div>
 <script data-config type="text/javascript">
   var LOCAL = {
-    path: 'http://csstar.top/2022/03/12/%E9%A1%B5%E9%9D%A2%E6%B8%B2%E6%9F%93%E6%A8%A1%E5%BC%8F/',
+    path: 'http://csstar.top/2022/03/16/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%952/',
     favicon: {
       show: "Eric Chen",
       hide: "Eric Chen"

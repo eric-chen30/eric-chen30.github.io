@@ -3,11 +3,11 @@
     <id>http://csstar.top</id>
     <title>CsStar • Posts by &#34;前端知识&#34; tag</title>
     <link href="http://csstar.top" />
-    <updated>2022-03-16T15:11:34.000Z</updated>
+    <updated>2022-03-16T15:21:33.000Z</updated>
     <category term="Docker" />
     <category term="ES7-11" />
-    <category term="快捷操作" />
     <category term="Pandas" />
+    <category term="快捷操作" />
     <category term="前端学习网站" />
     <category term="前端知识" />
     <category term="机器学习" />
@@ -15,9 +15,105 @@
     <category term="Vue" />
     <category term="计算机组成原理" />
     <category term="单例模式" />
-    <category term="页面渲染模式" />
     <category term="浏览器" />
+    <category term="页面渲染模式" />
     <category term="ES6" />
+    <entry>
+        <id>http://csstar.top/2022/03/16/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%952/</id>
+        <title>前端知识点汇总(二)</title>
+        <link rel="alternate" href="http://csstar.top/2022/03/16/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%952/"/>
+        <content type="html">&lt;h1 id=&#34;前端知识点汇总二&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#前端知识点汇总二&#34;&gt;#&lt;/a&gt; 前端知识点汇总 (二)&lt;/h1&gt;
+&lt;h2 id=&#34;vuex属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#vuex属性&#34;&gt;#&lt;/a&gt; &lt;strong&gt;Vuex 属性&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;state             state 是存储的单一状态，是存储的基本数据&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Getters         getters 是 store 的计算属性，对 state 的加工，是派生出来的数据（跟 computed 计算属性一样）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mutations      更改 Vuex 的 store 中状态的唯一方法就是提交 mutaions&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Actions         Actions 提交的是 mutation，而不是直接变更状态，可包含异步操作&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Moudle         Module 是 store 分割的模块，每个模块拥有自己的 state、getters、mutations、actions&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;辅助函数       mapState、MapGetters、MapActions、mapMutations 等辅助函数&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;首页白屏问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#首页白屏问题&#34;&gt;#&lt;/a&gt; &lt;strong&gt;首页白屏问题&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;路由懒加载&lt;/li&gt;
+&lt;li&gt;cdn 加速&lt;/li&gt;
+&lt;li&gt;开启 vue 服务渲染模式&lt;/li&gt;
+&lt;li&gt;用 webpack 的 externals 属性将不需要打包的库文件分离出去，减少打包后文件的大小&lt;/li&gt;
+&lt;li&gt;生产环境中删除掉不必要的 console.log&lt;/li&gt;
+&lt;li&gt;vue-cli 开启打包压缩 和 后台配合 gzip 访问&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;进程和线程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#进程和线程&#34;&gt;#&lt;/a&gt; &lt;strong&gt;进程和线程&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;进程&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;系统进行资源调度和分配的基本单位&lt;/li&gt;
+&lt;li&gt;进程是线程的容器&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;线程&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;操作系统能够运算调度的最小单位&lt;/li&gt;
+&lt;li&gt;包含在进程之间，进程运行的单位&lt;/li&gt;
+&lt;li&gt;一个进程中可以有许多线程，这些线程共享进程的变量和资源&lt;/li&gt;
+&lt;li&gt;线程与线程之间的资源和变量不共享&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;进程通信&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#进程通信&#34;&gt;#&lt;/a&gt; &lt;strong&gt;进程通信&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;管道&lt;/li&gt;
+&lt;li&gt;有名管道&lt;/li&gt;
+&lt;li&gt;信号量&lt;/li&gt;
+&lt;li&gt;消息队列&lt;/li&gt;
+&lt;li&gt;信号&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;选择器的权重&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#选择器的权重&#34;&gt;#&lt;/a&gt; &lt;strong&gt;选择器的权重&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;通配选择器的权重为 0     &lt;code&gt;*&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;类型选择器和伪元素选择器的权重为 1     &lt;code&gt;div&lt;/code&gt;   &lt;code&gt;:before&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;类选择器、伪类选择器、属性选择器权重为 10    &lt;code&gt;class&lt;/code&gt;    &lt;code&gt;:hover&lt;/code&gt;    &lt;code&gt;[&#39;attr=#&#39;]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;id 选择器权重为 100         &lt;code&gt;id&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;内联样式权重为 1000      &lt;code&gt;&amp;lt;div style=&amp;quot;color: red&amp;quot;&amp;gt;内联样式的权重为1000&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;！important 的规则权重为 10000&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;宏任务和微任务&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#宏任务和微任务&#34;&gt;#&lt;/a&gt; &lt;strong&gt;宏任务和微任务&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;微任务&lt;/strong&gt;： process.nextTick ， promise ， Object.observe ， MutationObserver&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;宏任务&lt;/strong&gt;： script ， setTimeout ， setInterval ， setImmediate ， I/O ， UI rendering&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;] 误区：并不是微任务快于宏任务，因为宏任务中包含了 script ，浏览器会	执行一个宏任务，接下来如果有异步代码就先执行微任务。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Event Loop 的顺序&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;执行同步代码，这属于宏任务&lt;/li&gt;
+&lt;li&gt;执行栈为空，查询是否有微任务需要执行&lt;/li&gt;
+&lt;li&gt;执行所有微任务&lt;/li&gt;
+&lt;li&gt;必要的话渲染 UI&lt;/li&gt;
+&lt;li&gt;然后开始下一轮 Event Loop，执行宏任务中的异步代码&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;其它&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#其它&#34;&gt;#&lt;/a&gt; &lt;strong&gt;其它&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Vue2.0 的数据响应是采用数据劫持结合发布者 - 订阅者模式的方式，通过&lt;strong&gt; Object.defineProperty ()&lt;/strong&gt; 来劫持各个属性的 setter、getter&lt;/p&gt;
+&lt;p&gt;vue3.0 实现数据双向绑定是通过&lt;strong&gt; Proxy&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;单页面 ——》资源局部刷新				内容改变不需加载整个页面，响应速度快；对服务器的压力小写；前后端分离；&lt;/p&gt;
+&lt;p&gt;多页面 ——》页面跳转，整页刷新&lt;/p&gt;
+&lt;p&gt;路由跳转，无刷新页面，静态跳转&lt;/p&gt;
+&lt;p&gt;location.href = ‘url’  来跳转，刷新了页面&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;computer:&lt;/code&gt;  依赖多个值计算计算出一个属性值，并且具有缓存机制，如果没有更新，属性值值可以复用，如果更新，属性值需要重新计算。（同步）&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;watch:&lt;/code&gt;  监听一个值的变化，做多件事情。（异步）&lt;/p&gt;
+</content>
+        <category term="前端知识" />
+        <updated>2022-03-16T15:21:33.000Z</updated>
+    </entry>
     <entry>
         <id>http://csstar.top/2022/03/16/%E7%BD%91%E7%BB%9C/</id>
         <title>网络</title>
