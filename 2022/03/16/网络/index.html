@@ -1,0 +1,638 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="CsStar" href="http://csstar.top/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="CsStar" href="http://csstar.top/atom.xml" />
+<link rel="alternate" type="application/json" title="CsStar" href="http://csstar.top/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.1.4">
+
+  
+  <meta name="keywords" content="前端知识" />
+
+
+
+<meta name="description" content="Work Hard To Be A Better Man" >
+
+
+<link rel="canonical" href="http://csstar.top/2022/03/16/%E7%BD%91%E7%BB%9C/">
+
+
+
+  <title>
+网络 |
+Eric Chen = CsStar = Work Hard To Be A Better Man</title>
+<meta name="generator" content="Hexo 5.1.1"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">网络
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2022-03-16 23:11:34">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-03-16T23:11:34+08:00">2022-03-16</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>4.3k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>4 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Eric Chen</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicljitigmj20zk0m87fp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclffsa1cj20zk0m811l.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitzannuj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitf0kl1j20zk0m87fe.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclimtf7dj20zk0m8qav.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclx6phq6j20zk0m8e36.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main id="main">
+      <div class="inner">
+        <div id="content" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://csstar.top/2022/03/16/%E7%BD%91%E7%BB%9C/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="Eric Chen">
+    <meta itemprop="description" content="Work Hard To Be A Better Man, Work Hard To Be A Better Man">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="CsStar">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h2 id="tcp-vs-udp"><a class="markdownIt-Anchor" href="#tcp-vs-udp">#</a> <strong>TCP vs  UDP</strong></h2>
+<ul>
+<li>TCP   面向连接的、可靠的、基于字节流的传输层通信协议</li>
+<li>UDP   提供简单不可靠的非连接传输服务，面向报文</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><code>TCP</code></th>
+<th><code>UDP</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>面向连接的，可靠性高</td>
+<td>非连接的，可靠性低</td>
+</tr>
+<tr>
+<td>基于三次握手，信息有延时，时效性较差</td>
+<td>时效性好，常用于实时传输</td>
+</tr>
+<tr>
+<td>首部开销 20 字节，如果携带的用户数据较小，则利用率低</td>
+<td>首部开销 8 字节，可以传输更多的用户数据</td>
+</tr>
+<tr>
+<td>端对端的，有序号机制、确认机制、超时重传机制，确保数据可靠交付</td>
+<td>一对一、一对多、多对一、多对多的交互通信</td>
+</tr>
+<tr>
+<td>FTP（应用层协议）基于 TCP</td>
+<td>DNS（应用层协议）基于 UDP</td>
+</tr>
+</tbody>
+</table>
+<h2 id="xss-跨网站指令码"><a class="markdownIt-Anchor" href="#xss-跨网站指令码">#</a> XSS: 跨网站指令码</h2>
+<ul>
+<li>反射型</li>
+<li>存储型</li>
+<li>DOM-based 型</li>
+</ul>
+<p>如何攻击：通过修改 HTML 节点或者运行 JS 脚本进行攻击</p>
+<p>如何防御：</p>
+<ul>
+<li>
+<p>最普遍的做法是对输入输出的内容进行转义，对于引号、尖括号、斜杠进行转义。  如果有特定的文本不能进行转义，需要设置黑白名单来进行过滤</p>
+</li>
+<li>
+<p>CSP: 内容安全策略     本质上也是建立白名单，规定浏览器只能够执行特定来源的代码   通过设置  <code>HTTP Header中的Content-Security-Policy 来开启CSP</code></p>
+<ol>
+<li>只允许加载本站资源</li>
+<li>只允许加载 https 协议的图片</li>
+<li>允许加载任何来源框架</li>
+</ol>
+</li>
+</ul>
+<h2 id="csrf跨站请求伪造-是一种挟持用户在已经登录的web应用程序上执行非本意操作的攻击方法"><a class="markdownIt-Anchor" href="#csrf跨站请求伪造-是一种挟持用户在已经登录的web应用程序上执行非本意操作的攻击方法">#</a> CSRF：跨站请求伪造    是一种挟持用户在已经登录的 web 应用程序上执行非本意操作的攻击方法</h2>
+<p>如何防御：</p>
+<ol>
+<li>get 请求不对数据进行修改</li>
+<li>不让第三方网站访问到用户的 Cookie                       对 cookie 设置 Samesite 属性，该属性设置 cookie 不随着跨域请求发送</li>
+<li>阻止第三方网站请求接口                                       验证 Referer 来判断请求是否由第三方网站发起的</li>
+<li>请求时附带验证信息，比如验证码或者 Cookie           服务器下发一个随机的 Token，每次用户发送请求的时候，必须携带这个 Token，然后服务器对其进行检验</li>
+</ol>
+<h2 id="密码安全"><a class="markdownIt-Anchor" href="#密码安全">#</a> 密码安全</h2>
+<blockquote>
+<p>加盐：对于密码存储来说，必然是不能明文存储在数据库中，不然一旦数据库泄漏，会对用户造成巨大的损失。</p>
+<ul>
+<li>加盐就是给原密码添加字符串。加盐后的密码再进行一些列的加密算法处理。</li>
+<li>加盐并不能阻止别人盗取账号，只能确保即使数据库泄漏，也不会暴露用户的真实密码</li>
+<li>通常使用验证码增产时延或者限制尝试次数的方式，并且当输入错误时，不能提示密码输入错误，而是提示账号或者密码输入错误</li>
+</ul>
+</blockquote>
+<h2 id="三次握手"><a class="markdownIt-Anchor" href="#三次握手">#</a> 三次握手</h2>
+<p>客户端：closed——》SYN  Send——》established</p>
+<p>服务端：closed——》Listened——》SYN Receive——》established</p>
+<blockquote>
+<p>为什么需要三次握手</p>
+</blockquote>
+<p>如果 A 向 B 发送了一个连接请求，由于网络延时原因，这个 A 发送的请求长时间没有被 B 接收，就会触发超时重传机制，重新发送的请求被 B 接收到后，两者顺利建立连接并开始传输信息或者数据，然后连接结束，两者处于 closed 状态。但此时，之前由于网络延时而未到达的请求到达了 B，B 以为 A 又要建立新的连接，便应答了请求，从而处于 established 状态，而此时 A 是 closed 状态，那么服务器就会一直等客户端传输数据，会造成资源浪费。</p>
+<h2 id="四次挥手"><a class="markdownIt-Anchor" href="#四次挥手">#</a> 四次挥手</h2>
+<p><strong>断开连接时，两端都需要发送 FIN 和 ACK 信号</strong></p>
+<p>客户端：established——》FIN-WAIT-1——》FIN-WAIT-2——》TIME_WAIT——》closed</p>
+<p>服务端：established——》close-wait——》last-ack——》closed</p>
+<ul>
+<li>如果客户端 A 认为需要发送的数据已经发送完成，向给服务器 B 发送连接释放的请求</li>
+<li>B 收到释放请求后，会告诉应用层要释放 TCP 连接，然后发送 ACK 包，进入 close-wait 状态，表明 A 到 B 的连接已经释放，不再接收 A 发送的数据。但此时 B 仍然可以发送数据给 A</li>
+<li>B 如果此时还有没发送完的数据继续发送，数据发送完毕后，向 A 发送释放连接请求，然后 B 进入 last-ack 状态</li>
+<li>A 收到请求后，向 B 发送确认应答，此时 A 进入 Time-wait 状态。该状态会持续一个最大生命周期，如果该段时间内没有收到来自 B 的重发请求话，就进入 closed 状态，B 接收到 A 发送的确认信号后，进入 closed 状态。</li>
+</ul>
+<blockquote>
+<p>为什么 A 需要等待 2MSL 时间？</p>
+</blockquote>
+<p>为了确保 B 能够收到 A 发送的确认断开的信号，因为如果确认信息由于网络问题一直没有到达，就会导致 B 不能正常关闭。</p>
+<p><strong>拥塞处理</strong></p>
+<ul>
+<li>慢开始、拥塞避免</li>
+<li>快速重传、快速恢复</li>
+</ul>
+<h2 id="get请求和post请求"><a class="markdownIt-Anchor" href="#get请求和post请求">#</a> get 请求和 post 请求</h2>
+<ul>
+<li>get 请求由于 url 长度的限制导致请求参数有长度限制，而 post 请求没有长度限制</li>
+<li>post 请求相对于 get 请求安全些，因为 get 请求参数都展示在 url 上</li>
+<li>post 可以通过 request body 传输更多的数据，而 get 没有这个技术</li>
+<li>post 支持更多的编码类型且不对数据类型限制</li>
+<li>在前端使用接口编写参数的时候，post 对于复杂的请求参数更容易编写</li>
+</ul>
+<h2 id="常见状态码"><a class="markdownIt-Anchor" href="#常见状态码">#</a> 常见状态码</h2>
+<hr>
+<p><strong>2xx  成功</strong></p>
+<ul>
+<li><code>200 ok 表示客户端发送的请求被服务器正常处理</code></li>
+<li>204 no content  表示请求成功，但是响应报文不包含实体的主体部分</li>
+<li>205 reset content  与 204 一样，但是要求请求方重置内容</li>
+<li>206 partial Content   进行范围请求</li>
+</ul>
+<p><strong>3xx 重定向</strong></p>
+<ul>
+<li><code>301 moved  permanently    永久性重定向，表示资源已经被分配到新的url</code></li>
+<li><code>302 found   临时性重定向</code></li>
+<li>303   see other  表示资源存在着另一个 URL，应该使用 get 方法请求资源</li>
+</ul>
+<p><strong>4xx  客户端错误</strong></p>
+<ul>
+<li><code>400 bad request  请求报文存在语法错误</code></li>
+<li><code>401 unauthorized  表示发送的请求需要有HTTP认证的认证信息</code></li>
+<li><code>402  forbidden   请求资源被服务器拒绝</code></li>
+<li><code>404  not found   服务器没有找到请求的资源</code></li>
+</ul>
+<p><strong>5xx  服务器错误</strong></p>
+<ul>
+<li><code>500 internal server error  服务器在执行请求时发生了错误</code></li>
+<li>501 not implemented   服务器不支持当前请求的某个功能</li>
+<li><code>503  service unavailable   服务器此时处于超负载或者正在停机维护，无法处理请求</code></li>
+</ul>
+<h2 id="https"><a class="markdownIt-Anchor" href="#https">#</a> HTTPS</h2>
+<p>HTTPS 还是通过 HTTP 进行信息的传输，但是信息通过 TLS 协议进行了加密。</p>
+<p>TLS 使用了两种加密技术：对称加密和非对称加密。</p>
+<ul>
+<li>
+<p>对称加密指两边具有相同的密钥，两边都知道将密文进行加密解密</p>
+</li>
+<li>
+<p>非对称加密，有公钥和私钥之分，公钥所有人都知道，可以将数据用公钥进行加密，但是数据只能用私钥进行解密，而私钥只有发放公钥的一方知道</p>
+</li>
+<li>
+<p>一般双方确认通信前使用非对称加密方式，一旦双方确认后，为了提高性能，两端使用对称加密的方式进行通信</p>
+</li>
+</ul>
+<blockquote>
+<p>TLS 握手过程</p>
+</blockquote>
+<ol>
+<li>客户端发送一个随机值，需要的协议以及加密方式</li>
+<li>服务端收到这个随机值，自己也产生一个随机值，根据客户端发来的协议和加密方式进行处理，发送自己的证书</li>
+<li>客户端收到这个证书并检验是否有效，通过后会再产生一个随机值，通过服务端证书的公钥加密这个随机值并发送给服务端（如果服务端需要客户端证书，需要携带）</li>
+<li>服务端收到这个加密的随机值使用私钥进行解密，这时候两端都有三个随机值，可以通过这三个随机值通过约定的加密方式生成密钥，后面的通信使用这个密钥进行加密解密</li>
+</ol>
+<blockquote>
+<p>HTTPS 2.0</p>
+</blockquote>
+<p>1.x 中，为了性能考虑，我们常常使用精灵图，将小图内联等方式，主要是因为浏览器限制了同一域名下的请求数量，当页面请求的资源过多时，会造成队头阻塞，一些资源需要等待其它资源请求完毕后才能发起请求。</p>
+<blockquote>
+<p>HTTPS 2.0 改进的地方</p>
+</blockquote>
+<ul>
+<li>二进制传输 ：  文本传输数据 ——》新的编码方式，数据被分割，采用二进制编码方式</li>
+<li>多路复用 ：     两个概念：帧 和 流   帧是最小的数据单位，多个帧组成数据流   多路复用就是在一个 TCP 连接中可以存在多条流，解决了队头阻塞的问题</li>
+<li>Header 压缩 ：  在之前的版本中，使用文本形式传输 headers  且携带 cookie 的情况下，每次都要重复传输大量字节   2.0 中使用了 HPACK 对传输的 header 进行压缩，并在两端维护了索引表，用于记录出现过的 headers，后面传输过程中，就只需要穿记录的 haders 的键名，服务端收到键名后可以找到对应的值</li>
+<li>服务端 PUSH  ：服务端在收到客户端的请求后，主动推送一些其它资源</li>
+</ul>
+<h2 id="dns"><a class="markdownIt-Anchor" href="#dns">#</a> DNS</h2>
+<blockquote>
+<p><strong>将域名解析为 IP 的过程，查询过程主要有：迭代查询和递归查询（比较少用）两种</strong></p>
+</blockquote>
+<p><strong>迭代查询过程</strong>（本地域名服务器向根域名服务器的查询采用迭代查询）</p>
+<ol>
+<li>客户机向本地域名服务器发送 DNS 请求报文（递归查询）</li>
+<li>本地域名服务器收到请求后，查询本地缓存，如果没有记录，以 DNS 客户的身份向根域名服务器发送请求</li>
+<li>根域名服务器收到请求后，判断该域名为.com 域，并将顶级域名服务器 dns.com 的 ip 地址返回给本地域名服务器</li>
+<li>本地域名服务器向顶级域名服务器 dns.com 发送 DNS 请求（迭代查询）</li>
+<li>顶级域名服务器收到请求后，判断该域属于 abc.com 域，因此将对应的授权域名服务器 dns.abc.com 的 IP 地址返回给本地域名服务器</li>
+<li>本地域名服务器向授权域名服务器发送请求</li>
+<li>授权域名服务器收到请求后，将查询结果返回给本地域名服务器</li>
+<li>本地域名服务器将查询结果保存到本地缓存后，同时返回给客户机</li>
+</ol>
+<blockquote>
+<p>总结：客户机 ——》本地域名服务器 ——》根域名服务器 ——》本地域名服务器 ——》顶级域名服务器 ——》本地域名服务器 ——》授权域名服务器 ——》本地域名服务器 ——》主机</p>
+</blockquote>
+<blockquote>
+<p><strong>地址栏输入 URL 到页面加载完成的过程</strong></p>
+</blockquote>
+<ol>
+<li>DNS 查询，返回 IP 地址（DNS 查询 IP 的过程）</li>
+<li>TCP 握手（TCP 握手过程）</li>
+<li>TLS 握手，然后开始正式的数据传输（TLS 握手过程）</li>
+<li>数据进入服务端之前，可能会经过负责负载均衡的服务器（将请求合理的分发到多台服务器上），假设服务端响应一个 HTML 文件</li>
+<li>首先，浏览器会判断状态码，如果是 200 继续解析，如果是 400（客户端请求数据出现错误）或者 500（浏览器处理请求错误）会报错，如果是 300 的话，会进行重定向，这里会有个重定向计时器，避免多次重定向，超多一定的次数也会报错</li>
+<li>浏览器开始解析 HTML 文件，如果是 gzip 格式还需要先进行解压，通过文件的编码方式得知如何去解压这个文件</li>
+<li>文件解码成功后，开始正式的渲染流程。根据 HTML 构造 DOM 树，根据 CSS 构建 CSSOM 树。如果遇到 script 标签，会检查是否包含 <code>async</code>  和 <code>defer</code> ，前者会并行下载执行 JS，后者会先下载文件，然后等 HTML 解析完成后顺序执行，如果上述两种属性都没有，就会阻塞渲染流程，知道 JS 代码加载完毕，引入外部资源需要下载，如果资源比较多，长时间的下载，会阻塞页面的渲染流程，导致页面长时间没有响应。</li>
+<li>初始的 HTML 被完全加载和解析后会触发 DomContentLoaded 事件</li>
+<li>CSSOM 树和 DOM 树构建完成后开始生成 Render 树，同时计算元素的坐标，确定元素的布局</li>
+<li>在 Render 树的过程中，浏览器开始调用 GPU 绘制，将内容展示在屏幕上</li>
+</ol>
+
+      <div class="tags">
+          <a href="/tags/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86/" rel="tag"><i class="ic i-tag"></i> 前端知识</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2022-03-16 23:15:20" itemprop="dateModified" datetime="2022-03-16T23:15:20+08:00">2022-03-16</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="Eric Chen 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="Eric Chen 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="Eric Chen 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>Eric Chen <i class="ic i-at"><em>@</em></i>CsStar
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://csstar.top/2022/03/16/%E7%BD%91%E7%BB%9C/" title="网络">http://csstar.top/2022/03/16/网络/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="nav">
+    <div class="item left">
+      
+
+  <a href="/2022/03/14/%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicmnywqgpj20zk0m8dwx.jpg" title="跨域问题">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>跨域问题</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments" data-id="2022/03/16/网络/"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#tcp-vs-udp"><span class="toc-number">1.</span> <span class="toc-text"> TCP vs  UDP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#xss-%E8%B7%A8%E7%BD%91%E7%AB%99%E6%8C%87%E4%BB%A4%E7%A0%81"><span class="toc-number">2.</span> <span class="toc-text"> XSS: 跨网站指令码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#csrf%E8%B7%A8%E7%AB%99%E8%AF%B7%E6%B1%82%E4%BC%AA%E9%80%A0-%E6%98%AF%E4%B8%80%E7%A7%8D%E6%8C%9F%E6%8C%81%E7%94%A8%E6%88%B7%E5%9C%A8%E5%B7%B2%E7%BB%8F%E7%99%BB%E5%BD%95%E7%9A%84web%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E4%B8%8A%E6%89%A7%E8%A1%8C%E9%9D%9E%E6%9C%AC%E6%84%8F%E6%93%8D%E4%BD%9C%E7%9A%84%E6%94%BB%E5%87%BB%E6%96%B9%E6%B3%95"><span class="toc-number">3.</span> <span class="toc-text"> CSRF：跨站请求伪造    是一种挟持用户在已经登录的 web 应用程序上执行非本意操作的攻击方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%86%E7%A0%81%E5%AE%89%E5%85%A8"><span class="toc-number">4.</span> <span class="toc-text"> 密码安全</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B"><span class="toc-number">5.</span> <span class="toc-text"> 三次握手</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B"><span class="toc-number">6.</span> <span class="toc-text"> 四次挥手</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#get%E8%AF%B7%E6%B1%82%E5%92%8Cpost%E8%AF%B7%E6%B1%82"><span class="toc-number">7.</span> <span class="toc-text"> get 请求和 post 请求</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E7%8A%B6%E6%80%81%E7%A0%81"><span class="toc-number">8.</span> <span class="toc-text"> 常见状态码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#https"><span class="toc-number">9.</span> <span class="toc-text"> HTTPS</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#dns"><span class="toc-number">10.</span> <span class="toc-text"> DNS</span></a></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="Eric Chen"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">Eric Chen</p>
+  <div class="description" itemprop="description">Work Hard To Be A Better Man</div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+        <a href="/archives">
+        <span class="count">16</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories">
+        <span class="count">6</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags">
+        <span class="count">14</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL2VyaWMtY2hlbjMw" title="https:&#x2F;&#x2F;github.com&#x2F;eric-chen30"><i class="ic i-github"></i></span>
+      <span class="exturl item twitter" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;twitter.com&#x2F;yourname"><i class="ic i-twitter"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS9FcmljX3NodWFp" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;Eric_shuai"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTQzODMzOTMwNA==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;438339304"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item weibo" data-url="aHR0cHM6Ly93ZWliby5jb20vNjg5MzcwODY2My9wcm9maWxlP3JpZ2h0bW9kPTEmd3ZyPTYmbW9kPXBlcnNvbmluZm8=" title="https:&#x2F;&#x2F;weibo.com&#x2F;6893708663&#x2F;profile?rightmod&#x3D;1&amp;wvr&#x3D;6&amp;mod&#x3D;personinfo"><i class="ic i-weibo"></i></span>
+      <span class="exturl item about" data-url="aHR0cHM6Ly9hYm91dC5tZS9jc3N0YXI=" title="https:&#x2F;&#x2F;about.me&#x2F;csstar"><i class="ic i-address-card"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+        
+  <li class="item dropdown">
+    <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/friends/" rel="section"><i class="ic i-heart"></i>友達</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/links/" rel="section"><i class="ic i-magic"></i>网址</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="copyright">
+  
+  &copy; 2020 – 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="ic i-sakura rotate"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Eric Chen @ Eric Chen</span>
+</div>
+<div>
+  <span class="post-meta-item-icon">
+    <i class="ic i-chart-area"></i>
+  </span>
+  <span title="站点总字数">51k 字</span>
+
+  <span class="post-meta-divider">|</span>
+  <span class="post-meta-item-icon">
+    <i class="ic i-coffee"></i>
+  </span>
+  <span title="站点阅读时长">46 分钟</span>
+</div>
+
+<div class="powered-by">
+  基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'http://csstar.top/2022/03/16/%E7%BD%91%E7%BB%9C/',
+    favicon: {
+      show: "Eric Chen",
+      hide: "Eric Chen"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 ${query} ，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return uri === LOCAL.path;
+      }
+    ]
+  };
+</script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/velocity-animate@1.5.2/velocity.min.js,npm/velocity-animate@1.5.2/velocity.ui.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.1.4"></script>
+
+
+
+
+</body>
+</html>
