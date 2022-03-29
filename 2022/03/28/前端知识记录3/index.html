@@ -1,0 +1,909 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="CsStar" href="http://csstar.top/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="CsStar" href="http://csstar.top/atom.xml" />
+<link rel="alternate" type="application/json" title="CsStar" href="http://csstar.top/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.1.4">
+
+  
+  <meta name="keywords" content="前端知识" />
+
+
+
+<meta name="description" content="Work Hard To Be A Better Man" >
+
+
+<link rel="canonical" href="http://csstar.top/2022/03/28/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%953/">
+
+
+
+  <title>
+前端知识记录3 |
+Eric Chen = CsStar = Work Hard To Be A Better Man</title>
+<meta name="generator" content="Hexo 5.1.1"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">前端知识记录3
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2022-03-28 14:17:01">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-03-28T14:17:01+08:00">2022-03-28</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>18k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>16 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Eric Chen</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclh3brzpj20zk0m8ann.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclwrdwyaj20zk0m8are.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclga70tsj20zk0m84mr.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciukx8a7j20zk0m8aio.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclimtf7dj20zk0m8qav.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclfb3vzhj20zk0m8wny.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main id="main">
+      <div class="inner">
+        <div id="content" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://csstar.top/2022/03/28/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%953/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="Eric Chen">
+    <meta itemprop="description" content="Work Hard To Be A Better Man, Work Hard To Be A Better Man">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="CsStar">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h1 id="前端知识点汇总-三"><a class="markdownIt-Anchor" href="#前端知识点汇总-三">#</a> 前端知识点汇总 (三)</h1>
+<h2 id="replace字符串替换"><a class="markdownIt-Anchor" href="#replace字符串替换">#</a> replace 字符串替换</h2>
+<ul>
+<li>
+<p>直接使用 replace ()，传入两个字符串，只能替换匹配到的第一个</p>
+</li>
+<li>
+<p>replace ()  +  正则替换</p>
+</li>
+<li>
+<p>split()  +  join()</p>
+</li>
+<li>
+<p>replace() + RegExp</p>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 使用replace()只能替换匹配的第一个</span></span><br><span class="line"><span class="keyword">var</span> str = <span class="string">&#x27;1,2,3&#x27;</span></span><br><span class="line">str = str.replace(<span class="string">&#x27;,&#x27;</span>,<span class="string">&#x27; &#x27;</span>)</span><br><span class="line"><span class="built_in">console</span>.log(str)   <span class="comment">// 1 2,3</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用replace() + 正则替换</span></span><br><span class="line"><span class="comment">// 注意：replace的第一个参数就是正则，如果加了单双引号，就变为字符串，不起作用</span></span><br><span class="line"><span class="keyword">var</span> str2 = <span class="string">&#x27;1,2,3&#x27;</span></span><br><span class="line">str2 = str2.replace(<span class="regexp">/,/g</span>, <span class="string">&#x27; &#x27;</span>)</span><br><span class="line"><span class="built_in">console</span>.log(str2)   <span class="comment">// 1 2 3</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// split + join</span></span><br><span class="line"><span class="keyword">var</span> str3 = <span class="string">&#x27;1,2,3&#x27;</span></span><br><span class="line"><span class="comment">// str3 = str3.split(&#x27;,&#x27;)  // [ &#x27;1&#x27;, &#x27;2&#x27;, &#x27;3&#x27; ]\</span></span><br><span class="line">str3 = str3.split(<span class="string">&#x27;,&#x27;</span>).join(<span class="string">&#x27; &#x27;</span>)   <span class="comment">// 1 2 3</span></span><br><span class="line"><span class="built_in">console</span>.log(str3)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用replace + RegExp</span></span><br><span class="line"><span class="comment">// RegExp 的两个参数分别为  要替换的字符，匹配模式及</span></span><br><span class="line"><span class="keyword">var</span> str4 = <span class="string">&#x27;1,2,3&#x27;</span></span><br><span class="line">str4 = str4.replace(<span class="built_in">RegExp</span>(<span class="string">&quot;,&quot;</span>,<span class="string">&quot;g&quot;</span>), <span class="string">&#x27; &#x27;</span>)</span><br><span class="line"><span class="built_in">console</span>.log(str4)  <span class="comment">// 1 2 3</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// replaceAll  第一个参数必须为正则表达式，第二个参数为替换的新字符串</span></span><br><span class="line"><span class="comment">// 没有用，直接被弃用，完全可以使用replace替换它</span></span><br></pre></td></tr></table></figure>
+<h2 id="内存泄漏"><a class="markdownIt-Anchor" href="#内存泄漏">#</a> 内存泄漏</h2>
+<blockquote>
+<p>** 定义：** 一个应用或程序，由于某些原因导致本应该回收的内存没有被操作系统或空闲内存池回收</p>
+</blockquote>
+<ol>
+<li>JavaScript 是垃圾回收语言之一，通过定期检查事先被分配的内存块是否还可以被其它部分访问到，来确定是否对内存块进行回收处理。简单说就是，如果已经被分配的内存块还需要被引用或被访问到，那么就不进行回收</li>
+<li>导致内存泄漏的主要原因可以归结于 “不必要的引用”</li>
+<li>大多数垃圾回收语言使用 ``Mark-and-Sweep` 算法
+<ul>
+<li>垃圾回收器建立一个根节点的列表</li>
+<li>所有的根节点被检查并且标记为活跃，子节点被递归检查，从根节点可达的节点视为非垃圾节点</li>
+<li>所有没有被标记为活跃的内存块可以被认为是垃圾，被垃圾回收器进行回收</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>常见的 JavaScript 内存泄漏</p>
+</blockquote>
+<ol>
+<li>意外的全局变量</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    bar = <span class="string">&quot;this is an explicit global variable&quot;</span></span><br><span class="line">    <span class="comment">// 相当于 window.bar = &quot;this is an explicit global variable&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 另外一种全局变量被创建的方式是通过this</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo1</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">this</span>.variable = <span class="string">&quot;this is an explicit global variable&quot;</span></span><br><span class="line">    <span class="comment">// 这个this相当于window对象</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 为了防止这种错误的发生，可以在JavaScript文件的最前面添加`use strict`开启更严格模式，阻止意外全局</span></span><br></pre></td></tr></table></figure>
+<p><strong>对于全局变量，需要谨慎使用。如果必须	用全局变量来存储大量数据，使用完之后确保对其进行清零或重新赋值，否则会造成大量的内存消耗。此外，对于缓存的大小也需要有所限制</strong></p>
+<ol start="2">
+<li>被遗忘的计时器或者回调</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> someSource = getData()</span><br><span class="line"></span><br><span class="line"> <span class="built_in">setInterval</span>(</span><br><span class="line">      <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">          <span class="keyword">var</span> node = <span class="built_in">document</span>.getElementById(<span class="string">&#x27;Node&#x27;</span>);</span><br><span class="line">          <span class="keyword">if</span>(node) &#123;</span><br><span class="line">          <span class="comment">// Do stuff with node and someResource.</span></span><br><span class="line">          node.innerHTML = <span class="built_in">JSON</span>.stringify(someResource));</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;,<span class="number">1000</span>);</span><br></pre></td></tr></table></figure>
+<p><strong>node 对象可能再后面没有引用，需要被移除，但是由于间隔函数仍然是活跃的，因此 node 对象使用玩后不能被即使回收，间隔处理不能回收，则它的相关引用也不能回收，如果引用存储大量数据，那么影响很大</strong></p>
+<ol start="3">
+<li>超出 DOM 引用（储存 DOM 节点到数据结构中）</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> elements = &#123;</span><br><span class="line">    button: <span class="built_in">document</span>.getElementById(<span class="string">&#x27;button&#x27;</span>),</span><br><span class="line">    image: <span class="built_in">document</span>.getElementById(<span class="string">&#x27;image&#x27;</span>),</span><br><span class="line">    text: <span class="built_in">document</span>.getElementById(<span class="string">&#x27;text&#x27;</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">doStuff</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">     image.src = <span class="string">&#x27;http://some.url/image&#x27;</span>;</span><br><span class="line">     button.click();</span><br><span class="line">     <span class="built_in">console</span>.log(text.innerHTML);</span><br><span class="line">&#125;</span><br><span class="line">     </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">removeButton</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">      <span class="comment">// The button is a direct child of body.</span></span><br><span class="line">      <span class="built_in">document</span>.body.removeChild(<span class="built_in">document</span>.getElementById(<span class="string">&#x27;button&#x27;</span>));</span><br><span class="line">      <span class="comment">// At this point, we still have a reference to #button in the global </span></span><br><span class="line">      <span class="comment">// elements dictionary. In other words, the button element is still in</span></span><br><span class="line">	  <span class="comment">// memory and cannot be collected by the GC. </span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>当我们需要删除 DOM 节点时，由于全局对象中还存在该对象的引用，因此无法被垃圾系统回收</strong></p>
+<ol start="4">
+<li>闭包（从父级作用域捕获变量的匿名函数）</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 造成内存泄漏的例子</span></span><br><span class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> el = <span class="built_in">document</span>.getElementById(<span class="string">&#x27;id&#x27;</span>)</span><br><span class="line">    el.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(el.id)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 解决办法：手动清除 </span></span><br><span class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> el = <span class="built_in">document</span>.getElementById(<span class="string">&#x27;id&#x27;</span>)</span><br><span class="line">    el.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(el.id)</span><br><span class="line">    &#125;</span><br><span class="line">    el = <span class="literal">null</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 尽量避免变量的循环赋值和引用</span></span><br></pre></td></tr></table></figure>
+<h2 id="一个元素绑定多个事件"><a class="markdownIt-Anchor" href="#一个元素绑定多个事件">#</a> 一个元素绑定多个事件</h2>
+<blockquote>
+<p>这个问题涉及到事件处理程序，事件处理程序分为 DOM0、DOM2、DOM3 这三种级别的事件处理程序</p>
+</blockquote>
+<h3 id="dom0级事件处理程序"><a class="markdownIt-Anchor" href="#dom0级事件处理程序">#</a> DOM0 级事件处理程序</h3>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 第一种是通过 JavaScript代码获取DOM元素，然后将函数赋值给相应的事件属性</span></span><br><span class="line"><span class="keyword">var</span> btn = <span class="built_in">document</span>.getElementById(<span class="string">&#x27;btn&#x27;</span>)</span><br><span class="line">btn.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// do something ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--第二种是直接在html设置对应事件属性的值，值有两种表现形式，一种是执行的函数体，一种是函数名（绝大多数）--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">&quot;alert(&#x27;test&#x27;)&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">&quot;clickFn()&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--然后在script代码中定义该函数并实现--&gt;</span></span><br></pre></td></tr></table></figure>
+<ol>
+<li>
+<p>如果两种事件处理程序同时存在时，在 JavaScript 中定义的事件处理程序会覆盖掉在 html 标签中定义的事件处理程序</p>
+</li>
+<li>
+<p>DOM0 级事件处理程序只支持事件 <code>冒泡阶段</code></p>
+</li>
+<li>
+<p><code>一个事件处理程序只能绑定一个函数</code></p>
+</li>
+</ol>
+<blockquote>
+<p>如果 html 标签中定义了一个函数，同时我们在 js 代码中又通过获取 DOM 对象，绑定了并一个函数，那么 js 中绑定的事件处理程序的优先级高于在 HTML 中定义的事件处理程序</p>
+</blockquote>
+<h3 id="dom2级事件处理程序"><a class="markdownIt-Anchor" href="#dom2级事件处理程序">#</a> DOM2 级事件处理程序</h3>
+<blockquote>
+<p>DOM2 级别的事件处理程序中，当事件发生在节点时，目标元素的事件处理程序就会触发，而且目标元素的每个祖先节点也会按照事件流的顺序触发对应的事件处理程序。</p>
+</blockquote>
+<ul>
+<li>在 IE10 一下的版本中，只支持事件冒泡阶段，在 IE11 中同时支持事件捕获和事件冒泡阶段</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// IE10一下的版本添加/删除事件处理程序，只支持事件冒泡阶段</span></span><br><span class="line">element.attachEvent(<span class="string">&quot;on&quot;</span> + eventName, handler)</span><br><span class="line">element.detachEvent(<span class="string">&quot;on&quot;</span> + eventName, handler)</span><br><span class="line"></span><br><span class="line"><span class="comment">// IE11以及其他非IE浏览器中，同时支持事件捕获和事件冒泡两个阶段</span></span><br><span class="line"><span class="comment">// 第三个参数为是否支持捕获阶段，默认为false，即默认为冒泡，第三个参数为true时，为捕获</span></span><br><span class="line">addEventListener(eventName,handler,userCapture)</span><br><span class="line">removeEventListener(eventName,handler,userCapture)</span><br></pre></td></tr></table></figure>
+<ol>
+<li><code>DOM2级事件处理程序，支持对同一事件绑定多个处理程序</code> ，但以 IE10 为界限绑定事件的函数不同而已</li>
+<li>删除需要绑定的事件时，不能删除匿名函数，因为添加和删除的必须是同一个函数</li>
+<li>IE 浏览器中，通过 attachEvent 函数为同一个事件添加多个事件处理函数时，会按照添加的相反顺序执行</li>
+<li>在 IE 浏览器中，通过 attachEvent 添加事件处理程序会在全局作用域中运行， <code>this指向全局作用域window</code> 。而在非 IE 浏览器中使用 addEventListener 函数添加事件处理程序在指定的元素内部执行，因此 <code>this执行绑定的元素</code> 。</li>
+</ol>
+<blockquote>
+<p>针对不同浏览器进行一个兼容的封装函数</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> EventUtil = &#123;</span><br><span class="line">    addEventHandler: <span class="function"><span class="keyword">function</span>(<span class="params">element, type, handler</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(element.addEventListener)&#123;</span><br><span class="line">            element.addEventListener(type, handler)</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(element.attachEvent)&#123;</span><br><span class="line">            element.attachEvent(<span class="string">&quot;on&quot;</span> + type, handler)</span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            element[<span class="string">&quot;on&quot;</span> + type] = handler</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    </span><br><span class="line">    removeEventHandler: <span class="function"><span class="keyword">function</span>(<span class="params">element, type, handler</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(element.addEventListener)&#123;</span><br><span class="line">            element.removeEventListener(type, handler)</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(element.attachEvent)&#123;</span><br><span class="line">            element.detachEvent(<span class="string">&quot;on&quot;</span> + type, handler)</span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            element[<span class="string">&quot;on&quot;</span> + type] = <span class="literal">null</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="dom3级事件处理程序"><a class="markdownIt-Anchor" href="#dom3级事件处理程序">#</a> DOM3 级事件处理程序</h3>
+<blockquote>
+<p>与 DOM2 级事件处理程序最重要的区别在于 DOM3 级事件处理程序允许自定义事件。自定义事件由 createEvent（“Customer”）函数创建，返回的对象有一个 initCustomerEvent () 函数</p>
+</blockquote>
+<p>函数可以接收如下四个参数：</p>
+<ul>
+<li>type           字符串，触发事件的类型</li>
+<li>bubble       是否可以冒泡</li>
+<li>cancelable  表示事件是否可以取消</li>
+<li>detail            任意值，保存 event 对象中的 detail 属性中</li>
+</ul>
+<p>创建完自定义事件后，需要通过 <code>dispatchEvent函数</code> 手动触发，触发自定义事件的元素需要和绑定的自定义事件的元素为同一元素</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.implementation.hasFeature(<span class="string">&#x27;CustomEvents&#x27;</span>,<span class="string">&#x27;3.0&#x27;</span>)   <span class="comment">// 判断浏览器是否支持DOM3级事件处理程序</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> customEvent</span><br><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">document</span>.implementation.hasFeature(<span class="string">&#x27;CustomEvents&#x27;</span>,<span class="string">&#x27;3.0&#x27;</span>)&#123;</span><br><span class="line">     	<span class="keyword">var</span> detailData = &#123;<span class="attr">name</span>: <span class="string">&#x27;king&#x27;</span>&#125;</span><br><span class="line">    	customEvent = <span class="built_in">document</span>.createEvent(<span class="string">&#x27;customEvent&#x27;</span>)</span><br><span class="line">    	customEvent.initCustomEvent(<span class="string">&#x27;myEvent&#x27;</span>,<span class="literal">true</span>,<span class="literal">false</span>,detailData)</span><br><span class="line">     &#125;</span><br><span class="line">&#125;)()</span><br><span class="line"></span><br><span class="line"><span class="comment">// 监听自定义事件并获取携带参数</span></span><br><span class="line">div.addEventListener(<span class="string">&#x27;myEvent&#x27;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(e.detail)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 触发自定义事件</span></span><br><span class="line">btn.addEventListener(<span class="string">&#x27;click&#x27;</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    div.dispatchEvent(customEvent)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h2 id="高度塌陷"><a class="markdownIt-Anchor" href="#高度塌陷">#</a> 高度塌陷</h2>
+<blockquote>
+<p>父元素不设置高度时，子元素使用了浮动属性，父元素就会发生高度塌陷（高度变为 0）。</p>
+<p>我们也可以这样理解，父元素没有设置高度，那么它的高度就是由子元素内容决定的，而当对子元素使用了浮动后，它脱离了文档流，此时父元素没有内容了，因此产生了高度塌陷。</p>
+</blockquote>
+<p><strong>如何解决高度塌陷的问题呢？</strong></p>
+<ol>
+<li>
+<p>给父元素添加声明 ``overflow：hidden；`，给父元素设置高度</p>
+</li>
+<li>
+<p>在浮动元素的下方添加空 div，并给元素声明 ``clear:both;`</p>
+</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span></span><br><span class="line"><span class="css">	<span class="selector-class">.box</span>&#123;</span></span><br><span class="line">		margin: 200px auto;</span><br><span class="line">		width: 400px;</span><br><span class="line"><span class="css">		<span class="selector-tag">background</span>: <span class="selector-id">#42B983</span>;</span></span><br><span class="line"><span class="css">		<span class="selector-tag">border</span>: 3<span class="selector-tag">px</span> <span class="selector-tag">solid</span> <span class="selector-id">#000000</span>;</span></span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line"><span class="css">	<span class="selector-class">.chl_box</span>&#123;</span></span><br><span class="line">		width: 200px;</span><br><span class="line">		height: 200px;</span><br><span class="line"><span class="css">		<span class="selector-tag">background</span>: <span class="selector-id">#00FFFF</span>;</span></span><br><span class="line">		float: left;</span><br><span class="line">	&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;chl_box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">                <span class="comment">&lt;!-- height: 0;overflow: hidden; 为了解决 IE 浏览器的兼容问题 --&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;height: 0;overflow: hidden;clear: both;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>万能清除浮动法</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span></span><br><span class="line"><span class="css">	<span class="selector-class">.box</span>&#123;</span></span><br><span class="line">		margin: 200px auto;</span><br><span class="line">		width: 400px;</span><br><span class="line"><span class="css">		<span class="selector-tag">background</span>: <span class="selector-id">#42B983</span>;</span></span><br><span class="line"><span class="css">		<span class="selector-tag">border</span>: 3<span class="selector-tag">px</span> <span class="selector-tag">solid</span> <span class="selector-id">#000000</span>;</span></span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line"><span class="css">	<span class="selector-class">.chl_box</span>&#123;</span></span><br><span class="line">		width: 200px;</span><br><span class="line">		height: 200px;</span><br><span class="line"><span class="css">		<span class="selector-tag">background</span>: <span class="selector-id">#00FFFF</span>;</span></span><br><span class="line">		float: left;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line"><span class="css">	<span class="selector-class">.box</span><span class="selector-pseudo">::after</span>&#123;</span></span><br><span class="line">		content: &quot;&quot;;</span><br><span class="line">		display: block;</span><br><span class="line">        clear: both;</span><br><span class="line"><span class="css">        <span class="comment">/* height: 0;overflow: hidden; 为了解决 IE 浏览器的兼容问题 */</span></span></span><br><span class="line"> 		height: 0;</span><br><span class="line">		overflow: hidden;</span><br><span class="line"><span class="css">        <span class="comment">/* visibility:hidden;为了去隐藏content中的内容 */</span></span></span><br><span class="line">		visibility: hidden;</span><br><span class="line">	&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;chl_box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>父元素添加浮动 (会产生新的浮动问题)</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span></span><br><span class="line"><span class="css">	<span class="selector-class">.box</span>&#123;</span></span><br><span class="line">		margin: 200px auto;</span><br><span class="line">		width: 400px;</span><br><span class="line"><span class="css">		<span class="selector-tag">background</span>: <span class="selector-id">#42B983</span>;</span></span><br><span class="line"><span class="css">		<span class="selector-tag">border</span>: 3<span class="selector-tag">px</span> <span class="selector-tag">solid</span> <span class="selector-id">#000000</span>;</span></span><br><span class="line">		float: left;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line"><span class="css">	<span class="selector-class">.chl_box</span>&#123;</span></span><br><span class="line">		width: 200px;</span><br><span class="line">		height: 200px;</span><br><span class="line"><span class="css">		<span class="selector-tag">background</span>: <span class="selector-id">#00FFFF</span>;</span></span><br><span class="line">		float: left;</span><br><span class="line">	&#125;	</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;chl_box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>参考链接：<span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8xNjIyMDIyODM=">https://zhuanlan.zhihu.com/p/162202283</span></p>
+</blockquote>
+<h2 id="页面分页加载"><a class="markdownIt-Anchor" href="#页面分页加载">#</a> 页面分页加载</h2>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--scroll-view是视图容器组件，用来显示可滚动的视图区域</span></span><br><span class="line"><span class="comment">	这里主要实现滚动条到底部进行数据请求刷新  也就是  bindscrolltolower绑定的函数  Loadmore</span></span><br><span class="line"><span class="comment">	需要注意的是使用这个函数时，需要设置滚动条的高度，这里设置的是&#123;&#123;conHeight&#125;&#125;</span></span><br><span class="line"><span class="comment">	scroll-top</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">scroll-view</span> <span class="attr">scroll-y</span>=<span class="string">&quot;true&quot;</span> <span class="attr">style</span>=<span class="string">&quot;height:&#123;&#123;conHeight&#125;&#125;&quot;</span> <span class="attr">enable-flex</span>=<span class="string">&#x27;true&#x27;</span> <span class="attr">bindscrolltolower</span>=<span class="string">&quot;Lordmore&quot;</span> </span></span><br><span class="line"><span class="tag"><span class="attr">scroll-top</span>=<span class="string">&#x27;&#123;&#123;topNum&#125;&#125;&#x27;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">scroll-view</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">    <span class="comment">//滚动条回到顶部  点击下拉框切换目标就回到顶部</span></span></span><br><span class="line"><span class="javascript">    goTop: <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;  <span class="comment">// 一键回到顶部</span></span></span><br><span class="line"><span class="javascript">        <span class="built_in">this</span>.setData(&#123;</span></span><br><span class="line"><span class="javascript">            topNum:<span class="number">0</span>    <span class="comment">// 距离顶部的距离</span></span></span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;,</span><br><span class="line"><span class="javascript">    <span class="comment">//解决onReachBottom滚动问题</span></span></span><br><span class="line"><span class="javascript">    Lordmore:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="built_in">this</span>.onReachBottom()</span></span><br><span class="line">    &#125;,</span><br><span class="line">        </span><br><span class="line"><span class="javascript">    onReachBottom: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="comment">// ...logical code</span></span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="图片懒加载"><a class="markdownIt-Anchor" href="#图片懒加载">#</a> 图片懒加载</h2>
+<blockquote>
+<p>为了减轻服务器并发请求的压力，优先加载可视区域的内容，其他部分等进入了可视区域再加载，提高用户体验</p>
+</blockquote>
+<h3 id="懒加载原理"><a class="markdownIt-Anchor" href="#懒加载原理">#</a> 懒加载原理</h3>
+<p>一张图片对应一个<img>标签，浏览器是否发起图片加载请求是根据<img>的 src 属性，所以实现懒加载的关键就就是，在图片没有进入可视区域时，不给图片的 src 属性赋值，等图片进入可视区域后再进行属性赋值。</p>
+<h3 id="实现思路"><a class="markdownIt-Anchor" href="#实现思路">#</a> 实现思路</h3>
+<blockquote>
+<p>方式一：innerHeight、scrollTop、offSet 三者之间的关系</p>
+</blockquote>
+<ol>
+<li>加载 loading 图片</li>
+<li>判断哪些图片需要加载，也就是如何判断图片进入了可视区域</li>
+<li>隐形加载图片</li>
+<li>替换真图片</li>
+</ol>
+<blockquote>
+<p>加载 loading 图片</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;imglist&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">class</span>=<span class="string">&quot;lazy&quot;</span> <span class="attr">src</span>=<span class="string">&quot;存放大小较小的伪图片，等待的图片&quot;</span> <span class="attr">data-src</span>=<span class="string">&quot;真实图片地址&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;pic&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>判断图片进入可视区域</p>
+</blockquote>
+<ul>
+<li>滚动距离：document.body.scrollTop</li>
+<li>浏览器窗口的视口（viewport）高度（以像素为单位）：window.innerHeight</li>
+<li>当前元素距离顶部的距离：HTMLElement.offsetTop</li>
+</ul>
+<p>当 <code>HTMLElement.offsetTop &lt;=  window.innerHeight + document.body.scrollTop</code>  的时候图片进入可视区域，可以对<img>标签的 data-src 属性进行赋值操作。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 获取所有图片元素</span></span><br><span class="line"><span class="keyword">var</span> images = <span class="built_in">document</span>.getElementByTagName(<span class="string">&#x27;img&#x27;</span>)</span><br><span class="line"><span class="comment">// 绑定滚动事件</span></span><br><span class="line"><span class="built_in">window</span>.addEventListener(<span class="string">&quot;scroll&quot;</span>, <span class="function">(<span class="params">e</span>) =&gt;</span> &#123;</span><br><span class="line">    ergodic()</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ergodic</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="comment">// 遍历图片</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">let</span> i <span class="keyword">of</span> images) &#123;</span><br><span class="line">        <span class="comment">// 判断图片是否进入可视区域</span></span><br><span class="line">        <span class="keyword">if</span>(i.offsetTop &lt;= <span class="built_in">window</span>.innerHeight + <span class="built_in">window</span>.scrollY)&#123;</span><br><span class="line">            <span class="comment">// 对可视区域的图片进行加载</span></span><br><span class="line">            <span class="keyword">let</span> trueSrc = i.getAttribute(<span class="string">&quot;data-src&quot;</span>)</span><br><span class="line">            i.setAttribute(<span class="string">&quot;src&quot;</span>,trueSrc)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 没发生滚动也需要加载一次</span></span><br><span class="line">ergodic()</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>方式二：getBoundingClientRect ().top 为元素相对于窗口的位置，而 window.innerHeight 为当前窗口的高度</p>
+</blockquote>
+<p>** 原理：** 当元素对于窗口的位置小于当前窗口的高度时，元素位于窗口可视区域内</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.addEventListener(<span class="string">&quot;scroll&quot;</span> (e) =&gt; &#123;</span><br><span class="line">    ergodic()</span><br><span class="line">&#125;)</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ergodic</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">let</span> i <span class="keyword">of</span> images)&#123;</span><br><span class="line">        <span class="comment">// 与上面相比，仅仅是判断的方式不一样</span></span><br><span class="line">        <span class="keyword">if</span>(i.getBoundingClientRect().top &lt; <span class="built_in">window</span>.innerHeight)&#123;</span><br><span class="line">            <span class="keyword">let</span> tureSrc = i.getAttribute(<span class="string">&#x27;data-src&#x27;</span>)</span><br><span class="line">            i.setAttribute(<span class="string">&#x27;src&#x27;</span>, tureSrc)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>方式三：Intersection Observer 观察器接口，浏览器原生提供的构造函数</p>
+</blockquote>
+<p>以上两种方式都实现了图片的懒加载效果，但是存在大量的循环和判断，对于图片量大的项目中性能较差，Intersection Observer 方法省掉大量的循环和判断，但是兼容不是太好。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 通过new生成一个该构造函数的实例</span></span><br><span class="line"><span class="keyword">const</span> observer = <span class="keyword">new</span> IntersectionObserver(callback);</span><br><span class="line"><span class="comment">// 实例通过调用observer属性为每一张图片绑定一个观察器</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i <span class="keyword">of</span> images)&#123;</span><br><span class="line">    observer.observe(i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">callback</span>(<span class="params">entries</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(entries);  </span><br><span class="line">    <span class="comment">// entries为一个数组，其中有一个 isIntersecting 属性，目标元素在可视区域为ture，否则为false</span></span><br><span class="line">    <span class="comment">// 我们就是利用该属性判断图片是否在可视区域</span></span><br><span class="line">    <span class="keyword">for</span>(ket i <span class="keyword">of</span> entries)&#123;</span><br><span class="line">        <span class="keyword">if</span>(i.isIntersecting)&#123;</span><br><span class="line">            <span class="keyword">let</span> img = i.target;   <span class="comment">// target事件属性返回触发事件的元素</span></span><br><span class="line">            <span class="keyword">let</span> tureSrc = img.getAttribute(<span class="string">&quot;data-src&quot;</span>)</span><br><span class="line">            img.setAttribute(<span class="string">&quot;src&quot;</span>,trueSrc)</span><br><span class="line">            <span class="comment">// 如果图片来回滚动会出现一会可见、一会不可见的状态，都会触发函数，所以对于已加载的图片，停止观察</span></span><br><span class="line">            observer.unobserve(img);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="正则的简单用法"><a class="markdownIt-Anchor" href="#正则的简单用法">#</a> 正则的简单用法</h2>
+<p>主要作用：</p>
+<ul>
+<li>测试字符串是否是有效的数据</li>
+<li>替换指定的字符串</li>
+<li>输入数据中查找指定的字符串</li>
+</ul>
+<blockquote>
+<p>创建</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> re = <span class="keyword">new</span> <span class="built_in">RegExp</span>();</span><br><span class="line">re = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">&quot;a&quot;</span>)   		<span class="comment">// 匹配英文字母a</span></span><br><span class="line">re = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">&quot;a&quot;</span>,<span class="string">&quot;i&quot;</span>)	<span class="comment">// 不区分大小写匹配英文字母A，a</span></span><br><span class="line"><span class="comment">// RegExp 构造函数第一个参数为正则表达式的文本内容，第二个参数是匹配模式  g全局匹配 i不区分大小写  m多行查找</span></span><br><span class="line"><span class="keyword">let</span> result1 = re.test(str)</span><br><span class="line"><span class="keyword">let</span> result2 = re.exec(str)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>方法和属性</p>
+</blockquote>
+<ol>
+<li>test   匹配正则表达式，返回值为 Boolean 值，检验功能</li>
+<li>exec   用正则表达式模式在字符串中进行查找，并且返回查找结果的数组</li>
+</ol>
+<h2 id="html5新特性"><a class="markdownIt-Anchor" href="#html5新特性">#</a> HTML5 新特性</h2>
+<ul>
+<li>新的语义元素，比如 <header>, <footer>, <article>, and <section>。</section></article></footer></header></li>
+<li>新的表单控件，比如数字、日期、时间、日历和滑块。</li>
+<li>强大的图像支持（借由 <canvas> 和 <svg>）</svg></canvas></li>
+<li>强大的多媒体支持（借由 <video> 和 <audio>）</audio></video></li>
+<li>强大的新 API，比如用本地存储取代 cookie。</li>
+</ul>
+<h2 id="css3新特性"><a class="markdownIt-Anchor" href="#css3新特性">#</a> CSS3 新特性</h2>
+<ol>
+<li><strong>新的选择器</strong></li>
+</ol>
+<ul>
+<li>
+<p><code>E:nth-child(n)</code>  选择器匹配其父元素的第 n 个子元素，不论元素类型，n 可以使数字，关键字，或公式</p>
+</li>
+<li>
+<p><code>E:nth-of-type(n)</code>  选择与之其匹配的父元素的第 N 个子元素</p>
+</li>
+<li>
+<p><code>E:frist-child</code>  相对于父级做参考，“所有” 子元素的第一个子元素，并且 “位置” 要对应</p>
+</li>
+<li>
+<p><code>E:frist-of-type</code>  相对于父级做参考，“特定类型”（E）的第一个子元素</p>
+</li>
+<li>
+<p><code>E:empty</code>  选择没有子元素的每个 E 元素</p>
+</li>
+<li>
+<p><code>E:target</code>  选择当前活动的 E 元素</p>
+</li>
+<li>
+<p><code>::selection</code>  选择被用户选取的元素部分</p>
+</li>
+<li>
+<p>属性选择器</p>
+<p><code>E[abc*=&quot;def&quot;]</code>  选择 adc 属性值中包含子串 &quot;def&quot; 的所有元素</p>
+</li>
+</ul>
+<ol start="2">
+<li><strong>文本</strong></li>
+</ol>
+<ul>
+<li><code>text-shadow:2px 2px 8px #000;</code>  参数 1 为向右的偏移量，参数 2 为向左的偏移量，参数 3 为渐变的像素，参数 4 为渐变的颜色</li>
+<li><code>text-overflow</code> ：规定当文本溢出包含元素时发生的事情 text-overflow:ellipsis (省略)</li>
+<li><code>text-wrap</code> ：规定文本换行的规则</li>
+<li><code>word-break</code>  规定非中日韩文本的换行规则</li>
+<li><code>word-wrap</code> ：对长的不可分割的单词进行分割并换行到下一行</li>
+<li><code>white-space</code> ：规定如何处理元素中的空白 white-space:nowrap 规定段落中的文本不进行换行</li>
+</ul>
+<ol start="3">
+<li><strong>边框</strong></li>
+</ol>
+<ul>
+<li><code>border-raduis</code>  边框的圆角</li>
+<li><code>border-image</code>  边框图片</li>
+</ul>
+<ol start="4">
+<li><strong>背景</strong></li>
+</ol>
+<ul>
+<li><code>rgba</code></li>
+<li><code>backgrounnd-size:cover/contain</code> ，其中 background-size：cover，会使 “最大” 边进行缩放，另一边同比缩放，铺满容器，超出部分会溢出。background-size:contain，会使 “最小” 边进行缩放，另一边同比缩放，不一定铺满容器，会完整显示图片</li>
+</ul>
+<ol start="5">
+<li><strong>渐变</strong></li>
+</ol>
+<ul>
+<li><code>linear-gradient</code></li>
+<li><code>radial-gradient</code></li>
+</ul>
+<ol start="6">
+<li><strong>多列布局</strong></li>
+</ol>
+<ul>
+<li><code>column-count</code></li>
+<li><code>column-width</code></li>
+<li><code>column-gap</code></li>
+<li><code>column-rule</code></li>
+</ul>
+<ol start="7">
+<li><strong>过渡</strong></li>
+</ol>
+<ul>
+<li><code>transition</code></li>
+<li><code>transition-property:width</code>  //property 为定义过渡的 css 属性列表，列表以逗号分隔</li>
+<li><code>transition-duration:2s;</code>  // 过渡持续的时间</li>
+<li><code>transition-timing-function:ease;</code></li>
+<li><code>transition-delay:5s</code>  // 过渡延迟 5s 进行</li>
+</ul>
+<ol start="8">
+<li><strong>动画、旋转</strong></li>
+</ol>
+<ul>
+<li><code>animation</code></li>
+<li><code>transform ：translate（x,y) rotate(deg) scale(x,y)</code></li>
+<li><code>translate</code></li>
+<li><code>scale</code></li>
+<li><code>rotate</code></li>
+<li><code>skew</code> （倾斜）</li>
+</ul>
+<ol start="9">
+<li>
+<p><strong>flex 布局</strong></p>
+</li>
+<li>
+<p><strong>@media 媒体查询</strong></p>
+</li>
+</ol>
+<h2 id="对象遍历"><a class="markdownIt-Anchor" href="#对象遍历">#</a> 对象遍历</h2>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// for...in 循环遍历对象自身和继承的可枚举属性</span></span><br><span class="line"><span class="keyword">var</span> obj =&#123;</span><br><span class="line">    <span class="string">&#x27;0&#x27;</span>: <span class="string">&#x27;a&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;1&#x27;</span>: <span class="string">&#x27;b&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;2&#x27;</span>: <span class="string">&#x27;c&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// obj[i]  key-value</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i <span class="keyword">in</span> obj)&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(i,<span class="string">&#x27;:&#x27;</span>,obj[i])</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Object.keys()</span></span><br><span class="line"><span class="keyword">var</span> obj =&#123;</span><br><span class="line">    <span class="string">&#x27;0&#x27;</span>: <span class="string">&#x27;a&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;1&#x27;</span>: <span class="string">&#x27;b&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;2&#x27;</span>: <span class="string">&#x27;c&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 遍历对象的所有键，返回一个数组</span></span><br><span class="line"><span class="keyword">let</span> keys = <span class="built_in">Object</span>.keys(obj)</span><br><span class="line"><span class="built_in">console</span>.log(keys)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 通过forEach 去取出数组中的每一项</span></span><br><span class="line">keys.forEach(<span class="function">(<span class="params">key</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(key,obj[key])</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Object.getOwnPropertyNames(obj)</span></span><br><span class="line"><span class="keyword">var</span> obj =&#123;</span><br><span class="line">    <span class="string">&#x27;0&#x27;</span>: <span class="string">&#x27;a&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;1&#x27;</span>: <span class="string">&#x27;b&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;2&#x27;</span>: <span class="string">&#x27;c&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> keys = <span class="built_in">Object</span>.getOwnPropertyNames(obj)</span><br><span class="line"><span class="built_in">console</span>.log(keys)</span><br><span class="line"></span><br><span class="line">keys.forEach(<span class="function">(<span class="params">key</span>) =&gt;</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(key,obj[key])</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Reflect.ownKeys(obj)遍历</span></span><br><span class="line"><span class="keyword">var</span> obj =&#123;</span><br><span class="line">    <span class="string">&#x27;0&#x27;</span>: <span class="string">&#x27;a&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;1&#x27;</span>: <span class="string">&#x27;b&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;2&#x27;</span>: <span class="string">&#x27;c&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> keys =<span class="built_in">Reflect</span>.ownKeys(obj)</span><br><span class="line"><span class="built_in">console</span>.log(keys)</span><br><span class="line"></span><br><span class="line">keys.forEach(<span class="function">(<span class="params">key</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(key,obj[key])</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h2 id="数组求和"><a class="markdownIt-Anchor" href="#数组求和">#</a> 数组求和</h2>
+<ol>
+<li>for 循环累加</li>
+<li>使用 reduce () 方法进行求和</li>
+<li>forEach () 进行遍历求和 (对数组中的每一个元素调用一次回调函数)</li>
+<li>eval (执行表达式)</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">arr</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">eval</span>(arr.join(<span class="string">&quot;+&quot;</span>));</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(sum(arr));</span><br></pre></td></tr></table></figure>
+<h2 id="数组去重"><a class="markdownIt-Anchor" href="#数组去重">#</a> 数组去重</h2>
+<ol>
+<li>新建一个空数组，然后遍历原数组通过判断把没有出现在新数组中的元素添加进去</li>
+<li>利用键值对</li>
+<li>使用 reduce () 函数</li>
+<li>借助 ES6 的 Set 数据结构</li>
+<li>借助 ES6 的 Map 数据结构</li>
+</ol>
+<h2 id="字符串处理方法"><a class="markdownIt-Anchor" href="#字符串处理方法">#</a> 字符串处理方法</h2>
+<ul>
+<li><strong>replace</strong>  字符串替换， <code>返回替换后结果</code></li>
+<li><strong>split</strong>     字符串分割，返回一个 <code>字符串数组</code></li>
+<li><strong>substring</strong>   用于提取字符串中介于两个指定下标之间的的字符     <code>返回字串</code></li>
+</ul>
+<ol>
+<li>字符串的内容为 start 到 stop-1 除的所有字符，字符串的长度为 stop - start</li>
+<li>如果 start = stop，则返回空字符串，如果 start &gt; stop  那么方法在提取字符串之前会进行交换</li>
+<li>substring 与 substr 不同， <code>sunstring不接收负的参数</code></li>
+</ol>
+<ul>
+<li><strong>substr</strong></li>
+</ul>
+<ol>
+<li>substr（start, length）用于截取从 start 开始指定长度的字符串</li>
+<li>start 参数可以为负数，-1 指字符串的最后一个字符，-2 表示倒数第二个字符</li>
+<li>第二个参数可选，如果不穿第二个参数，就到字符串结尾</li>
+</ol>
+<blockquote>
+<p>**concat ()** 用于 <code>数组的合并</code></p>
+<p><strong>slice()</strong> <code>不改变原数组</code> ，而是返回一个新的数组对象</p>
+<p>**splice ()** 方法会 <code>改变原数组</code> ，向数组中添加 / 删除项目</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// slice方法返回包含选中元素的新数组，不对原数组产生影响</span></span><br><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line"><span class="built_in">console</span>.log(arr.slice(<span class="number">1</span>))  <span class="comment">// [ 2, 3, 4, 5 ]</span></span><br><span class="line"><span class="built_in">console</span>.log(arr.slice(<span class="number">2</span>))   <span class="comment">// [ 3, 4, 5 ]</span></span><br><span class="line"><span class="built_in">console</span>.log(arr.slice(<span class="number">2</span>,<span class="number">3</span>))  <span class="comment">// [ 3 ]</span></span><br><span class="line"><span class="built_in">console</span>.log(arr.slice(<span class="number">2</span>,<span class="number">5</span>))  <span class="comment">// [ 3, 4, 5 ]</span></span><br><span class="line"><span class="built_in">console</span>.log(arr)   <span class="comment">// [ 1, 2, 3, 4, 5 ]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * splice(index,count,item1,item2...)</span></span><br><span class="line"><span class="comment"> * index：表示从什么位置开始 添加/删除 项目，如果为负数，从末尾开始</span></span><br><span class="line"><span class="comment"> * count：要删除的项目数   如果设置为0 则表示不进行元素删除</span></span><br><span class="line"><span class="comment"> * 后面 item 表示需要添加的元素</span></span><br><span class="line"><span class="comment"> * splice 方法会改变原数组  返回删除的项目</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line"><span class="comment">// 从索引为1开始，删除两个元素</span></span><br><span class="line"><span class="built_in">console</span>.log(arr.splice(<span class="number">1</span>,<span class="number">2</span>))   <span class="comment">// [ 2, 3 ]      返回删除的项目 [2,3]</span></span><br><span class="line"><span class="built_in">console</span>.log(arr)               <span class="comment">// [ 1, 4, 5 ] 原数组发生了改变</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 现在就是对[1，4，5]进行操作</span></span><br><span class="line"><span class="comment">// 从索引1开始 删除一个项目  添加3个元素</span></span><br><span class="line"><span class="built_in">console</span>.log(arr.splice(<span class="number">1</span>,<span class="number">1</span>,<span class="number">6</span>,<span class="number">6</span>,<span class="number">6</span>))  <span class="comment">// [ 4 ]  返回删除的元素 4</span></span><br><span class="line"><span class="built_in">console</span>.log(arr)        <span class="comment">// [ 1, 6, 6, 6, 5 ]</span></span><br></pre></td></tr></table></figure>
+<h2 id="es7-10常用函数"><a class="markdownIt-Anchor" href="#es7-10常用函数">#</a> ES7-10 常用函数</h2>
+<ul>
+<li>Arrary.prototype.includes      用于检测数组中是否包含某个元素，返回布尔类型</li>
+<li>Object.values ()                        返回一个给定对象的所有可枚举属性值的数组</li>
+<li>Object.entries ()                       返回一个给定对象自身可遍历属性 [key,value] 的数组</li>
+<li>Object.fromEntries ()               把键值对列表转换为一个对象</li>
+<li>Object.getOwnPropertyDescriptors ()             该方法返回指定对象所有自身属性的描述对象</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> object1 = &#123;</span><br><span class="line">  a: <span class="string">&#x27;somestring&#x27;</span>,</span><br><span class="line">  b: <span class="number">42</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">const</span> [key, value] <span class="keyword">of</span> <span class="built_in">Object</span>.entries(object1)) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;key&#125;</span>: <span class="subst">$&#123;value&#125;</span>`</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// expected output:</span></span><br><span class="line"><span class="comment">// &quot;a: somestring&quot;</span></span><br><span class="line"><span class="comment">// &quot;b: 42&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//Object.entries()方法返回一个给定对象自身可枚举属性的键值对数组，其排列与使用 for...in 循环遍历该对象时返回的顺序一致（区别在于 for-in 循环还会枚举原型链中的属性）。</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 键值对列表</span></span><br><span class="line"><span class="keyword">const</span> entries = <span class="keyword">new</span> <span class="built_in">Map</span>([</span><br><span class="line">  [<span class="string">&#x27;foo&#x27;</span>, <span class="string">&#x27;bar&#x27;</span>],</span><br><span class="line">  [<span class="string">&#x27;baz&#x27;</span>, <span class="number">42</span>]</span><br><span class="line">]);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> obj = <span class="built_in">Object</span>.fromEntries(entries);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(obj);</span><br><span class="line"><span class="comment">// expected output: Object &#123; foo: &quot;bar&quot;, baz: 42 &#125;</span></span><br></pre></td></tr></table></figure>
+<h2 id="数组处理方法"><a class="markdownIt-Anchor" href="#数组处理方法">#</a> 数组处理方法</h2>
+<ul>
+<li>判断一个变量是数组还是对象</li>
+</ul>
+<blockquote>
+<ol>
+<li>
+<p>使用 <code>typeof</code>  对数组类型进行判断，返回的结果是 ``object`，不是我们期望的结果。typeof 运算符在判断基本类型的时候很有用，但是对于引用类型，没那么有效。</p>
+</li>
+<li>
+<p><code>instanceof</code>  运算符通常用于通过原型链来检查某个变量是否为某个类型数据的实例，使用 instanceof 运算符可以判断一个变量是数组还是对象。</p>
+</li>
+</ol>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"><span class="built_in">console</span>.log(a <span class="keyword">instanceof</span> Arrary)	<span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log(a <span class="keyword">instanceof</span> <span class="built_in">Object</span>)	<span class="comment">// true</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> b = &#123;<span class="attr">name</span>: <span class="string">&#x27;king&#x27;</span>&#125;</span><br><span class="line"><span class="built_in">console</span>.log(b <span class="keyword">instanceof</span> Arrary)   <span class="comment">// false</span></span><br><span class="line"><span class="built_in">console</span>.log(b <span class="keyword">instanceof</span> <span class="built_in">Object</span>)   <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>filter () 函数过滤满足条件的数据  (需要传入一个函数)</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>]</span><br><span class="line">arr.filter(<span class="function"><span class="params">x</span> =&gt;</span> <span class="keyword">return</span> x%<span class="number">2</span>)   <span class="comment">// 找出数组中所有奇数的数字</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>reduce () 函数累加器处理数组元素</li>
+</ul>
+<blockquote>
+<ol>
+<li>reduce () 函数最主要的作用是做累加处理，即接收一个函数作为累加器，将数组中的每一个元素从左到右依次执行累加器，返回最终的处理结果。</li>
+<li>语法：arr.reduce (callback, initialValue);</li>
+</ol>
+<ul>
+<li>initialValue 用作 callback 的第一个参数值，如果没有设置，则会使用数组的第一个元素值</li>
+<li>callback 会接收 4 个参数（accumulator，currentValue，currentIndex，array）</li>
+<li>accumulator 表示上一次累加器的返回结果，如果设置了 initialValue，则 accumulator = initialValue，否则为数组的第一个值</li>
+<li>currentValue 表示数组正在处理的值</li>
+<li>currentIndex 表示正在处理的索引   设置了 initialValue，currentIndex 从 0 开始，否则从 1 开始</li>
+</ul>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 使用 reduce 进行数组求和</span></span><br><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]</span><br><span class="line"><span class="keyword">var</span> sum = arr.reduce(<span class="function"><span class="keyword">function</span>(<span class="params">accumulator,currentValue</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> accumulator + currentValue;</span><br><span class="line">&#125;,<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 统计数组中每个元素出现的次数</span></span><br><span class="line"><span class="keyword">var</span> countOccurrences = <span class="function"><span class="keyword">function</span>(<span class="params">arr</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> arr.reduce(<span class="function"><span class="keyword">function</span>(<span class="params">accumulator,currentValue</span>)</span>&#123;</span><br><span class="line">        accumulator[currentValue] ? accumulator[currentValue]++:accumulator[currentValue] = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">return</span> accumulator;</span><br><span class="line">    &#125;,&#123;&#125;);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">countOccurrences([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">2</span>,<span class="number">2</span>,<span class="number">5</span>,<span class="number">1</span>]);    <span class="comment">// &#123;1:2,2:3,3:1,5:1&#125;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>数组遍历</li>
+</ul>
+<ol>
+<li>原始 <code>for</code>  循环</li>
+<li>基于 <code>forEach()</code>  函数的方法</li>
+<li>基于 <code>map()</code>  函数的方法</li>
+<li>基于 <code>filter()</code>  函数的方法</li>
+<li>基于 <code>some()</code>  函数和 <code>every()</code>  函数的方法</li>
+<li>基于 <code>redece()</code>  函数的方法</li>
+<li>基于 <code>find()</code>  函数的方法</li>
+</ol>
+<h2 id="事件流"><a class="markdownIt-Anchor" href="#事件流">#</a> 事件流</h2>
+<ul>
+<li>捕获阶段          由外向内</li>
+<li>目标阶段          触发事件流的元素</li>
+<li>冒泡阶段          由内向外</li>
+</ul>
+<ol>
+<li>对于由外向内的过程，如果元素绑定了捕获类型事件，则会优先于冒泡类型事件先执行。</li>
+<li>在事件捕获阶段，对于元素绑定了冒泡类型事件，会直接跳过，延迟到冒泡阶段才会执行</li>
+<li>在目标阶段，触发目标 i 元素事件，不管是冒泡类型事件还是捕获类型事件，都会执行</li>
+<li>在事件冒泡阶段，对于捕获类型的事件，直接跳过，不执行</li>
+</ol>
+<h2 id="事件委托"><a class="markdownIt-Anchor" href="#事件委托">#</a> 事件委托</h2>
+<blockquote>
+<p>当许多相同子元素需要绑定相同事件时，单独给每个子元素绑定事件不仅麻烦，而且会造成资源浪费，同时对于新增新元素无法进行有效处理，此时我们可以将这些子元素统一交给父元素来管理。</p>
+<ul>
+<li>事件处理程序过多会导致页面交互时间过长</li>
+<li>时间处理程序过多导致内存占用过多</li>
+</ul>
+<p>事件委托利用 <code>事件冒泡</code> 原理，利用父元素来代表子元素的某一类型事件的处理方式。</p>
+</blockquote>
+<p>主要有以下两种情况：</p>
+<ul>
+<li>对于已有元素的事件绑定</li>
+<li>对于新创建元素的事件绑定</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1.获取父元素</span></span><br><span class="line"><span class="keyword">var</span> parent = <span class="built_in">document</span>.querySelector(<span class="string">&#x27;ul&#x27;</span>)</span><br><span class="line"><span class="comment">// 2.父元素绑定事件</span></span><br><span class="line">parent.addEventListener(<span class="string">&#x27;click&#x27;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">event</span>)</span>&#123;</span><br><span class="line">    <span class="comment">// 3.获取事件对象</span></span><br><span class="line">    <span class="keyword">var</span> event = EventUtil.getEvent(event);</span><br><span class="line">    <span class="comment">// 4.获取目标元素</span></span><br><span class="line">    <span class="keyword">var</span> target = EventUtil.getTarget(event);</span><br><span class="line">    <span class="comment">// 5.判断当前事件流所处的元素</span></span><br><span class="line">    <span class="keyword">if</span>(target.nodeName.toLowerCase() === <span class="string">&#x27;li&#x27;</span>)&#123;</span><br><span class="line">        <span class="comment">// 6.与目标元素相同，做相应的处理</span></span><br><span class="line">        <span class="built_in">console</span>.log(target.innerText);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h2 id="常见布局方式"><a class="markdownIt-Anchor" href="#常见布局方式">#</a> 常见布局方式</h2>
+<ol>
+<li>静态布局</li>
+</ol>
+<blockquote>
+<p>最为传统的一种布局方式，网页上所有的元素都是使用 <code>px</code>  为单位进行设定的</p>
+<p>** 布局特点：** 不论屏幕大小，页面宽高始终不变，始终维持最初设计的样式大小来显示，常见于传统 PC 布局</p>
+</blockquote>
+<ol start="2">
+<li>流式布局</li>
+</ol>
+<blockquote>
+<p>** 布局特点：** 当屏幕分辨率大小发生变化时，页面里的元素大小会发生变化，但布局不会发生变化</p>
+<p>** 实现：** 通常使用 % 百分比来定义宽度，高度大都使用 px 来进行固定，常见于 web 前端开发早期</p>
+</blockquote>
+<ol start="3">
+<li>自适应布局</li>
+</ol>
+<blockquote>
+<p>自适应布局就是为不同的屏幕定义不同的布局，就是创建多个静态布局，每个静态布局对应一个屏幕分辨率范围</p>
+<p>** 布局特点：** 当屏幕大小发生变化时，页面里面的元素的位置会变化而大小不会变化</p>
+<p>** 实现：** 使用 @media 媒体查询给不同的尺寸和介质的设备切换不同样式。</p>
+</blockquote>
+<ol start="4">
+<li>响应式布局</li>
+</ol>
+<blockquote>
+<p>响应式设计的目标是确保一个页面在所有终端上（各种尺寸的 PC、手机、平板、智能手表的 Web 浏览器等等）都能显示出令人满意的效果，对 CSS 编写者来说，有多种手法可以去实现，但通常是糅合了流式布局 + 弹性布局，再搭配媒体查询技术使用。</p>
+<p>** 布局特点：** 每个屏幕分辨率下面会有一个布局样式，即元素位置和大小都会改变</p>
+<p>** 实现：** 媒体查询 + 流式布局</p>
+</blockquote>
+<ol start="5">
+<li>弹性布局</li>
+</ol>
+<blockquote>
+<ul>
+<li>rem、em 的区别：</li>
+</ul>
+<p>两者都是为了解决不同网页字体大小展示而产生的</p>
+<p>em 是相对其父元素，在实际应用中相对而言使用没那么方便</p>
+<p>rem 则始终相对于 html 大小，相对于页面根元素而言</p>
+</blockquote>
+
+      <div class="tags">
+          <a href="/tags/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86/" rel="tag"><i class="ic i-tag"></i> 前端知识</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2022-03-29 16:22:24" itemprop="dateModified" datetime="2022-03-29T16:22:24+08:00">2022-03-29</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="Eric Chen 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="Eric Chen 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="Eric Chen 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>Eric Chen <i class="ic i-at"><em>@</em></i>CsStar
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://csstar.top/2022/03/28/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%953/" title="前端知识记录3">http://csstar.top/2022/03/28/前端知识记录3/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="nav">
+    <div class="item left">
+      
+
+  <a href="/2022/03/16/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%952/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclhnx9glj20zk0m8npd.jpg" title="前端知识点汇总(二)">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>前端知识点汇总(二)</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments" data-id="2022/03/28/前端知识记录3/"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB-%E4%B8%89"><span class="toc-number">1.</span> <span class="toc-text"> 前端知识点汇总 (三)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#replace%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%9B%BF%E6%8D%A2"><span class="toc-number">1.1.</span> <span class="toc-text"> replace 字符串替换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F"><span class="toc-number">1.2.</span> <span class="toc-text"> 内存泄漏</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E4%B8%AA%E5%85%83%E7%B4%A0%E7%BB%91%E5%AE%9A%E5%A4%9A%E4%B8%AA%E4%BA%8B%E4%BB%B6"><span class="toc-number">1.3.</span> <span class="toc-text"> 一个元素绑定多个事件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#dom0%E7%BA%A7%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86%E7%A8%8B%E5%BA%8F"><span class="toc-number">1.3.1.</span> <span class="toc-text"> DOM0 级事件处理程序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#dom2%E7%BA%A7%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86%E7%A8%8B%E5%BA%8F"><span class="toc-number">1.3.2.</span> <span class="toc-text"> DOM2 级事件处理程序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#dom3%E7%BA%A7%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86%E7%A8%8B%E5%BA%8F"><span class="toc-number">1.3.3.</span> <span class="toc-text"> DOM3 级事件处理程序</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%AB%98%E5%BA%A6%E5%A1%8C%E9%99%B7"><span class="toc-number">1.4.</span> <span class="toc-text"> 高度塌陷</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B5%E9%9D%A2%E5%88%86%E9%A1%B5%E5%8A%A0%E8%BD%BD"><span class="toc-number">1.5.</span> <span class="toc-text"> 页面分页加载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%BE%E7%89%87%E6%87%92%E5%8A%A0%E8%BD%BD"><span class="toc-number">1.6.</span> <span class="toc-text"> 图片懒加载</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%87%92%E5%8A%A0%E8%BD%BD%E5%8E%9F%E7%90%86"><span class="toc-number">1.6.1.</span> <span class="toc-text"> 懒加载原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E7%8E%B0%E6%80%9D%E8%B7%AF"><span class="toc-number">1.6.2.</span> <span class="toc-text"> 实现思路</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%A3%E5%88%99%E7%9A%84%E7%AE%80%E5%8D%95%E7%94%A8%E6%B3%95"><span class="toc-number">1.7.</span> <span class="toc-text"> 正则的简单用法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#html5%E6%96%B0%E7%89%B9%E6%80%A7"><span class="toc-number">1.8.</span> <span class="toc-text"> HTML5 新特性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#css3%E6%96%B0%E7%89%B9%E6%80%A7"><span class="toc-number">1.9.</span> <span class="toc-text"> CSS3 新特性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E9%81%8D%E5%8E%86"><span class="toc-number">1.10.</span> <span class="toc-text"> 对象遍历</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E6%B1%82%E5%92%8C"><span class="toc-number">1.11.</span> <span class="toc-text"> 数组求和</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D"><span class="toc-number">1.12.</span> <span class="toc-text"> 数组去重</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86%E6%96%B9%E6%B3%95"><span class="toc-number">1.13.</span> <span class="toc-text"> 字符串处理方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#es7-10%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0"><span class="toc-number">1.14.</span> <span class="toc-text"> ES7-10 常用函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E5%A4%84%E7%90%86%E6%96%B9%E6%B3%95"><span class="toc-number">1.15.</span> <span class="toc-text"> 数组处理方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6%E6%B5%81"><span class="toc-number">1.16.</span> <span class="toc-text"> 事件流</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6%E5%A7%94%E6%89%98"><span class="toc-number">1.17.</span> <span class="toc-text"> 事件委托</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E5%B8%83%E5%B1%80%E6%96%B9%E5%BC%8F"><span class="toc-number">1.18.</span> <span class="toc-text"> 常见布局方式</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="Eric Chen"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">Eric Chen</p>
+  <div class="description" itemprop="description">Work Hard To Be A Better Man</div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+        <a href="/archives">
+        <span class="count">18</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories">
+        <span class="count">6</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags">
+        <span class="count">14</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL2VyaWMtY2hlbjMw" title="https:&#x2F;&#x2F;github.com&#x2F;eric-chen30"><i class="ic i-github"></i></span>
+      <span class="exturl item twitter" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;twitter.com&#x2F;yourname"><i class="ic i-twitter"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS9FcmljX3NodWFp" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;Eric_shuai"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTQzODMzOTMwNA==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;438339304"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item weibo" data-url="aHR0cHM6Ly93ZWliby5jb20vNjg5MzcwODY2My9wcm9maWxlP3JpZ2h0bW9kPTEmd3ZyPTYmbW9kPXBlcnNvbmluZm8=" title="https:&#x2F;&#x2F;weibo.com&#x2F;6893708663&#x2F;profile?rightmod&#x3D;1&amp;wvr&#x3D;6&amp;mod&#x3D;personinfo"><i class="ic i-weibo"></i></span>
+      <span class="exturl item about" data-url="aHR0cHM6Ly9hYm91dC5tZS9jc3N0YXI=" title="https:&#x2F;&#x2F;about.me&#x2F;csstar"><i class="ic i-address-card"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+        
+  <li class="item dropdown">
+    <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/friends/" rel="section"><i class="ic i-heart"></i>友達</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/links/" rel="section"><i class="ic i-magic"></i>网址</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="copyright">
+  
+  &copy; 2020 – 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="ic i-sakura rotate"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Eric Chen @ Eric Chen</span>
+</div>
+<div>
+  <span class="post-meta-item-icon">
+    <i class="ic i-chart-area"></i>
+  </span>
+  <span title="站点总字数">70k 字</span>
+
+  <span class="post-meta-divider">|</span>
+  <span class="post-meta-item-icon">
+    <i class="ic i-coffee"></i>
+  </span>
+  <span title="站点阅读时长">1:04</span>
+</div>
+
+<div class="powered-by">
+  基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'http://csstar.top/2022/03/28/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%953/',
+    favicon: {
+      show: "Eric Chen",
+      hide: "Eric Chen"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 ${query} ，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return uri === LOCAL.path;
+      }
+    ]
+  };
+</script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/velocity-animate@1.5.2/velocity.min.js,npm/velocity-animate@1.5.2/velocity.ui.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.1.4"></script>
+
+
+
+
+</body>
+</html>
