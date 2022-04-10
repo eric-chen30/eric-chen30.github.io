@@ -11,7 +11,7 @@
         
             Docker入门 |
         
-        Keep Theme
+        向日葵
     </title>
     
 <link rel="stylesheet" href="/css/style.css">
@@ -23,7 +23,7 @@
     <script id="hexo-configurations">
     let KEEP = window.KEEP || {};
     KEEP.hexo_config = {"hostname":"csstar.top","root":"/","language":"zh-CN"};
-    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.jpg","favicon":"/images/favicon.ico","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"Keep writing and Keep loving."},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":false,"preload":false},"code_copy":{"enable":true,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.jpg","favicon":"/images/favicon.ico","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"Keep writing and Keep loving."},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":false},"code_copy":{"enable":true,"style":"mac"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
     KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
   </script>
 <meta name="generator" content="Hexo 5.1.1"></head>
@@ -52,7 +52,7 @@
         <div class="left">
             
             <a class="logo-title" href="/">
-                Keep Theme
+                向日葵
             </a>
         </div>
 
@@ -77,9 +77,15 @@
                         </li>
                     
                     
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
                 </ul>
             </div>
             <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
                 
                 <div class="icon-item menu-bar">
                     <div class="menu-bar-middle"></div>
@@ -332,6 +338,23 @@ repository-------------&gt; 仓库</p>
         </div>
 
         
+            <div class="post-copyright-info">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li>本文标题：Docker入门</li>
+        <li>本文作者：Eric Chen</li>
+        <li>创建时间：2020-09-12 15:59:46</li>
+        <li>
+            本文链接：https://eric-chen30.github.io/2020/09/12/Docker入门/
+        </li>
+        <li>
+            版权声明：本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
 
         
             <ul class="post-tags-box">
@@ -404,6 +427,10 @@ repository-------------&gt; 仓库</p>
     <ul class="tools-list">
         <!-- TOC aside toggle -->
         
+            <li class="tools-item page-aside-toggle">
+                <i class="fas fa-outdent"></i>
+            </li>
+        
 
         <!-- go comment -->
         
@@ -458,11 +485,48 @@ repository-------------&gt; 仓库</p>
     </div>
 
     
+        <aside class="page-aside">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#docker%E5%85%A5%E9%97%A8"><span class="nav-number">1.</span> <span class="nav-text"> Docker 入门</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#docker%E7%AE%80%E4%BB%8B"><span class="nav-number">1.1.</span> <span class="nav-text"> docker 简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E8%A6%81%E7%B4%A0"><span class="nav-number">1.1.1.</span> <span class="nav-text"> 三要素：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#why"><span class="nav-number">1.1.2.</span> <span class="nav-text"> why：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%80%E5%8C%96"><span class="nav-number">1.1.3.</span> <span class="nav-text"> 简化：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AF%94%E5%96%BB"><span class="nav-number">1.1.4.</span> <span class="nav-text"> 比喻：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8Edocker%E7%9A%84%E6%A6%82%E5%BF%B5%E5%92%8C%E5%8C%BA%E5%88%AB"><span class="nav-number">1.2.</span> <span class="nav-text"> 虚拟机与 docker 的概念和区别</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%99%9A%E6%8B%9F%E6%9C%BA"><span class="nav-number">1.2.1.</span> <span class="nav-text"> 虚拟机：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8C%BA%E5%88%AB"><span class="nav-number">1.2.2.</span> <span class="nav-text"> 区别：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B5%84%E6%BA%90"><span class="nav-number">1.3.</span> <span class="nav-text"> 资源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#docker%E5%AE%89%E8%A3%85"><span class="nav-number">1.4.</span> <span class="nav-text"> Docker 安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E9%83%A8%E5%88%86"><span class="nav-number">1.5.</span> <span class="nav-text"> 三部分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%90%86%E8%A7%A3"><span class="nav-number">1.5.1.</span> <span class="nav-text"> 理解：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%98%BF%E9%87%8C%E4%BA%91%E7%BD%91%E6%98%93%E4%BA%91%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F"><span class="nav-number">1.6.</span> <span class="nav-text"> 阿里云 &#x2F; 网易云镜像加速：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#docker-run-%E6%9F%A5%E6%89%BE%E9%A1%BA%E5%BA%8F"><span class="nav-number">1.6.1.</span> <span class="nav-text"> docker run 查找顺序</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#docker%E5%91%BD%E4%BB%A4"><span class="nav-number">1.7.</span> <span class="nav-text"> docker 命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#docker-ps-%E7%9A%84%E5%8F%82%E6%95%B0"><span class="nav-number">1.7.1.</span> <span class="nav-text"> docker ps 的参数：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%95%9C%E5%83%8F%E5%8E%9F%E7%90%86"><span class="nav-number">1.8.</span> <span class="nav-text"> 镜像原理：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E5%B1%82%E7%BB%93%E6%9E%84"><span class="nav-number">1.9.</span> <span class="nav-text"> 分层结构：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%98%B2%E7%81%AB%E5%A2%99"><span class="nav-number">1.10.</span> <span class="nav-text"> 防火墙：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#docker%E5%AE%B9%E5%99%A8%E6%95%B0%E6%8D%AE%E5%8D%B7"><span class="nav-number">1.11.</span> <span class="nav-text"> docker 容器数据卷：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9B%B4%E6%8E%A5%E5%91%BD%E4%BB%A4"><span class="nav-number">1.11.1.</span> <span class="nav-text"> 直接命令：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#dockerfile"><span class="nav-number">1.12.</span> <span class="nav-text"> DockerFile：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E5%8D%B7%E5%AE%B9%E5%99%A8"><span class="nav-number">1.12.1.</span> <span class="nav-text"> 数据卷容器：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dockerfile-%E9%95%9C%E5%83%8F%E6%9E%84%E5%BB%BA%E6%96%87%E4%BB%B6"><span class="nav-number">1.12.2.</span> <span class="nav-text"> DockerFile:  镜像构建文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dockerfile-2"><span class="nav-number">1.12.3.</span> <span class="nav-text"> dockerfile：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#docker%E6%89%A7%E8%A1%8Cdockerfile%E7%9A%84%E5%A4%A7%E8%87%B4%E6%B5%81%E7%A8%8B"><span class="nav-number">1.12.4.</span> <span class="nav-text"> docker 执行 dockerfile 的大致流程：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dockerfile%E4%BF%9D%E7%95%99%E5%AD%97"><span class="nav-number">1.12.5.</span> <span class="nav-text"> dockerfile 保留字：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#cmd%E5%92%8Centrypoint%E5%8C%BA%E5%88%AB"><span class="nav-number">1.13.</span> <span class="nav-text"> CMD 和 ENTRYPOINT 区别：</span></a></li></ol></li></ol>
+    </div>
+</div>
+        </aside>
+    
 
     <div class="image-viewer-container">
     <img src="">
 </div>
 
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
 
     
 
@@ -483,6 +547,10 @@ repository-------------&gt; 仓库</p>
 
 
 
+    
+<script src="/js/local-search.js"></script>
+
+
 
 
     
@@ -493,6 +561,14 @@ repository-------------&gt; 仓库</p>
 
 
 <div class="post-scripts">
+    
+        
+<script src="/js/left-side-toggle.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+<script src="/js/toc.js"></script>
+
     
 </div>
 

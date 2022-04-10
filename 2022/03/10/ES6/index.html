@@ -11,7 +11,7 @@
         
             ES6 |
         
-        Keep Theme
+        向日葵
     </title>
     
 <link rel="stylesheet" href="/css/style.css">
@@ -23,7 +23,7 @@
     <script id="hexo-configurations">
     let KEEP = window.KEEP || {};
     KEEP.hexo_config = {"hostname":"csstar.top","root":"/","language":"zh-CN"};
-    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.jpg","favicon":"/images/favicon.ico","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"Keep writing and Keep loving."},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":false,"preload":false},"code_copy":{"enable":true,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.jpg","favicon":"/images/favicon.ico","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"Keep writing and Keep loving."},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":false},"code_copy":{"enable":true,"style":"mac"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
     KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
   </script>
 <meta name="generator" content="Hexo 5.1.1"></head>
@@ -52,7 +52,7 @@
         <div class="left">
             
             <a class="logo-title" href="/">
-                Keep Theme
+                向日葵
             </a>
         </div>
 
@@ -77,9 +77,15 @@
                         </li>
                     
                     
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
                 </ul>
             </div>
             <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
                 
                 <div class="icon-item menu-bar">
                     <div class="menu-bar-middle"></div>
@@ -555,6 +561,23 @@
         </div>
 
         
+            <div class="post-copyright-info">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li>本文标题：ES6</li>
+        <li>本文作者：Eric Chen</li>
+        <li>创建时间：2022-03-10 22:34:09</li>
+        <li>
+            本文链接：https://eric-chen30.github.io/2022/03/10/ES6/
+        </li>
+        <li>
+            版权声明：本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
 
         
             <ul class="post-tags-box">
@@ -642,6 +665,10 @@
     <ul class="tools-list">
         <!-- TOC aside toggle -->
         
+            <li class="tools-item page-aside-toggle">
+                <i class="fas fa-outdent"></i>
+            </li>
+        
 
         <!-- go comment -->
         
@@ -696,11 +723,48 @@
     </div>
 
     
+        <aside class="page-aside">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#es6"><span class="nav-number">1.</span> <span class="nav-text"> ES6</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#const%E5%92%8Clet"><span class="nav-number">1.1.</span> <span class="nav-text"> const 和 let</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%98%E9%87%8F%E7%9A%84%E8%A7%A3%E6%9E%84%E8%B5%8B%E5%80%BC"><span class="nav-number">1.2.</span> <span class="nav-text"> 变量的解构赋值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A8%A1%E6%9D%BF%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="nav-number">1.3.</span> <span class="nav-text"> 模板字符串</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%AE%80%E5%8C%96%E5%86%99%E6%B3%95"><span class="nav-number">1.4.</span> <span class="nav-text"> 对象的简化写法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0"><span class="nav-number">1.5.</span> <span class="nav-text"> 箭头函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#es6%E5%85%81%E8%AE%B8%E7%BB%99%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E8%B5%8B%E5%80%BC%E5%88%9D%E5%A7%8B%E5%80%BC"><span class="nav-number">1.6.</span> <span class="nav-text"> ES6 允许给函数参数赋值初始值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#es6-rest%E5%8F%82%E6%95%B0%E8%8E%B7%E5%8F%96%E5%87%BD%E6%95%B0%E7%9A%84%E5%AE%9E%E5%8F%82%E4%BB%A3%E6%9B%BFarguments"><span class="nav-number">1.7.</span> <span class="nav-text"> ES6 rest 参数，获取函数的实参，代替 arguments</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%89%A9%E5%B1%95%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">1.8.</span> <span class="nav-text"> 扩展运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#symbol-%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="nav-number">1.9.</span> <span class="nav-text"> symbol 的基本使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%AD%E4%BB%A3%E5%99%A8"><span class="nav-number">1.10.</span> <span class="nav-text"> 迭代器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E5%99%A8"><span class="nav-number">1.11.</span> <span class="nav-text"> 生成器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#promise"><span class="nav-number">1.12.</span> <span class="nav-text"> Promise</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#set%E9%9B%86%E5%90%88"><span class="nav-number">1.13.</span> <span class="nav-text"> Set (集合)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#map"><span class="nav-number">1.14.</span> <span class="nav-text"> Map</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#class%E7%B1%BB"><span class="nav-number">1.15.</span> <span class="nav-text"> class 类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E5%80%BC%E6%89%A9%E5%B1%95"><span class="nav-number">1.16.</span> <span class="nav-text"> 数值扩展</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95%E6%89%A9%E5%B1%95"><span class="nav-number">1.17.</span> <span class="nav-text"> 对象方法扩展</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A8%A1%E5%9D%97%E5%8C%96"><span class="nav-number">1.18.</span> <span class="nav-text"> 模块化</span></a></li></ol></li></ol>
+    </div>
+</div>
+        </aside>
+    
 
     <div class="image-viewer-container">
     <img src="">
 </div>
 
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
 
     
 
@@ -721,6 +785,10 @@
 
 
 
+    
+<script src="/js/local-search.js"></script>
+
+
 
 
     
@@ -731,6 +799,14 @@
 
 
 <div class="post-scripts">
+    
+        
+<script src="/js/left-side-toggle.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+<script src="/js/toc.js"></script>
+
     
 </div>
 
