@@ -4,9 +4,18 @@
     <title>CsStar • Posts by &#34;计算机基础&#34; category</title>
     <link href="http://csstar.top" />
     <updated>2022-03-16T15:11:34.000Z</updated>
+    <category term="Docker" />
+    <category term="Pandas" />
+    <category term="ES7-11" />
+    <category term="快捷操作" />
     <category term="前端学习网站" />
     <category term="前端知识" />
+    <category term="计算机网络" />
+    <category term="DOM" />
     <category term="计算机组成原理" />
+    <category term="设计模式" />
+    <category term="浏览器" />
+    <category term="ES6" />
     <entry>
         <id>http://csstar.top/2022/03/16/%E7%BD%91%E7%BB%9C/</id>
         <title>网络</title>
@@ -216,7 +225,7 @@
 &lt;li&gt;在 Render 树的过程中，浏览器开始调用 GPU 绘制，将内容展示在屏幕上&lt;/li&gt;
 &lt;/ol&gt;
 </content>
-        <category term="前端知识" />
+        <category term="计算机网络" />
         <updated>2022-03-16T15:11:34.000Z</updated>
     </entry>
     <entry>
@@ -412,5 +421,78 @@
 </content>
         <category term="计算机组成原理" />
         <updated>2020-10-03T12:23:32.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://csstar.top/2020/09/21/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</id>
+        <title>设计模式之单例模式</title>
+        <link rel="alternate" href="http://csstar.top/2020/09/21/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/"/>
+        <content type="html">&lt;h1 id=&#34;概括&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#概括&#34;&gt;#&lt;/a&gt; 概括&lt;/h1&gt;
+&lt;h2 id=&#34;定义&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#定义&#34;&gt;#&lt;/a&gt; 定义&lt;/h2&gt;
+&lt;p&gt;单例模式指在内存中只会创建一次且仅创建一次对象的模式。&lt;/p&gt;
+&lt;h2 id=&#34;原因&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#原因&#34;&gt;#&lt;/a&gt; 原因&lt;/h2&gt;
+&lt;p&gt;该模式是为了防止创建多个对象造成的资源浪费和管理困难的问题，仅在内存中创建一个对象，让有需要调用的地方都使用这一个单例对象。&lt;/p&gt;
+&lt;h2 id=&#34;两种模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#两种模式&#34;&gt;#&lt;/a&gt; 两种模式&lt;/h2&gt;
+&lt;p&gt;饿汉式：只有在需要调用对象的时候采取调用单例对象。&lt;/p&gt;
+&lt;p&gt;懒汉式：类加载的时候就已经创建好了单例对象，随时等待调用。&lt;/p&gt;
+&lt;h1 id=&#34;使用方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#使用方法&#34;&gt;#&lt;/a&gt; 使用方法&lt;/h1&gt;
+&lt;h2 id=&#34;懒汉式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#懒汉式&#34;&gt;#&lt;/a&gt; 懒汉式：&lt;/h2&gt;
+&lt;p&gt;当程序需要使用对象的时候，先判断对象是否已经实例化，如果没有，则实例化对象，如果已经实例化，则直接返回对象。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示意图：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://qh82kvit3.hn-bkt.clouddn.com/clipboard-1601039788093.png&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;实例代码：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://qh82kvit3.hn-bkt.clouddn.com/clipboard-1601039836972.png&#34; alt=&#34;avatar&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;饿汉模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#饿汉模式&#34;&gt;#&lt;/a&gt; 饿汉模式&lt;/h2&gt;
+&lt;p&gt;类加载的时候直接创建单例对象，当需要调用时，直接使用这个已经创建好的单例对象就行&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示意图：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://qh82kvit3.hn-bkt.clouddn.com/clipboard-1601039865541.png&#34; alt=&#34;avatar&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例代码：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://qh82kvit3.hn-bkt.clouddn.com/clipboard-1601039888935.png&#34; alt=&#34;avatar&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;类在加载的时候会在内存中实例化一个对象，当类被撤除时，这个对象也会随之消失。&lt;/p&gt;
+&lt;h1 id=&#34;改进和优化&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#改进和优化&#34;&gt;#&lt;/a&gt; 改进和优化&lt;/h1&gt;
+&lt;h2 id=&#34;懒汉模式的优化&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#懒汉模式的优化&#34;&gt;#&lt;/a&gt; 懒汉模式的优化&lt;/h2&gt;
+&lt;p&gt;问题 1：如果两个线程同时判断不存在已经实例化的对象，那么这两个线程都会实例化对象，就产生了两个对象，不符合单例模式。这里涉及到线程并发的问题。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示意图：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://qh82kvit3.hn-bkt.clouddn.com/clipboard-1601039901878.png&#34; alt=&#34;avatar&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解决方案 1：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在方法上或类对象上加锁&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;synchronized 的解释：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;同步代码块中的锁，当有一个线程执行同步代码时，别的线程就不能执行此代码块。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例代码：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://qh82kvit3.hn-bkt.clouddn.com/clipboard-1601039914173.png&#34; alt=&#34;avatar&#34;&gt;&lt;/p&gt;
+&lt;p&gt;问题 2：以上很好地解决了多个线程可能同时创建多个对象的情况，但是，每次去获取对象的时候都要先获取锁，并发性能非常的差，可能情况下，会出现卡帧的情况。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解决方案 2：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;性能优化。如果还没有实例化对象，就需要先获取锁，一旦对象已经实例化后，就可以省去获取锁的过程。所以不能直接在方法上加锁。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;示例代码：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://qh82kvit3.hn-bkt.clouddn.com/clipboard-1601039929391.png&#34; alt=&#34;avatar&#34;&gt;&lt;/p&gt;
+&lt;p&gt;因此，解决了线程并发和性能优化的问题。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解释：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;【1】，第一个分支判断是否已经实例化对象，如果已经实例化，则直接返回对象，如果没有的话，就会进入下一个分支。&lt;/p&gt;
+&lt;p&gt;【2】，多个线程获取争抢同一个锁，第一个获取锁的线程，就获取了判断的资格，会判断是否有其他线程已经实例化对象了，如果没有，就会实例化一个对象。也因此有了第一个且唯一的对象，当其他进程再次进行判断时，已经有了对象，就会直接返回实例化的对象，而不会再去创建对象。&lt;/p&gt;
+&lt;p&gt;【3】懒汉模式可总结为：双重校验 + 锁。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;完整代码：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://qh82kvit3.hn-bkt.clouddn.com/clipboard-1601039941802.png&#34; alt=&#34;avatar&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;volatile 防止指令重排：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;创建一个对象，在 JVM 中会经过三步：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;（1）为 singleehan 分配内存空间&lt;/p&gt;
+&lt;p&gt;（2）初始化 singleehan 对象&lt;/p&gt;
+&lt;p&gt;（3）将 singleehan 指向分配好的内存空间&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;指令重排序：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;JVM 在保证最终结果正确的情况下，可以不按照程序编码的顺序执行语句，仅可能提高程序的性能。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://qh82kvit3.hn-bkt.clouddn.com/clipboard-1601039959416.png&#34; alt=&#34;avatar&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;volatile 的作用：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;使用 volatile 关键字修饰的变量，可以保证其指令执行的顺序与程序指明的顺序一致，不会发生顺序变换，这样在多线程环境下就不会发生 NPE 异常了。volatile 还有第二个作用：使用 volatile 关键字修饰的变量，可以保证其内存可见性，即每一时刻线程读取到该变量的值都是内存中最新的那个值，线程每次操作该变量都需要先读取该变量。&lt;/p&gt;
+&lt;p&gt;因此，会需要对上述代码进行如下改进：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://qh82kvit3.hn-bkt.clouddn.com/clipboard.png&#34; alt=&#34;avatar&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;目的：为了防止指令重排导致的 NPE 异常。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;总结&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#总结&#34;&gt;#&lt;/a&gt; 总结&lt;/h1&gt;
+&lt;p&gt;1，单例模式有两种类型：懒汉式和饿汉式。&lt;/p&gt;
+&lt;p&gt;2，懒汉式：只有需要调用的时候才回去创建对象，实现方法：双重校验 + 锁 + volatile 防止指令重排&lt;/p&gt;
+&lt;p&gt;3，饿汉式：类加载的时候就会初始化实例对象，等待着被调用。不存在并发和性能的问题。&lt;/p&gt;
+&lt;p&gt;4，如果对于内存要求不高，那么就是用饿汉式，好处是不容易出错；如果对于内存的要求很高，就是用懒汉式。&lt;/p&gt;
+&lt;p&gt;5，为了防止多线程环境下，因为指令重排序导致变量报 NPE，需要在单例对象上添加 volatile 关键字防止指令重排序。&lt;/p&gt;
+</content>
+        <category term="设计模式" />
+        <updated>2020-09-21T11:07:10.000Z</updated>
     </entry>
 </feed>

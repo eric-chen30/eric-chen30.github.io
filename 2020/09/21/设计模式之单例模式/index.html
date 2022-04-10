@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Work Hard To Be A Better Man">
+    <meta name="author" content="Keep Team">
+    
+    <title>
+        
+            设计模式之单例模式 |
+        
+        Keep Theme
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/logo.svg">
+    
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"csstar.top","root":"/","language":"zh-CN"};
+    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":false,"background_img":"/images/bg.svg","description":"Keep writing and Keep loving."},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":false,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
+  </script>
+<meta name="generator" content="Hexo 5.1.1"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                Keep Theme
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                归档
+                            </a>
+                        </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">归档</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">设计模式之单例模式</span>
+        </div>
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/avatar.svg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">Keep Team</span>
+                        
+                            <span class="author-label">Lv2</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;
+        <span class="pc">2020-09-21 19:07:10</span>
+        <span class="mobile">2020-09-21 19:07</span>
+    </span>
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/">计算机基础</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <h1 id="概括"><a class="markdownIt-Anchor" href="#概括">#</a> 概括</h1>
+<h2 id="定义"><a class="markdownIt-Anchor" href="#定义">#</a> 定义</h2>
+<p>单例模式指在内存中只会创建一次且仅创建一次对象的模式。</p>
+<h2 id="原因"><a class="markdownIt-Anchor" href="#原因">#</a> 原因</h2>
+<p>该模式是为了防止创建多个对象造成的资源浪费和管理困难的问题，仅在内存中创建一个对象，让有需要调用的地方都使用这一个单例对象。</p>
+<h2 id="两种模式"><a class="markdownIt-Anchor" href="#两种模式">#</a> 两种模式</h2>
+<p>饿汉式：只有在需要调用对象的时候采取调用单例对象。</p>
+<p>懒汉式：类加载的时候就已经创建好了单例对象，随时等待调用。</p>
+<h1 id="使用方法"><a class="markdownIt-Anchor" href="#使用方法">#</a> 使用方法</h1>
+<h2 id="懒汉式"><a class="markdownIt-Anchor" href="#懒汉式">#</a> 懒汉式：</h2>
+<p>当程序需要使用对象的时候，先判断对象是否已经实例化，如果没有，则实例化对象，如果已经实例化，则直接返回对象。</p>
+<p><strong>示意图：</strong></p>
+<p><img src="http://qh82kvit3.hn-bkt.clouddn.com/clipboard-1601039788093.png" alt></p>
+<p><strong>实例代码：</strong></p>
+<p><img src="http://qh82kvit3.hn-bkt.clouddn.com/clipboard-1601039836972.png" alt="avatar"></p>
+<h2 id="饿汉模式"><a class="markdownIt-Anchor" href="#饿汉模式">#</a> 饿汉模式</h2>
+<p>类加载的时候直接创建单例对象，当需要调用时，直接使用这个已经创建好的单例对象就行</p>
+<p><strong>示意图：</strong></p>
+<p><img src="http://qh82kvit3.hn-bkt.clouddn.com/clipboard-1601039865541.png" alt="avatar"></p>
+<p><strong>示例代码：</strong></p>
+<p><img src="http://qh82kvit3.hn-bkt.clouddn.com/clipboard-1601039888935.png" alt="avatar"></p>
+<p><strong>注意：</strong></p>
+<p>类在加载的时候会在内存中实例化一个对象，当类被撤除时，这个对象也会随之消失。</p>
+<h1 id="改进和优化"><a class="markdownIt-Anchor" href="#改进和优化">#</a> 改进和优化</h1>
+<h2 id="懒汉模式的优化"><a class="markdownIt-Anchor" href="#懒汉模式的优化">#</a> 懒汉模式的优化</h2>
+<p>问题 1：如果两个线程同时判断不存在已经实例化的对象，那么这两个线程都会实例化对象，就产生了两个对象，不符合单例模式。这里涉及到线程并发的问题。</p>
+<p><strong>示意图：</strong></p>
+<p><img src="http://qh82kvit3.hn-bkt.clouddn.com/clipboard-1601039901878.png" alt="avatar"></p>
+<p><strong>解决方案 1：</strong></p>
+<p>在方法上或类对象上加锁</p>
+<p><strong>synchronized 的解释：</strong></p>
+<p>同步代码块中的锁，当有一个线程执行同步代码时，别的线程就不能执行此代码块。</p>
+<p><strong>示例代码：</strong></p>
+<p><img src="http://qh82kvit3.hn-bkt.clouddn.com/clipboard-1601039914173.png" alt="avatar"></p>
+<p>问题 2：以上很好地解决了多个线程可能同时创建多个对象的情况，但是，每次去获取对象的时候都要先获取锁，并发性能非常的差，可能情况下，会出现卡帧的情况。</p>
+<p><strong>解决方案 2：</strong></p>
+<p>性能优化。如果还没有实例化对象，就需要先获取锁，一旦对象已经实例化后，就可以省去获取锁的过程。所以不能直接在方法上加锁。</p>
+<p><strong>示例代码：</strong></p>
+<p><img src="http://qh82kvit3.hn-bkt.clouddn.com/clipboard-1601039929391.png" alt="avatar"></p>
+<p>因此，解决了线程并发和性能优化的问题。</p>
+<p><strong>解释：</strong></p>
+<p>【1】，第一个分支判断是否已经实例化对象，如果已经实例化，则直接返回对象，如果没有的话，就会进入下一个分支。</p>
+<p>【2】，多个线程获取争抢同一个锁，第一个获取锁的线程，就获取了判断的资格，会判断是否有其他线程已经实例化对象了，如果没有，就会实例化一个对象。也因此有了第一个且唯一的对象，当其他进程再次进行判断时，已经有了对象，就会直接返回实例化的对象，而不会再去创建对象。</p>
+<p>【3】懒汉模式可总结为：双重校验 + 锁。</p>
+<p><strong>完整代码：</strong></p>
+<p><img src="http://qh82kvit3.hn-bkt.clouddn.com/clipboard-1601039941802.png" alt="avatar"></p>
+<p><strong>volatile 防止指令重排：</strong></p>
+<p><strong>创建一个对象，在 JVM 中会经过三步：</strong></p>
+<p>（1）为 singleehan 分配内存空间</p>
+<p>（2）初始化 singleehan 对象</p>
+<p>（3）将 singleehan 指向分配好的内存空间</p>
+<p><strong>指令重排序：</strong></p>
+<p>JVM 在保证最终结果正确的情况下，可以不按照程序编码的顺序执行语句，仅可能提高程序的性能。</p>
+<p><img src="http://qh82kvit3.hn-bkt.clouddn.com/clipboard-1601039959416.png" alt="avatar"></p>
+<p><strong>volatile 的作用：</strong></p>
+<p>使用 volatile 关键字修饰的变量，可以保证其指令执行的顺序与程序指明的顺序一致，不会发生顺序变换，这样在多线程环境下就不会发生 NPE 异常了。volatile 还有第二个作用：使用 volatile 关键字修饰的变量，可以保证其内存可见性，即每一时刻线程读取到该变量的值都是内存中最新的那个值，线程每次操作该变量都需要先读取该变量。</p>
+<p>因此，会需要对上述代码进行如下改进：</p>
+<p><img src="http://qh82kvit3.hn-bkt.clouddn.com/clipboard.png" alt="avatar"></p>
+<p><strong>目的：为了防止指令重排导致的 NPE 异常。</strong></p>
+<h1 id="总结"><a class="markdownIt-Anchor" href="#总结">#</a> 总结</h1>
+<p>1，单例模式有两种类型：懒汉式和饿汉式。</p>
+<p>2，懒汉式：只有需要调用的时候才回去创建对象，实现方法：双重校验 + 锁 + volatile 防止指令重排</p>
+<p>3，饿汉式：类加载的时候就会初始化实例对象，等待着被调用。不存在并发和性能的问题。</p>
+<p>4，如果对于内存要求不高，那么就是用饿汉式，好处是不容易出错；如果对于内存的要求很高，就是用懒汉式。</p>
+<p>5，为了防止多线程环境下，因为指令重排序导致变量报 NPE，需要在单例对象上添加 volatile 关键字防止指令重排序。</p>
+
+        </div>
+
+        
+
+        
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">#设计模式</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+            <div class="article-nav">
+                
+                    <div class="article-prev">
+                        <a class="prev"
+                           rel="prev"
+                           href="/2020/10/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%A4%8D%E4%B9%A0/"
+                        >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">计算机组成原理复习</span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/2020/09/13/Pandas-DataFrame/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">认识Pandas-DataFrame</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2020</span>
+              -
+            
+            2022&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Keep Team</a>
+        </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.5</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+
+
+
+<div class="post-scripts">
+    
+</div>
+
+
+
+</body>
+</html>

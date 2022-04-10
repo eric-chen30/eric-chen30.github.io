@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>CsStar • Posts by &#34;快捷操作&#34; tag</title>
+        <link>http://csstar.top</link>
+        <description>Work Hard To Be A Better Man</description>
+        <language>zh-CN</language>
+        <pubDate>Wed, 09 Mar 2022 13:16:51 +0800</pubDate>
+        <lastBuildDate>Wed, 09 Mar 2022 13:16:51 +0800</lastBuildDate>
+        <category>Docker</category>
+        <category>Pandas</category>
+        <category>ES7-11</category>
+        <category>快捷操作</category>
+        <category>前端学习网站</category>
+        <category>前端知识</category>
+        <category>计算机网络</category>
+        <category>DOM</category>
+        <category>计算机组成原理</category>
+        <category>设计模式</category>
+        <category>浏览器</category>
+        <category>ES6</category>
+        <item>
+            <guid isPermalink="true">http://csstar.top/2022/03/09/vscode%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
+            <title>vscode常用快捷键</title>
+            <link>http://csstar.top/2022/03/09/vscode%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+            <category>快捷操作</category>
+            <pubDate>Wed, 09 Mar 2022 13:16:51 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;vscode常用快捷键&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#vscode常用快捷键&#34;&gt;#&lt;/a&gt; vscode 常用快捷键&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;向上 / 下复制当前行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;alt + shift  +  ⬆/⬇&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;逐个选择文本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CTRL  +  shift  +  ⬅/➡&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;批量替换匹配文本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CTRL  +  F2&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;将当前行代码上 / 下移&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;alt   +  ⬆/⬇&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;删除当前行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CTRL  +  x&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;多行同时编辑&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;CTRL  +  alt   +   ⬆/⬇&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;alt  +  鼠标选中特定位置&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;快速定位文件首位行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CTRL  +  home/end&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;删除上一个词&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CTRL  +  backspace&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;选择光标左 / 右侧全部内容&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CTRL  +  shift  +   home/end&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;按名称搜索文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CTRL  +  p&lt;/p&gt;
+&lt;/blockquote&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

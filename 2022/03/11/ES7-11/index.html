@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Work Hard To Be A Better Man">
+    <meta name="author" content="Keep Team">
+    
+    <title>
+        
+            ES7-11 |
+        
+        Keep Theme
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/logo.svg">
+    
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"csstar.top","root":"/","language":"zh-CN"};
+    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":false,"background_img":"/images/bg.svg","description":"Keep writing and Keep loving."},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":false,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
+  </script>
+<meta name="generator" content="Hexo 5.1.1"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                Keep Theme
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                归档
+                            </a>
+                        </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">归档</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">ES7-11</span>
+        </div>
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/avatar.svg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">Keep Team</span>
+                        
+                            <span class="author-label">Lv2</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;
+        <span class="pc">2022-03-11 14:00:54</span>
+        <span class="mobile">2022-03-11 14:00</span>
+    </span>
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/JavaScript/">JavaScript</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/ES7-11/">ES7-11</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <h1 id="es7-11"><a class="markdownIt-Anchor" href="#es7-11">#</a> ES7-11</h1>
+<h2 id="es7"><a class="markdownIt-Anchor" href="#es7">#</a> ES7</h2>
+<ul>
+<li>Array.prototype.includes		方法用来检测数组中是否包含某个元素，返回 boolean 值</li>
+<li>指数操作符  **                       用来实现幂运算，功能与 Math.pow 结果相同</li>
+</ul>
+<h2 id="es8"><a class="markdownIt-Anchor" href="#es8">#</a> ES8</h2>
+<blockquote>
+<p>async 函数</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// return 不是一个 Promise  类型的对象  则函数结果为一个成功的Promise对象</span></span><br><span class="line">    <span class="comment">// throw 抛出错误，则函数结果为一个失败的Promise对象</span></span><br><span class="line">    <span class="comment">// 返回结果是一个 Promise对象 那么返回一个成功的Promise对象</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve,reject</span>) =&gt;</span> &#123;</span><br><span class="line">        resolve(<span class="string">&#x27;sucess&#x27;</span>);</span><br><span class="line">        <span class="comment">// reject(&#x27;error&#x27;);</span></span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> result = fn();</span><br><span class="line"><span class="built_in">console</span>.log(result);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 调用then方法</span></span><br><span class="line">result.then(<span class="function"><span class="params">value</span> =&gt;</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;sucess&#x27;</span>);</span><br><span class="line">&#125;, <span class="function"><span class="params">reason</span> =&gt;</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.warn(<span class="string">&#x27;reason&#x27;</span>);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>await 表达式</p>
+</blockquote>
+<ul>
+<li>必须放在 async 函数中</li>
+<li>右侧表达式一般为 promise 对象</li>
+<li>await 返回的是 promise 成功的值</li>
+<li>await 的 promise 如果失败了，会抛出异常，需要通过 try…catch 捕获异常</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> p = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve,reject</span>) =&gt;</span>&#123;</span><br><span class="line">    resolve(<span class="string">&#x27;sucess&#x27;</span>);</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> result = <span class="keyword">await</span> p;</span><br><span class="line"><span class="built_in">console</span>.log(result);    <span class="comment">// 返回一个成功的Promise对象</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>对象方法扩展</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> school = &#123;</span><br><span class="line">    name: <span class="string">&#x27;eric&#x27;</span>,</span><br><span class="line">    cities: [<span class="string">&#x27;beijing&#x27;</span>,<span class="string">&#x27;shanghai&#x27;</span>,<span class="string">&#x27;guangzhou&#x27;</span>,<span class="string">&#x27;shenzhen&#x27;</span>],</span><br><span class="line">    xueke: [<span class="string">&#x27;math&#x27;</span>,<span class="string">&#x27;java&#x27;</span>,<span class="string">&#x27;front&#x27;</span>]</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 获取对象所有键</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.keys(school));</span><br><span class="line"><span class="comment">// 获取对象所有值</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.values(school));</span><br><span class="line"><span class="comment">// 获取所有的键值</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.entries(school));</span><br><span class="line"><span class="comment">// 创建Map</span></span><br><span class="line"><span class="keyword">const</span> m = <span class="keyword">new</span> <span class="built_in">Map</span>(<span class="built_in">Object</span>.entries(school));</span><br><span class="line"><span class="built_in">console</span>.log(m.get(<span class="string">&#x27;cities&#x27;</span>));</span><br><span class="line"><span class="comment">// 对象属性的描述对象</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.getPropertyDescriptors(school));</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> obj = <span class="built_in">Object</span>.create(<span class="literal">null</span>,&#123;</span><br><span class="line">    name: &#123;</span><br><span class="line">        <span class="comment">// 设置值</span></span><br><span class="line">        value: <span class="string">&#x27;eric&#x27;</span>,</span><br><span class="line">        <span class="comment">// 属性特性</span></span><br><span class="line">        writable: <span class="literal">true</span>,</span><br><span class="line">        configurable: <span class="literal">true</span>,</span><br><span class="line">        enumerable: <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="es9"><a class="markdownIt-Anchor" href="#es9">#</a> ES9</h2>
+<blockquote>
+<ul>
+<li>Rest 参数与 spread 扩展运算符在 ES6 中只针对数组，在 ES9 中也支持对象</li>
+<li>正则扩展 - 命名捕获分组     （?<name>.*）      提取规则更加方便   结果 groups 是捕获内容</name></li>
+<li>正则扩展 - 反向断言      根据正则表达式做唯一识别</li>
+<li>正则表达式 - dotAll 模式     正则表达式中。匹配除回车外的任何单字符，标记【s】改变这种行为，匹配任意单个字符</li>
+</ul>
+</blockquote>
+<h2 id="es10"><a class="markdownIt-Anchor" href="#es10">#</a> ES10</h2>
+<blockquote>
+<ul>
+<li>Object.fromEnteries                      将二维数组转换为对象</li>
+<li>trimStart 和 trimEnd                       清除左侧右侧空白</li>
+<li>Array.prototype.flat 和 flatMap       将多维数组进行降维    |       先 map 后 flat</li>
+<li>Symbol.prototype.description       获取描述</li>
+</ul>
+</blockquote>
+<h2 id="es11"><a class="markdownIt-Anchor" href="#es11">#</a> ES11</h2>
+<blockquote>
+<ul>
+<li>私有属性      在对象中通过 #变量名来声明     实例化对象不能直接访问，可以在类的内部定义方法访问私有属性</li>
+<li>Promise.allSettled         返回一个在所有给定的 promise 都已经 <code>fulfilled</code>  或 <code>rejected</code>  后的 promise，并带有一个对象数组，每个对象表示对应的 promise 结果</li>
+</ul>
+<ol>
+<li>当有多个彼此不依赖的异步任务成功完成时，或者想知道每个 promise 的结果时，通常使用它</li>
+<li>promise.all（）更适合彼此相互依赖或者在其中任何一个 reject 时立即结束</li>
+</ol>
+<ul>
+<li>String.prototype.matchAll     返回的结果是一个可迭代对象   可以使用 for…of 进行迭代   也可以使用扩展运算符</li>
+<li>可选链操作符</li>
+<li>动态 import           需要使用的时候才导入</li>
+<li>Bigint 类型</li>
+<li>globalThis              绝对全局对象     始终指向全局对象</li>
+</ul>
+</blockquote>
+
+        </div>
+
+        
+
+        
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/tags/ES7-11/">#ES7-11</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+            <div class="article-nav">
+                
+                    <div class="article-prev">
+                        <a class="prev"
+                           rel="prev"
+                           href="/2022/03/11/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99/"
+                        >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">前端学习网站</span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/2022/03/10/ES6/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">ES6</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2020</span>
+              -
+            
+            2022&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Keep Team</a>
+        </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.5</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+
+
+
+<div class="post-scripts">
+    
+</div>
+
+
+
+</body>
+</html>
