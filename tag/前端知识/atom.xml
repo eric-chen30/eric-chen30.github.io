@@ -5,18 +5,18 @@
     <link href="http://csstar.top" />
     <updated>2022-03-28T06:17:01.000Z</updated>
     <category term="Docker" />
+    <category term="Pandas" />
     <category term="ES7-11" />
     <category term="快捷操作" />
+    <category term="前端学习网站" />
     <category term="前端知识" />
     <category term="机器学习" />
     <category term="小的知识点" />
     <category term="Vue" />
     <category term="计算机组成原理" />
     <category term="单例模式" />
-    <category term="页面渲染模式" />
     <category term="浏览器" />
-    <category term="前端学习网站" />
-    <category term="Pandas" />
+    <category term="页面渲染模式" />
     <category term="ES6" />
     <entry>
         <id>http://csstar.top/2022/03/28/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%953/</id>
@@ -41,7 +41,7 @@
 &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 使用replace()只能替换匹配的第一个&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; str = &lt;span class=&#34;string&#34;&gt;&amp;#x27;1,2,3&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;str = str.replace(&lt;span class=&#34;string&#34;&gt;&amp;#x27;,&amp;#x27;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;#x27; &amp;#x27;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(str)   &lt;span class=&#34;comment&#34;&gt;// 1 2,3&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 使用replace() + 正则替换&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 注意：replace的第一个参数就是正则，如果加了单双引号，就变为字符串，不起作用&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; str2 = &lt;span class=&#34;string&#34;&gt;&amp;#x27;1,2,3&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;str2 = str2.replace(&lt;span class=&#34;regexp&#34;&gt;/,/g&lt;/span&gt;, &lt;span class=&#34;string&#34;&gt;&amp;#x27; &amp;#x27;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(str2)   &lt;span class=&#34;comment&#34;&gt;// 1 2 3&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// split + join&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; str3 = &lt;span class=&#34;string&#34;&gt;&amp;#x27;1,2,3&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// str3 = str3.split(&amp;#x27;,&amp;#x27;)  // [ &amp;#x27;1&amp;#x27;, &amp;#x27;2&amp;#x27;, &amp;#x27;3&amp;#x27; ]\&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;str3 = str3.split(&lt;span class=&#34;string&#34;&gt;&amp;#x27;,&amp;#x27;&lt;/span&gt;).join(&lt;span class=&#34;string&#34;&gt;&amp;#x27; &amp;#x27;&lt;/span&gt;)   &lt;span class=&#34;comment&#34;&gt;// 1 2 3&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(str3)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 使用replace + RegExp&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// RegExp 的两个参数分别为  要替换的字符，匹配模式及&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; str4 = &lt;span class=&#34;string&#34;&gt;&amp;#x27;1,2,3&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;str4 = str4.replace(&lt;span class=&#34;built_in&#34;&gt;RegExp&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;,&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;g&amp;quot;&lt;/span&gt;), &lt;span class=&#34;string&#34;&gt;&amp;#x27; &amp;#x27;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(str4)  &lt;span class=&#34;comment&#34;&gt;// 1 2 3&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// replaceAll  第一个参数必须为正则表达式，第二个参数为替换的新字符串&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 没有用，直接被弃用，完全可以使用replace替换它&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h2 id=&#34;内存泄漏&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#内存泄漏&#34;&gt;#&lt;/a&gt; 内存泄漏&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;** 定义：** 一个应用或程序，由于某些原因导致本应该回收的内存没有被操作系统或空闲内存池回收&lt;/p&gt;
+&lt;p&gt;定义：一个应用或程序，由于某些原因导致本应该回收的内存没有被操作系统或空闲内存池回收&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;JavaScript 是垃圾回收语言之一，通过定期检查事先被分配的内存块是否还可以被其它部分访问到，来确定是否对内存块进行回收处理。简单说就是，如果已经被分配的内存块还需要被引用或被访问到，那么就不进行回收&lt;/li&gt;
@@ -189,7 +189,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;方式二：getBoundingClientRect ().top 为元素相对于窗口的位置，而 window.innerHeight 为当前窗口的高度&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;** 原理：** 当元素对于窗口的位置小于当前窗口的高度时，元素位于窗口可视区域内&lt;/p&gt;
+&lt;p&gt;原理：当元素对于窗口的位置小于当前窗口的高度时，元素位于窗口可视区域内&lt;/p&gt;
 &lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;window&lt;/span&gt;.addEventListener(&lt;span class=&#34;string&#34;&gt;&amp;quot;scroll&amp;quot;&lt;/span&gt; (e) =&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ergodic()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;ergodic&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;let&lt;/span&gt; i &lt;span class=&#34;keyword&#34;&gt;of&lt;/span&gt; images)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;// 与上面相比，仅仅是判断的方式不一样&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(i.getBoundingClientRect().top &amp;lt; &lt;span class=&#34;built_in&#34;&gt;window&lt;/span&gt;.innerHeight)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;let&lt;/span&gt; tureSrc = i.getAttribute(&lt;span class=&#34;string&#34;&gt;&amp;#x27;data-src&amp;#x27;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            i.setAttribute(&lt;span class=&#34;string&#34;&gt;&amp;#x27;src&amp;#x27;&lt;/span&gt;, tureSrc)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;blockquote&gt;
 &lt;p&gt;方式三：Intersection Observer 观察器接口，浏览器原生提供的构造函数&lt;/p&gt;
@@ -214,14 +214,6 @@
 &lt;li&gt;test   匹配正则表达式，返回值为 Boolean 值，检验功能&lt;/li&gt;
 &lt;li&gt;exec   用正则表达式模式在字符串中进行查找，并且返回查找结果的数组&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;html5新特性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#html5新特性&#34;&gt;#&lt;/a&gt; HTML5 新特性&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;新的语义元素，比如 &lt;header&gt;, &lt;footer&gt;, &lt;article&gt;, and &lt;section&gt;。&lt;/section&gt;&lt;/article&gt;&lt;/footer&gt;&lt;/header&gt;&lt;/li&gt;
-&lt;li&gt;新的表单控件，比如数字、日期、时间、日历和滑块。&lt;/li&gt;
-&lt;li&gt;强大的图像支持（借由 &lt;canvas&gt; 和 &lt;svg&gt;）&lt;/svg&gt;&lt;/canvas&gt;&lt;/li&gt;
-&lt;li&gt;强大的多媒体支持（借由 &lt;video&gt; 和 &lt;audio&gt;）&lt;/audio&gt;&lt;/video&gt;&lt;/li&gt;
-&lt;li&gt;强大的新 API，比如用本地存储取代 cookie。&lt;/li&gt;
-&lt;/ul&gt;
 &lt;h2 id=&#34;css3新特性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#css3新特性&#34;&gt;#&lt;/a&gt; CSS3 新特性&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;新的选择器&lt;/strong&gt;&lt;/li&gt;
@@ -461,30 +453,30 @@
 &lt;/ol&gt;
 &lt;blockquote&gt;
 &lt;p&gt;最为传统的一种布局方式，网页上所有的元素都是使用 &lt;code&gt;px&lt;/code&gt;  为单位进行设定的&lt;/p&gt;
-&lt;p&gt;** 布局特点：** 不论屏幕大小，页面宽高始终不变，始终维持最初设计的样式大小来显示，常见于传统 PC 布局&lt;/p&gt;
+&lt;p&gt;布局特点：不论屏幕大小，页面宽高始终不变，始终维持最初设计的样式大小来显示，常见于传统 PC 布局&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;流式布局&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
-&lt;p&gt;** 布局特点：** 当屏幕分辨率大小发生变化时，页面里的元素大小会发生变化，但布局不会发生变化&lt;/p&gt;
-&lt;p&gt;** 实现：** 通常使用 % 百分比来定义宽度，高度大都使用 px 来进行固定，常见于 web 前端开发早期&lt;/p&gt;
+&lt;p&gt;布局特点：当屏幕分辨率大小发生变化时，页面里的元素大小会发生变化，但布局不会发生变化&lt;/p&gt;
+&lt;p&gt;实现：通常使用 % 百分比来定义宽度，高度大都使用 px 来进行固定，常见于 web 前端开发早期&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;自适应布局&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
 &lt;p&gt;自适应布局就是为不同的屏幕定义不同的布局，就是创建多个静态布局，每个静态布局对应一个屏幕分辨率范围&lt;/p&gt;
-&lt;p&gt;** 布局特点：** 当屏幕大小发生变化时，页面里面的元素的位置会变化而大小不会变化&lt;/p&gt;
-&lt;p&gt;** 实现：** 使用 @media 媒体查询给不同的尺寸和介质的设备切换不同样式。&lt;/p&gt;
+&lt;p&gt;布局特点：当屏幕大小发生变化时，页面里面的元素的位置会变化而大小不会变化&lt;/p&gt;
+&lt;p&gt;实现：使用 @media 媒体查询给不同的尺寸和介质的设备切换不同样式。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;响应式布局&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
 &lt;p&gt;响应式设计的目标是确保一个页面在所有终端上（各种尺寸的 PC、手机、平板、智能手表的 Web 浏览器等等）都能显示出令人满意的效果，对 CSS 编写者来说，有多种手法可以去实现，但通常是糅合了流式布局 + 弹性布局，再搭配媒体查询技术使用。&lt;/p&gt;
-&lt;p&gt;** 布局特点：** 每个屏幕分辨率下面会有一个布局样式，即元素位置和大小都会改变&lt;/p&gt;
-&lt;p&gt;** 实现：** 媒体查询 + 流式布局&lt;/p&gt;
+&lt;p&gt;布局特点：每个屏幕分辨率下面会有一个布局样式，即元素位置和大小都会改变&lt;/p&gt;
+&lt;p&gt;实现：媒体查询 + 流式布局&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;弹性布局&lt;/li&gt;
