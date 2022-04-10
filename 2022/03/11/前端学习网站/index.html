@@ -1,529 +1,436 @@
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#FFF">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Work Hard To Be A Better Man">
+    <meta name="author" content="Keep Team">
+    
+    <title>
+        
+            前端学习网站 |
+        
+        Keep Theme
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
 
-<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
-  <meta http-equiv="Cache-Control" content="no-transform">
-  <meta http-equiv="Cache-Control" content="no-siteapp">
+    <link rel="shortcut icon" href="/images/logo.svg">
+    
+<link rel="stylesheet" href="/css/font-awesome.min.css">
 
-
-<link rel="alternate" type="application/rss+xml" title="CsStar" href="http://csstar.top/rss.xml" />
-<link rel="alternate" type="application/atom+xml" title="CsStar" href="http://csstar.top/atom.xml" />
-<link rel="alternate" type="application/json" title="CsStar" href="http://csstar.top/feed.json" />
-
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
-
-<link rel="stylesheet" href="/css/app.css?v=0.1.4">
-
-  
-  <meta name="keywords" content="前端学习网站" />
-
-
-
-<meta name="description" content="Work Hard To Be A Better Man" >
-
-
-<link rel="canonical" href="http://csstar.top/2022/03/11/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99/">
-
-
-
-  <title>
-前端学习网站 |
-Eric Chen = CsStar = Work Hard To Be A Better Man</title>
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"csstar.top","root":"/","language":"zh-CN"};
+    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":false,"background_img":"/images/bg.svg","description":"Keep writing and Keep loving."},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":false,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
+  </script>
 <meta name="generator" content="Hexo 5.1.1"></head>
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div id="loading">
-    <div class="cat">
-      <div class="body"></div>
-      <div class="head">
-        <div class="face"></div>
-      </div>
-      <div class="foot">
-        <div class="tummy-end"></div>
-        <div class="bottom"></div>
-        <div class="legs left"></div>
-        <div class="legs right"></div>
-      </div>
-      <div class="paw">
-        <div class="hands left"></div>
-        <div class="hands right"></div>
-      </div>
-    </div>
-  </div>
-  <div id="container">
-    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="inner">
-        <div id="brand">
-          <div class="pjax">
-          
-  <h1 itemprop="name headline">前端学习网站
-  </h1>
-  
-<div class="meta">
-  <span class="item" title="创建时间：2022-03-11 23:17:08">
-    <span class="icon">
-      <i class="ic i-calendar"></i>
-    </span>
-    <span class="text">发表于</span>
-    <time itemprop="dateCreated datePublished" datetime="2022-03-11T23:17:08+08:00">2022-03-11</time>
-  </span>
-  <span class="item" title="本文字数">
-    <span class="icon">
-      <i class="ic i-pen"></i>
-    </span>
-    <span class="text">本文字数</span>
-    <span>1.2k</span>
-    <span class="text">字</span>
-  </span>
-  <span class="item" title="阅读时长">
-    <span class="icon">
-      <i class="ic i-clock"></i>
-    </span>
-    <span class="text">阅读时长</span>
-    <span>1 分钟</span>
-  </span>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
 </div>
 
 
-          </div>
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                Keep Theme
+            </a>
         </div>
-        <nav id="nav">
-  <div class="inner">
-    <div class="toggle">
-      <div class="lines" aria-label="切换导航栏">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-      </div>
-    </div>
-    <ul class="menu">
-      <li class="item title"><a href="/" rel="start">Eric Chen</a></li>
-    </ul>
-    <ul class="right">
-      <li class="item theme">
-        <i class="ic i-sun"></i>
-      </li>
-      <li class="item search">
-        <i class="ic i-search"></i>
-      </li>
-    </ul>
-  </div>
-</nav>
 
-      </div>
-      <div id="imgs" class="pjax">
-        <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclxfdlttj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicm0n457cj20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciundwu5j20zk0m8n9e.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclfw2t96j20zk0m8x6p.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclj9410cj20zk0m8h12.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicitf0kl1j20zk0m87fe.jpg"></li>
-        </ul>
-      </div>
-    </header>
-    <div id="waves">
-      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-        <defs>
-          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-        </defs>
-        <g class="parallax">
-          <use xlink:href="#gentle-wave" x="48" y="0" />
-          <use xlink:href="#gentle-wave" x="48" y="3" />
-          <use xlink:href="#gentle-wave" x="48" y="5" />
-          <use xlink:href="#gentle-wave" x="48" y="7" />
-        </g>
-      </svg>
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                归档
+                            </a>
+                        </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
     </div>
-    <main id="main">
-      <div class="inner">
-        <div id="content" class="pjax">
-          
-  <div class="article wrap">
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">归档</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">前端学习网站</span>
+        </div>
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/avatar.svg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">Keep Team</span>
+                        
+                            <span class="author-label">Lv1</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;
+        <span class="pc">2022-03-11 23:17:08</span>
+        <span class="mobile">2022-03-11 23:17</span>
+    </span>
     
-<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-<i class="ic i-home"></i>
-<span><a href="/">首页</a></span>
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99/">前端学习网站</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
 </div>
 
-    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
-  <link itemprop="mainEntityOfPage" href="http://csstar.top/2022/03/11/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99/">
+                    </div>
+                </div>
+            </div>
+        
 
-  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="image" content="/images/avatar.jpg">
-    <meta itemprop="name" content="Eric Chen">
-    <meta itemprop="description" content="Work Hard To Be A Better Man, Work Hard To Be A Better Man">
-  </span>
-
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="CsStar">
-  </span>
-
-  <div class="body md" itemprop="articleBody">
-    
-
-    <blockquote>
+        <div class="article-content markdown-body">
+            <blockquote>
 <p>GitHub：代码管理、开源项目、技术源码、博客托管</p>
 </blockquote>
-<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLw==">https://github.com/</span></p>
+<p><a class="link" target="_blank" rel="noopener" href="https://github.com/">https://github.com/<i class="fas fa-external-link-alt"></i></a></p>
 <blockquote>
 <p>B 站：大量的计算机学习视频</p>
 </blockquote>
-<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tLw==">https://www.bilibili.com/</span></p>
+<p><a class="link" target="_blank" rel="noopener" href="https://www.bilibili.com/">https://www.bilibili.com/<i class="fas fa-external-link-alt"></i></a></p>
 <blockquote>
 <p>力扣：提高编程能力，学习别人编码方式</p>
 </blockquote>
-<p><span class="exturl" data-url="aHR0cHM6Ly9sZWV0Y29kZS1jbi5jb20v">https://leetcode-cn.com/</span></p>
+<p><a class="link" target="_blank" rel="noopener" href="https://leetcode-cn.com/">https://leetcode-cn.com/<i class="fas fa-external-link-alt"></i></a></p>
 <blockquote>
 <p>Vue：渐进式 JavaScript 框架</p>
 </blockquote>
-<p><span class="exturl" data-url="aHR0cHM6Ly9jbi52dWVqcy5vcmcv">https://cn.vuejs.org/</span></p>
+<p><a class="link" target="_blank" rel="noopener" href="https://cn.vuejs.org/">https://cn.vuejs.org/<i class="fas fa-external-link-alt"></i></a></p>
 <blockquote>
 <p>W3school：技术基础文档，简单介绍技术包含内容</p>
 </blockquote>
-<p><span class="exturl" data-url="aHR0cHM6Ly93d3cudzNzY2hvb2wuY29tLmNuLw==">https://www.w3school.com.cn/</span></p>
+<p><a class="link" target="_blank" rel="noopener" href="https://www.w3school.com.cn/">https://www.w3school.com.cn/<i class="fas fa-external-link-alt"></i></a></p>
 <blockquote>
 <p>Bootstrap：最受欢迎的 HTML、CSS 和 JS 框架，用于开发响应式布局、移动设备优先的 WEB 项目</p>
 </blockquote>
-<p><span class="exturl" data-url="aHR0cHM6Ly92My5ib290Y3NzLmNvbS8=">https://v3.bootcss.com/</span></p>
+<p><a class="link" target="_blank" rel="noopener" href="https://v3.bootcss.com/">https://v3.bootcss.com/<i class="fas fa-external-link-alt"></i></a></p>
 <blockquote>
 <p>webpack：流行的打包工具</p>
 </blockquote>
-<p><span class="exturl" data-url="aHR0cHM6Ly93d3cud2VicGFja2pzLmNvbS8=">https://www.webpackjs.com/</span></p>
+<p><a class="link" target="_blank" rel="noopener" href="https://www.webpackjs.com/">https://www.webpackjs.com/<i class="fas fa-external-link-alt"></i></a></p>
 <blockquote>
 <p>Axios：基于 Promise 的 HTTP 库，用于向服务器发送请求，请求数据</p>
 </blockquote>
-<p><span class="exturl" data-url="aHR0cDovL3d3dy5heGlvcy1qcy5jb20vemgtY24vZG9jcy8=">http://www.axios-js.com/zh-cn/docs/</span></p>
+<p><a class="link" target="_blank" rel="noopener" href="http://www.axios-js.com/zh-cn/docs/">http://www.axios-js.com/zh-cn/docs/<i class="fas fa-external-link-alt"></i></a></p>
 <blockquote>
 <p>uniapp：使用 Vue.js 开发所有前端应用的框架，一套代码，多平台发布</p>
 </blockquote>
-<p><span class="exturl" data-url="aHR0cHM6Ly91bmlhcHAuZGNsb3VkLmlvLw==">https://uniapp.dcloud.io/</span></p>
+<p><a class="link" target="_blank" rel="noopener" href="https://uniapp.dcloud.io/">https://uniapp.dcloud.io/<i class="fas fa-external-link-alt"></i></a></p>
 <blockquote>
 <p>Element UI：基于 Vue 的样式组件库</p>
 </blockquote>
-<p><span class="exturl" data-url="aHR0cHM6Ly9lbGVtZW50LmVsZW1lLmNuLyMvemgtQ04v">https://element.eleme.cn/#/zh-CN/</span></p>
+<p><a class="link" target="_blank" rel="noopener" href="https://element.eleme.cn/#/zh-CN/">https://element.eleme.cn/#/zh-CN/<i class="fas fa-external-link-alt"></i></a></p>
 <blockquote>
 <p>Vuex：一个专为 Vue.js 应用程序开发的<strong>状态管理模式 + 库</strong></p>
 </blockquote>
-<p><span class="exturl" data-url="aHR0cHM6Ly92dWV4LnZ1ZWpzLm9yZy96aC9ndWlkZS8=">https://vuex.vuejs.org/zh/guide/</span></p>
+<p><a class="link" target="_blank" rel="noopener" href="https://vuex.vuejs.org/zh/guide/">https://vuex.vuejs.org/zh/guide/<i class="fas fa-external-link-alt"></i></a></p>
 <blockquote>
 <p>MDN：面向 Web 开发者的文档，内容齐全，具有权威性</p>
 </blockquote>
-<p><span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvemgtQ04vZG9jcy9XZWI=">https://developer.mozilla.org/zh-CN/docs/Web</span></p>
+<p><a class="link" target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web">https://developer.mozilla.org/zh-CN/docs/Web<i class="fas fa-external-link-alt"></i></a></p>
 <blockquote>
 <p>阮一峰：ES6 入门教程</p>
 </blockquote>
-<p><span class="exturl" data-url="aHR0cHM6Ly9lczYucnVhbnlpZmVuZy5jb20v">https://es6.ruanyifeng.com/</span></p>
+<p><a class="link" target="_blank" rel="noopener" href="https://es6.ruanyifeng.com/">https://es6.ruanyifeng.com/<i class="fas fa-external-link-alt"></i></a></p>
 <blockquote>
 <p>React：用于构建用户界面的 JavaScript 库</p>
 </blockquote>
-<p><span class="exturl" data-url="aHR0cHM6Ly9yZWFjdGpzLm9yZy8=">https://reactjs.org/</span></p>
+<p><a class="link" target="_blank" rel="noopener" href="https://reactjs.org/">https://reactjs.org/<i class="fas fa-external-link-alt"></i></a></p>
 <blockquote>
 <p>Node：一个基于 Chrome V8 引擎的 JavaScript 运行环境</p>
 </blockquote>
-<p><span class="exturl" data-url="aHR0cDovL25vZGVqcy5jbi8=">http://nodejs.cn/</span></p>
+<p><a class="link" target="_blank" rel="noopener" href="http://nodejs.cn/">http://nodejs.cn/<i class="fas fa-external-link-alt"></i></a></p>
 <blockquote>
 <p>TypeScript：JavaScript 类型的超集，可以编译为纯 JavaScript，可在任何浏览器、计算机、操作系统运行，开源</p>
 </blockquote>
-<p><span class="exturl" data-url="aHR0cHM6Ly93d3cudHNsYW5nLmNuLw==">https://www.tslang.cn/</span></p>
+<p><a class="link" target="_blank" rel="noopener" href="https://www.tslang.cn/">https://www.tslang.cn/<i class="fas fa-external-link-alt"></i></a></p>
 <blockquote>
 <p>Electron：使用 JavaScript，HTML 和 CSS 构建跨平台的桌面应用程序</p>
 </blockquote>
-<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuZWxlY3Ryb25qcy5vcmcv">https://www.electronjs.org/</span></p>
+<p><a class="link" target="_blank" rel="noopener" href="https://www.electronjs.org/">https://www.electronjs.org/<i class="fas fa-external-link-alt"></i></a></p>
 <blockquote>
 <p>Babel：Babel 是一个 JavaScript 编译器，可将 ES6 编译为 ES5 代码，使部分浏览器兼容</p>
 </blockquote>
-<p><span class="exturl" data-url="aHR0cHM6Ly9iYWJlbGpzLmlvLw==">https://babeljs.io/</span></p>
+<p><a class="link" target="_blank" rel="noopener" href="https://babeljs.io/">https://babeljs.io/<i class="fas fa-external-link-alt"></i></a></p>
 <blockquote>
 <p>RequireJS：一个 JavaScript 文件和模块加载器</p>
 </blockquote>
-<p><span class="exturl" data-url="aHR0cHM6Ly9yZXF1aXJlanMub3JnLw==">https://requirejs.org/</span></p>
+<p><a class="link" target="_blank" rel="noopener" href="https://requirejs.org/">https://requirejs.org/<i class="fas fa-external-link-alt"></i></a></p>
 <blockquote>
 <p>开发者资源：自 2005 年以来记录 Web 技术，包括 CSS、HTML 和 JavaScript</p>
 </blockquote>
-<p><span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvemgtQ04v">https://developer.mozilla.org/zh-CN/</span></p>
+<p><a class="link" target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/">https://developer.mozilla.org/zh-CN/<i class="fas fa-external-link-alt"></i></a></p>
 <blockquote>
 <p>阮一峰 JS 教程</p>
 </blockquote>
-<p><span class="exturl" data-url="aHR0cDovL2phdmFzY3JpcHQucnVhbnlpZmVuZy5jb20v">http://javascript.ruanyifeng.com/</span></p>
+<p><a class="link" target="_blank" rel="noopener" href="http://javascript.ruanyifeng.com/">http://javascript.ruanyifeng.com/<i class="fas fa-external-link-alt"></i></a></p>
 <blockquote>
 <p>微信开发文档：微信小程序、微信公众号、小游戏等</p>
 </blockquote>
-<p><span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXJzLndlaXhpbi5xcS5jb20vZG9jLw==">https://developers.weixin.qq.com/doc/</span></p>
-
-      <div class="tags">
-          <a href="/tags/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99/" rel="tag"><i class="ic i-tag"></i> 前端学习网站</a>
-      </div>
-  </div>
-
-   <footer>
-
-    <div class="meta">
-  <span class="item">
-    <span class="icon">
-      <i class="ic i-calendar-check"></i>
-    </span>
-    <span class="text">更新于</span>
-    <time title="修改时间：2022-03-11 23:50:20" itemprop="dateModified" datetime="2022-03-11T23:50:20+08:00">2022-03-11</time>
-  </span>
-</div>
-
-      
-<div class="reward">
-  <button><i class="ic i-heartbeat"></i> 赞赏</button>
-  <p>请我喝[茶]~(￣▽￣)~*</p>
-  <div id="qr">
-      
-      <div>
-        <img data-src="/images/wechatpay.png" alt="Eric Chen 微信支付">
-        <p>微信支付</p>
-      </div>
-      
-      <div>
-        <img data-src="/images/alipay.png" alt="Eric Chen 支付宝">
-        <p>支付宝</p>
-      </div>
-      
-      <div>
-        <img data-src="/images/paypal.png" alt="Eric Chen 贝宝">
-        <p>贝宝</p>
-      </div>
-  </div>
-</div>
-
-      
-
-<div id="copyright">
-<ul>
-  <li class="author">
-    <strong>本文作者： </strong>Eric Chen <i class="ic i-at"><em>@</em></i>CsStar
-  </li>
-  <li class="link">
-    <strong>本文链接：</strong>
-    <a href="http://csstar.top/2022/03/11/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99/" title="前端学习网站">http://csstar.top/2022/03/11/前端学习网站/</a>
-  </li>
-  <li class="license">
-    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
-  </li>
-</ul>
-</div>
-
-  </footer>
-
-</article>
-
-  </div>
-  
-
-<div class="nav">
-    <div class="item left">
-      
-
-  <a href="/2020/10/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%A4%8D%E4%B9%A0/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclhfehz7j20zk0m8u0x.jpg" title="计算机组成原理复习">
-  <span class="type">上一篇</span>
-  <span class="category"><i class="ic i-flag"></i> 计算机基础</span>
-  <h3>计算机组成原理复习</h3>
-  </a>
-
-    </div>
-    <div class="item right">
-      
-
-  <a href="/2022/03/13/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%951/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicis081o9j20zk0m8dmr.jpg" title="前端知识点汇总（一）">
-  <span class="type">下一篇</span>
-  <span class="category"><i class="ic i-flag"></i> </span>
-  <h3>前端知识点汇总（一）</h3>
-  </a>
-
-    </div>
-</div>
-
-  
-  <div class="wrap" id="comments" data-id="2022/03/11/前端学习网站/"></div>
-
+<p><a class="link" target="_blank" rel="noopener" href="https://developers.weixin.qq.com/doc/">https://developers.weixin.qq.com/doc/<i class="fas fa-external-link-alt"></i></a></p>
 
         </div>
-        <div id="sidebar">
-          
 
-<div class="inner">
+        
 
-  <div class="panels">
-    <div class="inner">
-      <div class="contents panel pjax" data-title="文章目录">
-      </div>
-      <div class="related panel pjax" data-title="系列文章">
-      </div>
-      <div class="overview panel" data-title="站点概览">
-        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <img class="image" itemprop="image" alt="Eric Chen"
-      data-src="/images/avatar.jpg">
-  <p class="name" itemprop="name">Eric Chen</p>
-  <div class="description" itemprop="description">Work Hard To Be A Better Man</div>
+        
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/tags/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99/">#前端学习网站</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+            <div class="article-nav">
+                
+                    <div class="article-prev">
+                        <a class="prev"
+                           rel="prev"
+                           href="/2022/03/13/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%951/"
+                        >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">前端知识点汇总（一）</span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/2020/10/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%A4%8D%E4%B9%A0/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">计算机组成原理复习</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
+    </div>
 </div>
 
-<nav class="state">
-    <div class="item posts">
-        <a href="/archives">
-        <span class="count">6</span>
-        <span class="name">文章</span>
-      </a>
-    </div>
-    <div class="item categories">
-      <a href="/categories">
-        <span class="count">1</span>
-        <span class="name">分类</span>
-      </a>
-    </div>
-    <div class="item tags">
-      <a href="/tags">
-        <span class="count">3</span>
-        <span class="name">标签</span>
-      </a>
-    </div>
-</nav>
 
-<div class="social">
-      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL2VyaWMtY2hlbjMw" title="https:&#x2F;&#x2F;github.com&#x2F;eric-chen30"><i class="ic i-github"></i></span>
-      <span class="exturl item twitter" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;twitter.com&#x2F;yourname"><i class="ic i-twitter"></i></span>
-      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS9FcmljX3NodWFp" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;Eric_shuai"><i class="ic i-zhihu"></i></span>
-      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTQzODMzOTMwNA==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;438339304"><i class="ic i-cloud-music"></i></span>
-      <span class="exturl item weibo" data-url="aHR0cHM6Ly93ZWliby5jb20vNjg5MzcwODY2My9wcm9maWxlP3JpZ2h0bW9kPTEmd3ZyPTYmbW9kPXBlcnNvbmluZm8=" title="https:&#x2F;&#x2F;weibo.com&#x2F;6893708663&#x2F;profile?rightmod&#x3D;1&amp;wvr&#x3D;6&amp;mod&#x3D;personinfo"><i class="ic i-weibo"></i></span>
-      <span class="exturl item about" data-url="aHR0cHM6Ly9hYm91dC5tZS9jc3N0YXI=" title="https:&#x2F;&#x2F;about.me&#x2F;csstar"><i class="ic i-address-card"></i></span>
-</div>
-
-<ul class="menu">
-  
-    
-  <li class="item">
-    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
-  </li>
-
-        
-  <li class="item dropdown">
-    <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
-    <ul class="submenu">
-
-        
-  <li class="item">
-    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
-  </li>
-
-        
-  <li class="item">
-    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
-  </li>
-
-        
-  <li class="item">
-    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
-  </li>
-
-  </ul>
-    
-  <li class="item">
-    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
-  </li>
-
-    
-  <li class="item">
-    <a href="/friends/" rel="section"><i class="ic i-heart"></i>友達</a>
-  </li>
-
-    
-  <li class="item">
-    <a href="/links/" rel="section"><i class="ic i-magic"></i>网址</a>
-  </li>
-
-
-</ul>
-
-      </div>
-    </div>
-  </div>
-
-  <ul id="quick">
-    <li class="prev pjax">
-        <a href="/2020/10/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%A4%8D%E4%B9%A0/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
-    </li>
-    <li class="up"><i class="ic i-arrow-up"></i></li>
-    <li class="down"><i class="ic i-arrow-down"></i></li>
-    <li class="next pjax">
-        <a href="/2022/03/13/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%951/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
-    </li>
-    <li class="percent"></li>
-  </ul>
-</div>
-
+                
+            </div>
 
         </div>
-        <div class="dimmer"></div>
-      </div>
-    </main>
-    <footer id="footer">
-      <div class="inner">
-        <div class="copyright">
-  
-  &copy; 2020 – 
-  <span itemprop="copyrightYear">2022</span>
-  <span class="with-love">
-    <i class="ic i-sakura rotate"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Eric Chen @ Eric Chen</span>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2020</span>
+              -
+            
+            2022&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Keep Team</a>
+        </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.5</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+
+        <!-- go comment -->
+        
+    </ul>
 </div>
-<div>
-  <span class="post-meta-item-icon">
-    <i class="ic i-chart-area"></i>
-  </span>
-  <span title="站点总字数">29k 字</span>
 
-  <span class="post-meta-divider">|</span>
-  <span class="post-meta-item-icon">
-    <i class="ic i-coffee"></i>
-  </span>
-  <span title="站点阅读时长">26 分钟</span>
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
 </div>
 
-<div class="powered-by">
-  基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+    </div>
+
+    
+
+    <div class="image-viewer-container">
+    <img src="">
 </div>
 
-      </div>
-    </footer>
-  </div>
-<script data-config type="text/javascript">
-  var LOCAL = {
-    path: 'http://csstar.top/2022/03/11/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99/',
-    favicon: {
-      show: "Eric Chen",
-      hide: "Eric Chen"
-    },
-    search : {
-      placeholder: "文章搜索",
-      empty: "关于 ${query} ，什么也没搜到",
-      stats: "${time} ms 内找到 ${hits} 条结果"
-    },
-    valine: true,copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
-    ignores : [
-      function(uri) {
-        return uri.includes('#');
-      },
-      function(uri) {
-        return uri === LOCAL.path;
-      }
-    ]
-  };
-</script>
 
-<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/velocity-animate@1.5.2/velocity.min.js,npm/velocity-animate@1.5.2/velocity.ui.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+    
 
-<script src="/js/app.js?v=0.1.4"></script>
+</main>
 
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+
+
+
+<div class="post-scripts">
+    
+</div>
 
 
 
