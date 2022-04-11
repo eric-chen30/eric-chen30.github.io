@@ -3,7 +3,7 @@
     <id>http://csstar.top</id>
     <title>CsStar • Posts by &#34;javascript&#34; category</title>
     <link href="http://csstar.top" />
-    <updated>2022-03-14T11:51:06.000Z</updated>
+    <updated>2022-04-11T16:53:54.000Z</updated>
     <category term="Docker" />
     <category term="ES7-11" />
     <category term="Pandas" />
@@ -16,6 +16,204 @@
     <category term="设计模式" />
     <category term="浏览器" />
     <category term="ES6" />
+    <entry>
+        <id>http://csstar.top/2022/04/12/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%954/</id>
+        <title>前端知识记录4</title>
+        <link rel="alternate" href="http://csstar.top/2022/04/12/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%954/"/>
+        <content type="html">&lt;h1 id=&#34;前端知识点汇总-四&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#前端知识点汇总-四&#34;&gt;#&lt;/a&gt; 前端知识点汇总 (四)&lt;/h1&gt;
+&lt;h2 id=&#34;正则表达式中的符号&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#正则表达式中的符号&#34;&gt;#&lt;/a&gt; 正则表达式中的符号&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;？：问号之前的字符只出现零次或一次&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;+：加号之前的一个字符至少出现一次&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;*：星号可以替换为任意字符串&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;()：将括号内容看作一个整体执行上述匹配模式&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;\w：匹配字母、数字、下划线。等价于 [A-Za-z0-9_]&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;.：匹配除换行符（\n、\r）之外的任何单个字符&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;[A-Z]：[A-Z] 表示一个区间，匹配所有大写字母，[a-z] 表示所有小写字母&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;[&lt;sup&gt;ABC]：匹配除&lt;/sup&gt;后面字符的所有字符&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;[ABC]：匹配括号里的所有字符&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;box-shadow属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#box-shadow属性&#34;&gt;#&lt;/a&gt; box-shadow 属性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;offset-x             阴影水平方向偏移，正值为右偏移，负值为左偏移&lt;/li&gt;
+&lt;li&gt;offset-y             阴影垂直方向偏移，正值为下偏移，负值为上偏移&lt;/li&gt;
+&lt;li&gt;blur                   阴影模糊半径，值越大，越模糊，更朦胧，0 意味着阴影是固态而锋利的&lt;/li&gt;
+&lt;li&gt;spread              阴影扩展半径，值越大，阴影扩展范围越大&lt;/li&gt;
+&lt;li&gt;color                 阴影的颜色&lt;/li&gt;
+&lt;li&gt;position           外 / 内阴影   默认为外，设置值为 inset 时，为内阴影&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;px-em-rem的区别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#px-em-rem的区别&#34;&gt;#&lt;/a&gt; px、em、rem 的区别&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;px：绝对单位长度，相对于显示器屏幕的分辨率而言的&lt;/li&gt;
+&lt;li&gt;em：相对长度单位，值不固定，相对于父元素字体大小&lt;/li&gt;
+&lt;li&gt;rem：相对于 html 根元素的 font-size&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;rem 的缺点：屏幕越小的移动设备如果用了 rem 肯定文字就越小，就会导致文章看的时候特别费眼。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;javascript执行过程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#javascript执行过程&#34;&gt;#&lt;/a&gt; JavaScript 执行过程&lt;/h2&gt;
+&lt;h3 id=&#34;常见的javascript引擎&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#常见的javascript引擎&#34;&gt;#&lt;/a&gt; 常见的 JavaScript 引擎&lt;/h3&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Mozilla浏览器 -----&amp;gt; 解析引擎为 Spidermonkey(由c语言实现的)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Chrome浏览器 ------&amp;gt; 解析引擎为 V8(它是由c++实现的)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Safari浏览器 ------&amp;gt; 解析引擎为 JavaScriptCore(c&amp;#x2F;c++)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;IE and Edge ------&amp;gt; 解析引擎为 Chakra(c++)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Node.js     ------&amp;gt; 解析引擎为 V8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;解析过程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#解析过程&#34;&gt;#&lt;/a&gt; 解析过程&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;解析过程分为 【语法检查阶段】  和  【运行阶段】&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;语法检查阶段 包括 【词法分析】 和  【语法分析】&lt;/li&gt;
+&lt;li&gt;运行阶段 包括 【预解析】 和  【运行阶段】&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;词法分析&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;词法分析会将 js 代码中的字符串分割为有意义的代码块，这些代码块我们可以称之为 “词法单元”。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;语法分析&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;语法分析在这个过程中会将词法单元流转换成一颗 抽象语法树 (AST)。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;预解析&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在 js 文件或 script 里面的代码在正式开始执行之前，会进行一些解析工作。比如在全局上寻找 var 关键字声明的变量或者通过 function 关键字声明的函数，找到全局变量或者全局函数后，会进行作用域提升，但提升后不会立即进行赋值操作，此时默认值为 undefined&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;预编译&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;全局预编译，未调用的函数不进行编译&lt;/li&gt;
+&lt;li&gt;只有 var 和 function 关键字声明的变量和函数才会发生作用域提升&lt;/li&gt;
+&lt;li&gt;在所在的作用域提升后，不会扩展到其他作用域&lt;/li&gt;
+&lt;li&gt;预编译后会顺序执行代码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;外边距折叠问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#外边距折叠问题&#34;&gt;#&lt;/a&gt; 外边距折叠问题&lt;/h2&gt;
+&lt;p&gt;多个相邻元素之间在垂直方向上的 margin 会发生重叠&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;两个相邻元素的 margin 都为正值时，折叠结果为两者之间较大的值&lt;/li&gt;
+&lt;li&gt;两个相邻元素的 margin 都为负值时，折叠结果是两者绝对值中的较大值&lt;/li&gt;
+&lt;li&gt;两个外边距为一正一负时，折叠结果是两者的和&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;浮动清除&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#浮动清除&#34;&gt;#&lt;/a&gt; 浮动清除&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;高度塌陷：子元素都设置为浮动且父元素没有设置高度的时候会产生高度塌陷&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;在浮动元素后添加一个带 clear 属性的空元素 可以清除浮动&lt;/li&gt;
+&lt;li&gt;使用 CSS 的 overflow 属性，将 overflow 设置为 hidden 或者 auto&lt;/li&gt;
+&lt;li&gt;给父元素也添加浮动属性，但这样会影响布局，不建议使用&lt;/li&gt;
+&lt;li&gt;万能去浮动：添加一个伪类&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/* 相当于构建了一个BFC（块格式上下文），BFC在计算高度时，内部浮动的高度也计算在内，只有一个浮动元素，高度也不会发生塌陷 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.clear&lt;/span&gt;&lt;span class=&#34;selector-pseudo&#34;&gt;:after&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;content&lt;/span&gt;: &lt;span class=&#34;string&#34;&gt;&amp;#x27; &amp;#x27;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;clear&lt;/span&gt;: both;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: block;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;overflow&lt;/span&gt;: hidden;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;visibility&lt;/span&gt;: hidden;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;javascript基本数据类型&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#javascript基本数据类型&#34;&gt;#&lt;/a&gt; JavaScript 基本数据类型&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;String&lt;/li&gt;
+&lt;li&gt;Number&lt;/li&gt;
+&lt;li&gt;undefined        变量声明了但没有赋值       转换为布尔值为 false       number (undefined)   结果为 NaN&lt;/li&gt;
+&lt;li&gt;null                    变量定义了但为空              转换为布尔值为 false        number (null)   结果为 0&lt;/li&gt;
+&lt;li&gt;boolean&lt;/li&gt;
+&lt;li&gt;Object&lt;/li&gt;
+&lt;li&gt;Symbol&lt;/li&gt;
+&lt;li&gt;bigInt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NaN：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;typeof (NaN) 结果为 number 类型&lt;/li&gt;
+&lt;li&gt;NaN 是唯一一个不等于自身的量     NaN ！== NaN&lt;/li&gt;
+&lt;li&gt;检验是否为 NaN 可以使用 方法   isNaN 进行判断&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;比较两个值是否相等&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#比较两个值是否相等&#34;&gt;#&lt;/a&gt; 比较两个值是否相等&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;相等运算符  ==   ：  会自动转换数据类型，不是严格的相等&lt;/li&gt;
+&lt;li&gt;严格相等运算 === ： NaN 不等于自身，并且 +0 等于 -0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;针对上面两种相等，ES6 在对象上新增了  &lt;code&gt;Object.is()&lt;/code&gt;  方法，也就是同值相等算法，判断两个值是否严格相等，解决了严格相等运算符的缺陷&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;Object&lt;/span&gt;.is(&lt;span class=&#34;string&#34;&gt;&amp;#x27;foo&amp;#x27;&lt;/span&gt;, &lt;span class=&#34;string&#34;&gt;&amp;#x27;foo&amp;#x27;&lt;/span&gt;)&lt;span class=&#34;comment&#34;&gt;// true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;Object&lt;/span&gt;.is(&amp;#123;&amp;#125;, &amp;#123;&amp;#125;)&lt;span class=&#34;comment&#34;&gt;// false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;+&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt; === &lt;span class=&#34;number&#34;&gt;-0&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;//true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;literal&#34;&gt;NaN&lt;/span&gt; === &lt;span class=&#34;literal&#34;&gt;NaN&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;// false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;Object&lt;/span&gt;.is(+&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;-0&lt;/span&gt;) &lt;span class=&#34;comment&#34;&gt;// false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;Object&lt;/span&gt;.is(&lt;span class=&#34;literal&#34;&gt;NaN&lt;/span&gt;, &lt;span class=&#34;literal&#34;&gt;NaN&lt;/span&gt;) &lt;span class=&#34;comment&#34;&gt;// true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;Object&lt;/span&gt;.defineProperty(&lt;span class=&#34;built_in&#34;&gt;Object&lt;/span&gt;, &lt;span class=&#34;string&#34;&gt;&amp;#x27;is&amp;#x27;&lt;/span&gt;, &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  value: &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;x, y&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (x === y) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;comment&#34;&gt;// 针对+0 不等于 -0的情况&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; x !== &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt; || &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt; / x === &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt; / y;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// 针对NaN的情况&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; x !== x &amp;amp;&amp;amp; y !== y;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  configurable: &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  enumerable: &lt;span class=&#34;literal&#34;&gt;false&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  writable: &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;objectassign&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#objectassign&#34;&gt;#&lt;/a&gt; Object.assign()&lt;/h2&gt;
+&lt;h3 id=&#34;基本用法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#基本用法&#34;&gt;#&lt;/a&gt; 基本用法&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;该方法用于对象的合并，将源对象的所有可枚举属性，复制到目标对象&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第一个参数为目标对象，后面的参数都是源对象&lt;/li&gt;
+&lt;li&gt;如果具有同名属性，后面的属性会覆盖掉前面的属性&lt;/li&gt;
+&lt;li&gt;只有一个参数的时候，参数为对象，返回目标对象本身；如果不是对象，会先转换为对象，然后返回&lt;/li&gt;
+&lt;li&gt;如果将 null  和  undefined 当作参数传入方法中，由于两者无法转换为对象，因此会报错&lt;/li&gt;
+&lt;li&gt;限制：只拷贝源对象自身属性（不包括继承属性）、也不包括不可枚举属性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;注意点&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#注意点&#34;&gt;#&lt;/a&gt; 注意点&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;浅拷贝，不是深拷贝，如果源对象某个属性的值是对象，那么目标对象拷贝得到的是这个对象的引用&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;同名属性替换：遇到同名属性，处理方法是替换而不是添加&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;可以用来处理数组，但是会把数组视为对象&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;取值函数的处理，不会复制取值函数，而是将取值函数的结果进行复制&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;es6对象新增的一些其他方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#es6对象新增的一些其他方法&#34;&gt;#&lt;/a&gt; ES6 对象新增的一些其他方法&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Object.keys ()              返回一个数组，包含对象自身可枚举的属性的键名&lt;/li&gt;
+&lt;li&gt;Object.values ()           返回一个数组，包含对象自身可枚举的属性的值&lt;/li&gt;
+&lt;li&gt;Object.entries ()          返回一个数组，包含对象自身可枚举的键值对&lt;/li&gt;
+&lt;li&gt;Object.fromEntries ()   将一个键值对数组转换成一个对象&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;数组实例方法find-和-findindex&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#数组实例方法find-和-findindex&#34;&gt;#&lt;/a&gt; 数组实例方法：find () 和 findIndex ()&lt;/h2&gt;
+&lt;h3 id=&#34;find&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#find&#34;&gt;#&lt;/a&gt; find()&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;找出第一个符合条件的数组成员。参数是一个回调函数，所有数组成员一次执行回调，回调包含三个参数，（当前值，当前索引，原数组）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;找到第一个返回值为 true 的成员并返回&lt;/li&gt;
+&lt;li&gt;如果没有符合条件的数组成员，返回 undefined&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;findindex&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#findindex&#34;&gt;#&lt;/a&gt; findIndex()&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;返回第一个符合条件的数组成员的位置。参数是一个回调函数，所有数组成员一次执行回调，回调包含三个参数，（当前值，当前索引，原数组）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;找到第一个符合条件的成员，返回成员索引&lt;/li&gt;
+&lt;li&gt;如果没有符合条件的数组成员，返回 -1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;对于 find () 和  findIndex () 可以接收第二个参数，用来绑定回调函数中的 this 对象&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;f&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;v&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; v &amp;gt; &lt;span class=&#34;built_in&#34;&gt;this&lt;/span&gt;.age;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;let&lt;/span&gt; person = &amp;#123;&lt;span class=&#34;attr&#34;&gt;name&lt;/span&gt;: &lt;span class=&#34;string&#34;&gt;&amp;#x27;John&amp;#x27;&lt;/span&gt;, &lt;span class=&#34;attr&#34;&gt;age&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;20&lt;/span&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[&lt;span class=&#34;number&#34;&gt;10&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;12&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;26&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;15&lt;/span&gt;].find(f, person);    &lt;span class=&#34;comment&#34;&gt;// 26&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;这两个方法弥补了数组 indexOf 方法的不足，无法发现 NaN&lt;/p&gt;
+&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;[&lt;span class=&#34;literal&#34;&gt;NaN&lt;/span&gt;].indexOf(&lt;span class=&#34;literal&#34;&gt;NaN&lt;/span&gt;)&lt;span class=&#34;comment&#34;&gt;// -1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[&lt;span class=&#34;literal&#34;&gt;NaN&lt;/span&gt;].findIndex(&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;params&#34;&gt;y&lt;/span&gt; =&amp;gt;&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;Object&lt;/span&gt;.is(&lt;span class=&#34;literal&#34;&gt;NaN&lt;/span&gt;, y)) &lt;span class=&#34;comment&#34;&gt;// 0   借助 Object.is(NaN,y)来进行判断&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+        <category term="前端知识" />
+        <updated>2022-04-11T16:53:54.000Z</updated>
+    </entry>
     <entry>
         <id>http://csstar.top/2022/03/14/%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/</id>
         <title>跨域问题</title>
