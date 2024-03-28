@@ -41,10 +41,18 @@ tags:
 ##  启动台排列
 
 ```shell
-defaults write com.apple.dock springboard-rows -int 7			// 每行7个
-defaults write com.apple.dock springboard-columns -int 9。       // 每行9个
-defaults write com.apple.dock ResetLaunchPad -bool true;killall Dock。 重置并重启
-defaults write com.apple.dock springboard-rows Default defaults write com.apple.dock springboard-columns Default killall Dock 			// 恢复默认排列方式
+// 每行7个
+defaults write com.apple.dock springboard-rows -int 7			
+// 每行9个
+defaults write com.apple.dock springboard-columns -int 9  
+// 重置并重启
+defaults write com.apple.dock ResetLaunchPad -bool true;killall Dock 
+// 删除 Dock 的所有自定义设置，并重新加载默认设置
+defaults delete com.apple.dock;killall Dock
+// 重置启动台的行数和列数
+defaults write com.apple.dock springboard-rows Default 
+defaults write com.apple.dock springboard-columns Default
+killall Dock			
 ```
 
 ##  最近程序数
@@ -58,7 +66,8 @@ killall Dock
 ##  安装限制
 
 ```shell
-sudo spctl —master-disable  // 展示设置安全选项中的【任何来源】
+// 展示设置安全选项中的【任何来源】
+sudo spctl —master-disable  
 ```
 
 ![image-20240327163247884](Mac常用操作/image-20240327163247884.png)
