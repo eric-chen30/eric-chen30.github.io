@@ -208,7 +208,7 @@ MenuLink:
     name: "微信"
     icon: "icon-wechat"
     href: "javascript:;"
-    class: ""
+    class: "image"
     target: "_self"
     image: "/image/sidebar/wechat.jpg"
   -
@@ -224,7 +224,7 @@ MenuLink:
 # 页脚样式
 FooterStyle: 2
 # 页脚标语
-BottomText: "<div>【人生若只如初见,何事秋风悲画扇】</div>"
+BottomText: "<div>且行且忘且随风，且行且看且从容</div>"
 
 
 # ---- 控制台输出 ----
