@@ -63,7 +63,7 @@ Loading:
 
 # ---- 页面动效配置 ----
 # true || false, 是否渲染主页头图动效
-HomeHeaderAnimationRendered: true
+HomeHeaderAnimationRendered: false
 # 主页头图动效设置
 HomeHeaderAnimation:    
   radius: 15
@@ -198,33 +198,19 @@ MenuList:
 # 菜单链接
 MenuLink:
   -
-    name: "知乎"
-    icon: "icon-zhihu"
-    href: "https://zhihu.com/people/worstone-29"
-    class: ""
-    target: "_blank"
-    image: ""
-  -
-    name: "微博"
-    icon: "icon-weibo"
-    href: "https://weibo.com/u/5749847477"
-    class: ""
-    target: "_blank"
-    image: ""
-  -
     name: "QQ"
     icon: "icon-qq"
     href: "javascript:;"
     class: "image"
     target: "_self"
-    image: "/image/sidebar/qq.png"
+    image: "/image/sidebar/qq.jpg"
   -
     name: "微信"
     icon: "icon-wechat"
     href: "javascript:;"
     class: ""
     target: "_self"
-    image: ""
+    image: "/image/sidebar/wechat.jpg"
   -
     name: "GitHub"
     icon: "icon-github"
@@ -238,7 +224,7 @@ MenuLink:
 # 页脚样式
 FooterStyle: 2
 # 页脚标语
-BottomText: "<div><span class='face'>ღゝ◡╹)ノ♡</span></div><div>【人生若只如初见<span><i class='iconfont icon-like-fill'></i></span>何事秋风悲画扇】</div><div>&copy; 2020-2023 WorstOne. All Rights Reserved.</div>"
+BottomText: "<div>【人生若只如初见,何事秋风悲画扇】</div>"
 
 
 # ---- 控制台输出 ----
