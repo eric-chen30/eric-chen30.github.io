@@ -7,7 +7,7 @@ GitHubRepositories: "Hexo-LiveForCode"
 
 # ---- 基础信息配置 ----
 # 博主名称, 文章后缀和主页图片上都会使用此名称
-User: "停止一切浮躁"
+User: "停止一切躁动"
 # 用户头像URL
 UserAvatar: "/image/sidebar/avatar.jpg"
 # 创建时间
@@ -18,17 +18,17 @@ Home: "https://worstone.cn"
 
 # ---- 网站配置 ----
 # 当前页失去焦点, 页面Title显示文字
-WebsiteTitleBlur: "自卑玫瑰花"
+WebsiteTitleBlur: "从反方向开始移动"
 # 当前页失去焦点, 页面Title变化, 延时时间, 单位毫秒
 WebsiteTitleBlurTimeOut: 500
 # 当前页获取焦点, 页面Title显示文字, 显示后延时恢复原Title
-WebsiteTitleFocus: "温柔小王子"
+WebsiteTitleFocus: "穿梭时间的画面的钟"
 # 当前页获取焦点, 页面title变化, 延时时间, 单位毫秒
 WebsiteTitleFocusTimeOut: 1000
 # 网站图标
 WebsiteFavicon: 
   light: "/image/website/logo/logo.png"
-  dark: "/image/website/logo/logo-dark.png"
+  dark: "/image/website/logo/logo.png"
 
 
 # ---- 进度条配置 ----
@@ -93,7 +93,7 @@ BackAnimation:
 # 主页图片URL, 推荐尺寸 >= 1920 * 1080, 支持多张, 每次刷新随机设置一张
 HomeHeaderImage: 
   - "/image/header/home.jpg"
-  - "/image/header/home.jpeg"
+  # - "/image/header/home.jpeg"
 # 主页头图上的标语, 设置此选项会固定显示文字, 默认为空, 自动获取一句
 HomeBannerText: ""
 
